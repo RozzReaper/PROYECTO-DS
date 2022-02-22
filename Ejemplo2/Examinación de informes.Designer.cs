@@ -32,9 +32,11 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgv_casos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_casos)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_regresar
@@ -83,11 +85,20 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Examinación de Caso";
             // 
+            // dgv_casos
+            // 
+            this.dgv_casos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_casos.Location = new System.Drawing.Point(84, 73);
+            this.dgv_casos.Name = "dgv_casos";
+            this.dgv_casos.Size = new System.Drawing.Size(779, 359);
+            this.dgv_casos.TabIndex = 24;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 500);
+            this.Controls.Add(this.dgv_casos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnCerrar);
@@ -101,6 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_casos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +124,6 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgv_casos;
     }
 }

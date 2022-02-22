@@ -34,9 +34,11 @@ namespace Ejemplo2
             menu_Supervisor.Show();
         }
 
+        Casos casos= new Casos();
+
         private void Form5_Load(object sender, EventArgs e)
         {
-
+            dgv_casos.DataSource = casos.mostrarcasos();
         }
     }
 }
