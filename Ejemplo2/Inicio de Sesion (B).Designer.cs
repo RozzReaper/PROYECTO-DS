@@ -61,10 +61,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nasalization Rg", 25F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(6, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 40);
+            this.label2.Size = new System.Drawing.Size(249, 39);
             this.label2.TabIndex = 15;
             this.label2.Text = "ANDROMEDA";
             // 
