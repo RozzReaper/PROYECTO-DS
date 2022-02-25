@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Ejemplo2
 {
@@ -15,6 +16,14 @@ namespace Ejemplo2
         public Form2()
         {
             InitializeComponent();
+        }
+
+        Conexion cn = new Conexion();
+
+        public void login(string usuario, string contraseña) 
+        {
+
+                
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -92,6 +101,11 @@ namespace Ejemplo2
             this.Hide();
             Form6 frm = new Form6();
             frm.Show();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

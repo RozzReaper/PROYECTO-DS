@@ -61,17 +61,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nasalization Rg", 25F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(6, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 40);
+            this.label2.Size = new System.Drawing.Size(249, 39);
             this.label2.TabIndex = 13;
             this.label2.Text = "ANDROMEDA";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Ejemplo2.Properties.Resources.andromeda;
-            this.pictureBox3.Location = new System.Drawing.Point(34, 89);
+            this.pictureBox3.Location = new System.Drawing.Point(24, 88);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(208, 208);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,6 +203,7 @@
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesion (A)";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
