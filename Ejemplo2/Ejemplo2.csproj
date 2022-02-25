@@ -47,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\CacheS.cs" />
     <Compile Include="Casos.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="Repositorios\DatosLogin.cs" />
     <Compile Include="Historial de Llamadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +107,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\Repositorio.cs" />
+    <Compile Include="Repositorios\RepositorioM.cs" />
     <EmbeddedResource Include="Historial de Llamadas.resx">
       <DependentUpon>Historial de Llamadas.cs</DependentUpon>
     </EmbeddedResource>
