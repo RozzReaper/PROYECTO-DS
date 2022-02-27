@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Ejemplo2
 {
-    class DatosLogin
+    //Inicio
+    class DatosLogin:RepositorioM
     {
+        //Se añaden Campos de la tabla login
         private int Id_usuario;
         private int FK_Empleados;
         private string Tipo_empleado;
         private string n_usuario;
         private string contraseña;
 
+        //Metodos de Acesso
         public int ID { get { return Id_usuario; } set { Id_usuario = value; } }
 
         public int ID_Empleado { get { return FK_Empleados; } set { FK_Empleados = value; } }
