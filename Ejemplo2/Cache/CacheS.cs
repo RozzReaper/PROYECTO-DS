@@ -8,8 +8,8 @@ namespace Ejemplo2.Cache
 {
     public static class CacheS
     {
-        public static string Id_Usuario { get; set; }
-        public static string Contraseña { get; set; }
+        public static int Id_Usuario { get; set; }
+        public static string usuario { get; set; }
 
     }
 }

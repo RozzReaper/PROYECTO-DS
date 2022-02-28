@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Ejemplo2.Cache;
 
 namespace Ejemplo2
 {
@@ -98,14 +99,29 @@ namespace Ejemplo2
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form6 frm = new Form6();
-            frm.Show();
+            //Herencia al evento
+            DatosLogin obj = new DatosLogin();
+            bool Valido = obj.login(txtuser.Text, txtpass.Text);
+            if(Valido)
+            {
+                Form6 frm = new Form6();
+                this.Hide();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario/Contraseña incorrecto");
+            }
+
+
         }
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

@@ -112,7 +112,7 @@
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtpass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtpass.Location = new System.Drawing.Point(380, 229);
+            this.txtpass.Location = new System.Drawing.Point(380, 225);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(408, 20);
             this.txtpass.TabIndex = 2;
@@ -127,7 +127,7 @@
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtuser.ForeColor = System.Drawing.Color.DimGray;
-            this.txtuser.Location = new System.Drawing.Point(380, 147);
+            this.txtuser.Location = new System.Drawing.Point(386, 137);
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(408, 20);
             this.txtuser.TabIndex = 1;
