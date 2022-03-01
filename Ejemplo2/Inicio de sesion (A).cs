@@ -121,7 +121,7 @@ namespace Ejemplo2
             }
             else
             {
-                MessageBox.Show("Usuario/Contraseña incorrecto");
+                MessageBox.Show("Usuario/Contraseña/Tipo de empleado incorrecto");
             }
 
             

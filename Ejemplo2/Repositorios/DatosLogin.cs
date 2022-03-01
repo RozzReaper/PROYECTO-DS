@@ -49,6 +49,7 @@ namespace Ejemplo2
                 conexion.Open();
                 using (var comando = new SqlCommand())
                 {
+                    //Segun el codigo de encripación, que el inicio también dependa de si el empleado es Agente o Supervisor
                     comando.Connection = conexion;
                     comando.CommandText = @"select * from Usuario where n_usuario = @usuario and Tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
                     comando.CommandType = System.Data.CommandType.Text;
@@ -62,6 +63,7 @@ namespace Ejemplo2
                         //mientras se revisa con la base de datos a ver si existe las sentencias
                         while (lector.Read())
                         {
+                            //revisa cada elemento dependiendo de su numero de columna
                             CacheS.Id_Usuario = lector.GetInt32(0);
                             CacheS.usuario=lector.GetString(3);
                             CacheS.t_empleado=lector.GetString(2);
