@@ -39,6 +39,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
+            this.txt_temple = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -112,7 +113,7 @@
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtpass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtpass.Location = new System.Drawing.Point(380, 225);
+            this.txtpass.Location = new System.Drawing.Point(380, 257);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(408, 20);
             this.txtpass.TabIndex = 2;
@@ -183,6 +184,21 @@
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // txt_temple
+            // 
+            this.txt_temple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.txt_temple.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_temple.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txt_temple.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_temple.Location = new System.Drawing.Point(386, 192);
+            this.txt_temple.Name = "txt_temple";
+            this.txt_temple.Size = new System.Drawing.Size(408, 20);
+            this.txt_temple.TabIndex = 1;
+            this.txt_temple.Text = "TIPO DE EMPLEADO";
+            this.txt_temple.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
+            this.txt_temple.Enter += new System.EventHandler(this.txtuser_Enter);
+            this.txt_temple.Leave += new System.EventHandler(this.txtuser_Leave);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,6 +212,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtpass);
+            this.Controls.Add(this.txt_temple);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -228,5 +245,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_temple;
     }
 }

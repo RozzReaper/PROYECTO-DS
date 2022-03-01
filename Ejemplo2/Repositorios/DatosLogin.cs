@@ -42,7 +42,7 @@ namespace Ejemplo2
 
         //Inicio de sesion 
 
-        public bool login(string usuario, string contraseña)
+        public bool login(string usuario, string contraseña, string t_empleado)
         {
             using (var conexion = ObtenerConexion())
             {
@@ -50,9 +50,10 @@ namespace Ejemplo2
                 using (var comando = new SqlCommand())
                 {
                     comando.Connection = conexion;
-                    comando.CommandText = @"select * from Usuario where n_usuario = @usuario and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
+                    comando.CommandText = @"select * from Usuario where n_usuario = @usuario and Tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
                     comando.CommandType = System.Data.CommandType.Text;
                     comando.Parameters.AddWithValue("@usuario", usuario);
+                    comando.Parameters.AddWithValue("@t_empleado", t_empleado);
                     comando.Parameters.AddWithValue("@contraseña", contraseña);
                     SqlDataReader lector = comando.ExecuteReader();
                     //Si la tabla tiene datos
@@ -63,6 +64,7 @@ namespace Ejemplo2
                         {
                             CacheS.Id_Usuario = lector.GetInt32(0);
                             CacheS.usuario=lector.GetString(3);
+                            CacheS.t_empleado=lector.GetString(2);
                         }
                         return true;
                     }

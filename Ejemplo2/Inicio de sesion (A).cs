@@ -101,19 +101,30 @@ namespace Ejemplo2
         {
             //Herencia al evento
             DatosLogin obj = new DatosLogin();
-            bool Valido = obj.login(txtuser.Text, txtpass.Text);
+            bool Valido = obj.login(txtuser.Text, txtpass.Text, txt_temple.Text);
             if(Valido)
             {
-                Form6 frm = new Form6();
-                this.Hide();
-                frm.Show();
+                if(txt_temple.Text == "Agente universal")
+                {
+                    Form6 frm = new Form6();
+                    this.Hide();
+                    frm.Show();
+                }
+                else
+                    if(txt_temple.Text == "Supervisor")
+                {
+                    Form3 frm = new Form3();
+                    this.Hide();
+                    frm.Show();
+                }
+
             }
             else
             {
                 MessageBox.Show("Usuario/Contraseña incorrecto");
             }
 
-
+            
         }
 
 
