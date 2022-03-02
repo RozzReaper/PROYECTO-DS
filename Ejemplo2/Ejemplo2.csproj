@@ -50,6 +50,18 @@
     <Compile Include="Cache\CacheS.cs" />
     <Compile Include="Casos.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="Datos cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos cliente.Designer.cs">
+      <DependentUpon>Datos cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCliente.Designer.cs">
+      <DependentUpon>LoginCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositorios\DatosLogin.cs" />
     <Compile Include="Historial de Llamadas.cs">
       <SubType>Form</SubType>
@@ -109,8 +121,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\Repositorio.cs" />
     <Compile Include="Repositorios\RepositorioM.cs" />
+    <EmbeddedResource Include="Datos cliente.resx">
+      <DependentUpon>Datos cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Historial de Llamadas.resx">
       <DependentUpon>Historial de Llamadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCliente.resx">
+      <DependentUpon>LoginCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Inicial.resx">
       <DependentUpon>Menu Inicial.cs</DependentUpon>
