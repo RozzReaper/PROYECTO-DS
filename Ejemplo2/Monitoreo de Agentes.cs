@@ -7,11 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
+
 
 namespace Ejemplo2
 {
     public partial class Form4 : Form
     {
+
+        public SqlConnection cadenaconexion()
+        {
+            SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
+
+            if (cn.State == ConnectionState.Open)
+            {
+                cn.Close();
+            }
+            else
+            {
+                cn.Open();
+            }
+            return cn;
+        }
+
         public Form4()
         {
             InitializeComponent();
@@ -32,6 +51,16 @@ namespace Ejemplo2
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

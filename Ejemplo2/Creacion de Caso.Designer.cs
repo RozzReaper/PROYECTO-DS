@@ -32,6 +32,15 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Descripción = new System.Windows.Forms.Label();
+            this.txtfecha = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtidemple = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmb_cate = new System.Windows.Forms.ComboBox();
+            this.txtins = new System.Windows.Forms.Button();
+            this.txt_desc = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -83,11 +92,102 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Creación de Caso";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(299, 115);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Categoría";
+            // 
+            // Descripción
+            // 
+            this.Descripción.AutoSize = true;
+            this.Descripción.Location = new System.Drawing.Point(299, 290);
+            this.Descripción.Name = "Descripción";
+            this.Descripción.Size = new System.Drawing.Size(63, 13);
+            this.Descripción.TabIndex = 25;
+            this.Descripción.Text = "Descripción";
+            // 
+            // txtfecha
+            // 
+            this.txtfecha.Location = new System.Drawing.Point(92, 236);
+            this.txtfecha.Name = "txtfecha";
+            this.txtfecha.Size = new System.Drawing.Size(100, 20);
+            this.txtfecha.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(89, 205);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 13);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "fecha (Año, mes, día)";
+            // 
+            // txtidemple
+            // 
+            this.txtidemple.Location = new System.Drawing.Point(92, 146);
+            this.txtidemple.Name = "txtidemple";
+            this.txtidemple.Size = new System.Drawing.Size(100, 20);
+            this.txtidemple.TabIndex = 24;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(89, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 13);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Id de empleado";
+            // 
+            // cmb_cate
+            // 
+            this.cmb_cate.FormattingEnabled = true;
+            this.cmb_cate.Items.AddRange(new object[] {
+            "Problemas de conexión",
+            "Internet lento",
+            "Fecha de instalación",
+            "Dia de pago"});
+            this.cmb_cate.Location = new System.Drawing.Point(293, 146);
+            this.cmb_cate.Name = "cmb_cate";
+            this.cmb_cate.Size = new System.Drawing.Size(100, 21);
+            this.cmb_cate.TabIndex = 26;
+            this.cmb_cate.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // txtins
+            // 
+            this.txtins.Location = new System.Drawing.Point(452, 538);
+            this.txtins.Name = "txtins";
+            this.txtins.Size = new System.Drawing.Size(75, 23);
+            this.txtins.TabIndex = 27;
+            this.txtins.Text = "Insertar";
+            this.txtins.UseVisualStyleBackColor = true;
+            this.txtins.Click += new System.EventHandler(this.txtins_Click);
+            // 
+            // txt_desc
+            // 
+            this.txt_desc.Location = new System.Drawing.Point(302, 332);
+            this.txt_desc.Multiline = true;
+            this.txt_desc.Name = "txt_desc";
+            this.txt_desc.Size = new System.Drawing.Size(367, 119);
+            this.txt_desc.TabIndex = 29;
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.txt_desc);
+            this.Controls.Add(this.txtins);
+            this.Controls.Add(this.cmb_cate);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtidemple);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtfecha);
+            this.Controls.Add(this.Descripción);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnCerrar);
@@ -112,5 +212,14 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Descripción;
+        private System.Windows.Forms.TextBox txtfecha;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtidemple;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmb_cate;
+        private System.Windows.Forms.Button txtins;
+        private System.Windows.Forms.TextBox txt_desc;
     }
 }

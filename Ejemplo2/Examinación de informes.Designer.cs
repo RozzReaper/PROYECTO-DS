@@ -84,6 +84,7 @@
             this.label1.Size = new System.Drawing.Size(189, 23);
             this.label1.TabIndex = 23;
             this.label1.Text = "Examinación de Caso";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgv_casos
             // 
@@ -92,6 +93,7 @@
             this.dgv_casos.Name = "dgv_casos";
             this.dgv_casos.Size = new System.Drawing.Size(779, 359);
             this.dgv_casos.TabIndex = 24;
+            this.dgv_casos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_casos_CellContentClick);
             // 
             // Form5
             // 

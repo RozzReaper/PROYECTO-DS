@@ -40,5 +40,15 @@ namespace Ejemplo2
         {
             dgv_casos.DataSource = casos.mostrarcasos();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_casos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

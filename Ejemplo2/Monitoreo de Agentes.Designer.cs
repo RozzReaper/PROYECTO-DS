@@ -82,6 +82,7 @@
             this.label1.Size = new System.Drawing.Size(198, 23);
             this.label1.TabIndex = 24;
             this.label1.Text = "Monitoreo de Agentes";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form4
             // 
@@ -97,6 +98,7 @@
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Monitoreo de Agentes";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
