@@ -133,6 +133,27 @@ namespace Ejemplo2
 
         }
 
+        private void txt_temple_Enter(object sender, EventArgs e)
+        {
+            if (txt_temple.Text == "TIPO DE EMPLEADO")
+            {
+                txt_temple.Text = "";
+                txt_temple.ForeColor = Color.LightGray;
+            }
+        }
 
+        private void txt_temple_Leave(object sender, EventArgs e)
+        {
+            if (txt_temple.Text == "")
+            {
+                txt_temple.Text = "TIPO DE EMPLEADO";
+                txt_temple.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

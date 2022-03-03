@@ -33,7 +33,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAgente = new System.Windows.Forms.Button();
-            this.btnSupervisor = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -78,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 40F);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(496, 63);
+            this.label1.Location = new System.Drawing.Point(499, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 65);
             this.label1.TabIndex = 1;
@@ -94,30 +93,13 @@
             this.btnAgente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAgente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgente.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgente.Location = new System.Drawing.Point(376, 206);
+            this.btnAgente.Location = new System.Drawing.Point(382, 239);
             this.btnAgente.Name = "btnAgente";
             this.btnAgente.Size = new System.Drawing.Size(408, 40);
             this.btnAgente.TabIndex = 4;
             this.btnAgente.Text = "ACCEDER AGENTE UNIVERSAL";
             this.btnAgente.UseVisualStyleBackColor = false;
             this.btnAgente.Click += new System.EventHandler(this.btnAgente_Click);
-            // 
-            // btnSupervisor
-            // 
-            this.btnSupervisor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnSupervisor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSupervisor.FlatAppearance.BorderSize = 0;
-            this.btnSupervisor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnSupervisor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSupervisor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupervisor.ForeColor = System.Drawing.Color.LightGray;
-            this.btnSupervisor.Location = new System.Drawing.Point(376, 291);
-            this.btnSupervisor.Name = "btnSupervisor";
-            this.btnSupervisor.Size = new System.Drawing.Size(408, 40);
-            this.btnSupervisor.TabIndex = 5;
-            this.btnSupervisor.Text = "ACCEDER SUPERVISOR ADMINISTRADOR";
-            this.btnSupervisor.UseVisualStyleBackColor = false;
-            this.btnSupervisor.Click += new System.EventHandler(this.btnSupervisor_Click);
             // 
             // pictureBox2
             // 
@@ -151,7 +133,6 @@
             this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnSupervisor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAgente);
             this.Controls.Add(this.panel1);
@@ -176,7 +157,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAgente;
-        private System.Windows.Forms.Button btnSupervisor;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;

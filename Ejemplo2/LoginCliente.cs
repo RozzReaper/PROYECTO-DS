@@ -16,5 +16,10 @@ namespace Ejemplo2
         {
             InitializeComponent();
         }
+
+        private void LoginCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

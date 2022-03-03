@@ -152,7 +152,7 @@
             "Dia de pago"});
             this.cmb_cate.Location = new System.Drawing.Point(293, 146);
             this.cmb_cate.Name = "cmb_cate";
-            this.cmb_cate.Size = new System.Drawing.Size(100, 21);
+            this.cmb_cate.Size = new System.Drawing.Size(129, 21);
             this.cmb_cate.TabIndex = 26;
             this.cmb_cate.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
