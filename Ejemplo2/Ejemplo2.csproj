@@ -75,17 +75,11 @@
     <Compile Include="Menu Inicial.Designer.cs">
       <DependentUpon>Menu Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inicio de sesion %28A%29.cs">
+    <Compile Include="Inicio de sesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio de sesion %28A%29.Designer.cs">
-      <DependentUpon>Inicio de sesion %28A%29.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Inicio de Sesion %28B%29.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Inicio de Sesion %28B%29.Designer.cs">
-      <DependentUpon>Inicio de Sesion %28B%29.cs</DependentUpon>
+    <Compile Include="Inicio de sesion.Designer.cs">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu Supervisor.cs">
       <SubType>Form</SubType>
@@ -133,11 +127,8 @@
     <EmbeddedResource Include="Menu Inicial.resx">
       <DependentUpon>Menu Inicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio de sesion %28A%29.resx">
-      <DependentUpon>Inicio de sesion %28A%29.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Inicio de Sesion %28B%29.resx">
-      <DependentUpon>Inicio de Sesion %28B%29.cs</DependentUpon>
+    <EmbeddedResource Include="Inicio de sesion.resx">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Supervisor.resx">
       <DependentUpon>Menu Supervisor.cs</DependentUpon>

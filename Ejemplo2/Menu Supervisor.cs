@@ -25,8 +25,8 @@ namespace Ejemplo2
         private void btn_regresar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
-            form3.Show();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
