@@ -69,10 +69,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nasalization Rg", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(552, 27);
+            this.label1.Font = new System.Drawing.Font("Nasalization Rg", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(514, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 25);
+            this.label1.Size = new System.Drawing.Size(299, 29);
             this.label1.TabIndex = 23;
             this.label1.Text = "Examinación de Caso";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -99,7 +99,7 @@
             this.dgv_casos.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgv_casos.EnableHeadersVisualStyles = false;
             this.dgv_casos.GridColor = System.Drawing.Color.BlueViolet;
-            this.dgv_casos.Location = new System.Drawing.Point(82, 97);
+            this.dgv_casos.Location = new System.Drawing.Point(61, 97);
             this.dgv_casos.Name = "dgv_casos";
             this.dgv_casos.ReadOnly = true;
             this.dgv_casos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -112,14 +112,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_casos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_casos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SlateBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dgv_casos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_casos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_casos.Size = new System.Drawing.Size(1113, 359);
+            this.dgv_casos.Size = new System.Drawing.Size(1169, 359);
             this.dgv_casos.TabIndex = 1;
             this.dgv_casos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_casos_CellContentClick);
             // 
