@@ -47,9 +47,7 @@ namespace Ejemplo2
 
         private void btnSupervisor_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form3 b = new Form3();
-            b.Show();
+            
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)

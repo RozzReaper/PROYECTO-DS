@@ -113,7 +113,7 @@ namespace Ejemplo2
                 else
                     if(txt_temple.Text == "Supervisor")
                 {
-                    Form3 frm = new Form3();
+                    Menu_Supervisor frm = new Menu_Supervisor();
                     this.Hide();
                     frm.Show();
                 }

@@ -93,7 +93,7 @@
             this.btnAgente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAgente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgente.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgente.Location = new System.Drawing.Point(382, 239);
+            this.btnAgente.Location = new System.Drawing.Point(381, 234);
             this.btnAgente.Name = "btnAgente";
             this.btnAgente.Size = new System.Drawing.Size(408, 40);
             this.btnAgente.TabIndex = 4;

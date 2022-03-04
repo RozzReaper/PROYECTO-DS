@@ -21,5 +21,22 @@ namespace Ejemplo2
         {
 
         }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form6 frm = new Form6();
+            frm.Show();
+        }
     }
 }

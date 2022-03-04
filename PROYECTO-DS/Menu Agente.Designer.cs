@@ -30,15 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCaso = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnlgncliente = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,54 +63,6 @@
             this.label1.Size = new System.Drawing.Size(493, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido, Agente Universal";
-            // 
-            // btnCaso
-            // 
-            this.btnCaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnCaso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCaso.FlatAppearance.BorderSize = 0;
-            this.btnCaso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnCaso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaso.Font = new System.Drawing.Font("Ethnocentric Rg", 9F);
-            this.btnCaso.ForeColor = System.Drawing.Color.LightGray;
-            this.btnCaso.Location = new System.Drawing.Point(237, 260);
-            this.btnCaso.Name = "btnCaso";
-            this.btnCaso.Size = new System.Drawing.Size(408, 40);
-            this.btnCaso.TabIndex = 7;
-            this.btnCaso.Text = "CREACIÓN DE CASO";
-            this.btnCaso.UseVisualStyleBackColor = false;
-            this.btnCaso.Click += new System.EventHandler(this.btnSupervisor_Click);
-            // 
-            // btnHistorial
-            // 
-            this.btnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHistorial.FlatAppearance.BorderSize = 0;
-            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial.Font = new System.Drawing.Font("Ethnocentric Rg", 9F);
-            this.btnHistorial.ForeColor = System.Drawing.Color.LightGray;
-            this.btnHistorial.Location = new System.Drawing.Point(237, 175);
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(408, 40);
-            this.btnHistorial.TabIndex = 6;
-            this.btnHistorial.Text = "HISTORIAL DE LLAMADAS";
-            this.btnHistorial.UseVisualStyleBackColor = false;
-            this.btnHistorial.Click += new System.EventHandler(this.btnAgente_Click);
-            // 
-            // btn_regresar
-            // 
-            this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(836, 388);
-            this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(52, 50);
-            this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_regresar.TabIndex = 15;
-            this.btn_regresar.TabStop = false;
-            this.btn_regresar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCerrar
             // 
@@ -135,12 +88,76 @@
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
+            // btnCaso
+            // 
+            this.btnCaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnCaso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCaso.FlatAppearance.BorderSize = 0;
+            this.btnCaso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnCaso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCaso.ForeColor = System.Drawing.Color.LightGray;
+            this.btnCaso.Location = new System.Drawing.Point(242, 285);
+            this.btnCaso.Name = "btnCaso";
+            this.btnCaso.Size = new System.Drawing.Size(408, 40);
+            this.btnCaso.TabIndex = 7;
+            this.btnCaso.Text = "Creación de Caso";
+            this.btnCaso.UseVisualStyleBackColor = false;
+            this.btnCaso.Click += new System.EventHandler(this.btnSupervisor_Click);
+            // 
+            // btnHistorial
+            // 
+            this.btnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistorial.FlatAppearance.BorderSize = 0;
+            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistorial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistorial.ForeColor = System.Drawing.Color.LightGray;
+            this.btnHistorial.Location = new System.Drawing.Point(242, 156);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(408, 40);
+            this.btnHistorial.TabIndex = 6;
+            this.btnHistorial.Text = "Historial de Llamadas";
+            this.btnHistorial.UseVisualStyleBackColor = false;
+            this.btnHistorial.Click += new System.EventHandler(this.btnAgente_Click);
+            // 
+            // btn_regresar
+            // 
+            this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
+            this.btn_regresar.Location = new System.Drawing.Point(836, 388);
+            this.btn_regresar.Name = "btn_regresar";
+            this.btn_regresar.Size = new System.Drawing.Size(52, 50);
+            this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_regresar.TabIndex = 15;
+            this.btn_regresar.TabStop = false;
+            this.btn_regresar.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnlgncliente
+            // 
+            this.btnlgncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnlgncliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlgncliente.FlatAppearance.BorderSize = 0;
+            this.btnlgncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlgncliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.btnlgncliente.ForeColor = System.Drawing.Color.LightGray;
+            this.btnlgncliente.Location = new System.Drawing.Point(242, 220);
+            this.btnlgncliente.Name = "btnlgncliente";
+            this.btnlgncliente.Size = new System.Drawing.Size(408, 40);
+            this.btnlgncliente.TabIndex = 16;
+            this.btnlgncliente.Text = "Búsqueda de Cliente";
+            this.btnlgncliente.UseVisualStyleBackColor = false;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.btnlgncliente);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnCaso);
             this.Controls.Add(this.btnHistorial);
@@ -153,9 +170,9 @@
             this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -169,5 +186,6 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btn_regresar;
+        private System.Windows.Forms.Button btnlgncliente;
     }
 }
