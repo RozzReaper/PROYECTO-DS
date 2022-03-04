@@ -104,14 +104,14 @@ namespace Ejemplo2
             bool Valido = obj.login(txtuser.Text, txtpass.Text, txt_temple.Text);
             if(Valido)
             {
-                if(txt_temple.Text == "Agente Universal")
+                if(txt_temple.Text == "agente universal" || txt_temple.Text == "Agente Universal" || txt_temple.Text == "Agente universal")
                 {
                     this.Hide();
                     Form6 frm = new Form6();
                     frm.Show();
                 }
                 else
-                    if(txt_temple.Text == "Supervisor")
+                    if(txt_temple.Text == "Supervisor" || txt_temple.Text == "supervisor")
                 {
                     this.Hide();
                     Menu_Supervisor frm = new Menu_Supervisor();
