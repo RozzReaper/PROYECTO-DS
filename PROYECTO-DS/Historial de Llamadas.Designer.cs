@@ -79,7 +79,7 @@
             this.Controls.Add(this.btnMinimizar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Historial_de_Llamadas";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historial_de_Llamadas";
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();

@@ -60,5 +60,28 @@ namespace Ejemplo2
         {
             
         }
+
+        private void txtfecha_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtfecha_Enter(object sender, EventArgs e)
+        {
+            if (txtfecha.Text == "YYYY-MM-DD")
+            {
+                txtfecha.Text = "";
+                txtfecha.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtfecha_Leave(object sender, EventArgs e)
+        {
+            if (txtfecha.Text == "")
+            {
+                txtfecha.Text = "YYYY-MM-DD";
+                txtfecha.ForeColor = Color.Gray;
+            }
+        }
     }
 }

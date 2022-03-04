@@ -42,7 +42,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gold;
+            this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -54,10 +54,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ethnocentric Rg", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 25);
+            this.label1.Font = new System.Drawing.Font("Nasalization Rg", 18.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(244, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(493, 25);
+            this.label1.Size = new System.Drawing.Size(417, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido, Agente Universal";
             // 
@@ -75,7 +75,7 @@
             // 
             // btnCaso
             // 
-            this.btnCaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnCaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnCaso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCaso.FlatAppearance.BorderSize = 0;
             this.btnCaso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -83,7 +83,7 @@
             this.btnCaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCaso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaso.ForeColor = System.Drawing.Color.LightGray;
-            this.btnCaso.Location = new System.Drawing.Point(242, 285);
+            this.btnCaso.Location = new System.Drawing.Point(249, 269);
             this.btnCaso.Name = "btnCaso";
             this.btnCaso.Size = new System.Drawing.Size(408, 40);
             this.btnCaso.TabIndex = 7;
@@ -93,7 +93,7 @@
             // 
             // btnHistorial
             // 
-            this.btnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHistorial.FlatAppearance.BorderSize = 0;
             this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -101,7 +101,7 @@
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistorial.ForeColor = System.Drawing.Color.LightGray;
-            this.btnHistorial.Location = new System.Drawing.Point(242, 156);
+            this.btnHistorial.Location = new System.Drawing.Point(249, 157);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Size = new System.Drawing.Size(408, 40);
             this.btnHistorial.TabIndex = 6;
@@ -123,24 +123,25 @@
             // 
             // btnlgncliente
             // 
-            this.btnlgncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnlgncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnlgncliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlgncliente.FlatAppearance.BorderSize = 0;
             this.btnlgncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlgncliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btnlgncliente.ForeColor = System.Drawing.Color.LightGray;
-            this.btnlgncliente.Location = new System.Drawing.Point(242, 220);
+            this.btnlgncliente.Location = new System.Drawing.Point(249, 212);
             this.btnlgncliente.Name = "btnlgncliente";
             this.btnlgncliente.Size = new System.Drawing.Size(408, 40);
             this.btnlgncliente.TabIndex = 16;
             this.btnlgncliente.Text = "Búsqueda de Cliente";
             this.btnlgncliente.UseVisualStyleBackColor = false;
+            this.btnlgncliente.Click += new System.EventHandler(this.btnlgncliente_Click);
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.btnlgncliente);
             this.Controls.Add(this.btn_regresar);
@@ -149,7 +150,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form6";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historial de registro de llamadas";
             this.Load += new System.EventHandler(this.Form6_Load);

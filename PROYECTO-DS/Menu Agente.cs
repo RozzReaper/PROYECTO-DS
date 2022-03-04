@@ -52,5 +52,12 @@ namespace Ejemplo2
             Form7 form7 = new Form7();
             form7.Show();
         }
+
+        private void btnlgncliente_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginCliente loginCliente = new LoginCliente();
+            loginCliente.Show();
+        }
     }
 }

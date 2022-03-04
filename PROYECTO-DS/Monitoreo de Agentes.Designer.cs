@@ -80,7 +80,7 @@
             this.Controls.Add(this.btnMinimizar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Monitoreo de Agentes";
             this.Load += new System.EventHandler(this.Form4_Load);

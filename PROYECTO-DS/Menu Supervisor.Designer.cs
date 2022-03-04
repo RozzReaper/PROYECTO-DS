@@ -41,7 +41,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -53,10 +53,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ethnocentric Rg", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(257, 23);
+            this.label1.Font = new System.Drawing.Font("Nasalization Rg", 18.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(285, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(392, 25);
+            this.label1.Size = new System.Drawing.Size(335, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Bienvenido, Supervisor";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -87,15 +87,15 @@
             // 
             // btnCaso
             // 
-            this.btnCaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnCaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnCaso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCaso.FlatAppearance.BorderSize = 0;
             this.btnCaso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnCaso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaso.Font = new System.Drawing.Font("Ethnocentric Rg", 9F);
+            this.btnCaso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btnCaso.ForeColor = System.Drawing.Color.LightGray;
-            this.btnCaso.Location = new System.Drawing.Point(252, 266);
+            this.btnCaso.Location = new System.Drawing.Point(252, 249);
             this.btnCaso.Name = "btnCaso";
             this.btnCaso.Size = new System.Drawing.Size(408, 40);
             this.btnCaso.TabIndex = 17;
@@ -105,13 +105,13 @@
             // 
             // btnHistorial
             // 
-            this.btnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHistorial.FlatAppearance.BorderSize = 0;
             this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial.Font = new System.Drawing.Font("Ethnocentric Rg", 9F);
+            this.btnHistorial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btnHistorial.ForeColor = System.Drawing.Color.LightGray;
             this.btnHistorial.Location = new System.Drawing.Point(252, 181);
             this.btnHistorial.Name = "btnHistorial";
@@ -125,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnCaso);
@@ -133,7 +133,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu_Supervisor";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Supervisor";
             this.Load += new System.EventHandler(this.Menu_Supervisor_Load);

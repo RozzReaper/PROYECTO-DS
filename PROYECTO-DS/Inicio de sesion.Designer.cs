@@ -46,7 +46,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.panel1.BackColor = System.Drawing.Color.Indigo;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -82,15 +82,15 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(441, 32);
+            this.label1.Location = new System.Drawing.Point(537, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 39);
+            this.label1.Size = new System.Drawing.Size(120, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "LOGIN UNIVERSAL";
+            this.label1.Text = "LOGIN";
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -107,7 +107,7 @@
             // 
             // txtpass
             // 
-            this.txtpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.txtpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtpass.ForeColor = System.Drawing.Color.DimGray;
@@ -122,7 +122,7 @@
             // 
             // txtuser
             // 
-            this.txtuser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.txtuser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtuser.ForeColor = System.Drawing.Color.DimGray;
@@ -161,7 +161,7 @@
             // 
             // txt_temple
             // 
-            this.txt_temple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.txt_temple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txt_temple.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_temple.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txt_temple.ForeColor = System.Drawing.Color.DimGray;
@@ -177,19 +177,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.txt_temple);
             this.Controls.Add(this.btn_regresar);
-            this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesion (A)";
             this.Load += new System.EventHandler(this.Form2_Load);

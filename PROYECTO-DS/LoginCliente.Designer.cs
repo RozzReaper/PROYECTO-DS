@@ -57,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(84, 246);
+            this.label2.Location = new System.Drawing.Point(120, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 0;
@@ -67,7 +67,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label3.Location = new System.Drawing.Point(84, 302);
+            this.label3.Location = new System.Drawing.Point(120, 289);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 17);
             this.label3.TabIndex = 0;
@@ -77,7 +77,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label4.Location = new System.Drawing.Point(84, 189);
+            this.label4.Location = new System.Drawing.Point(120, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 17);
             this.label4.TabIndex = 0;
@@ -85,23 +85,23 @@
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(87, 266);
+            this.txtname.Location = new System.Drawing.Point(123, 253);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(265, 20);
+            this.txtname.Size = new System.Drawing.Size(331, 20);
             this.txtname.TabIndex = 2;
             // 
             // txtcel
             // 
-            this.txtcel.Location = new System.Drawing.Point(87, 322);
+            this.txtcel.Location = new System.Drawing.Point(123, 309);
             this.txtcel.Name = "txtcel";
-            this.txtcel.Size = new System.Drawing.Size(120, 20);
+            this.txtcel.Size = new System.Drawing.Size(186, 20);
             this.txtcel.TabIndex = 3;
             // 
             // txt_id
             // 
-            this.txt_id.Location = new System.Drawing.Point(87, 213);
+            this.txt_id.Location = new System.Drawing.Point(123, 200);
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(100, 20);
+            this.txt_id.Size = new System.Drawing.Size(166, 20);
             this.txt_id.TabIndex = 1;
             // 
             // btn_regresar
@@ -130,13 +130,13 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(598, 100);
+            this.panel1.Size = new System.Drawing.Size(598, 86);
             this.panel1.TabIndex = 22;
             // 
             // LoginCliente
@@ -155,6 +155,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginCliente";
+            this.Opacity = 0.85D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginCliente";
             this.Load += new System.EventHandler(this.LoginCliente_Load);

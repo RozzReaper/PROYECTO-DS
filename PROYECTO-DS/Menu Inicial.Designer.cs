@@ -77,27 +77,28 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 40F);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(499, 89);
+            this.label1.Location = new System.Drawing.Point(422, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 65);
+            this.label1.Size = new System.Drawing.Size(340, 65);
             this.label1.TabIndex = 1;
-            this.label1.Text = "MENÚ";
+            this.label1.Text = "Bienvenidos";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnAgente
             // 
-            this.btnAgente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnAgente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnAgente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgente.FlatAppearance.BorderSize = 0;
             this.btnAgente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnAgente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAgente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgente.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.btnAgente.ForeColor = System.Drawing.Color.LightGray;
             this.btnAgente.Location = new System.Drawing.Point(381, 234);
             this.btnAgente.Name = "btnAgente";
             this.btnAgente.Size = new System.Drawing.Size(408, 40);
             this.btnAgente.TabIndex = 4;
-            this.btnAgente.Text = "ACCEDER AGENTE UNIVERSAL";
+            this.btnAgente.Text = "Acceder Login";
             this.btnAgente.UseVisualStyleBackColor = false;
             this.btnAgente.Click += new System.EventHandler(this.btnAgente_Click);
             // 
@@ -129,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -138,7 +139,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Inicial";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);

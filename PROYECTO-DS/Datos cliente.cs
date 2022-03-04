@@ -16,5 +16,22 @@ namespace Ejemplo2
         {
             InitializeComponent();
         }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginCliente loginCliente = new LoginCliente();
+            loginCliente.Show();
+        }
+
+        private void Datos_cliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
