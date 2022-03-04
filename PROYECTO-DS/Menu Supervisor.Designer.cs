@@ -31,13 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.btnCaso = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +44,6 @@
             this.panel1.BackColor = System.Drawing.Color.SpringGreen;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnMinimizar);
-            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -68,25 +65,13 @@
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(808, 8);
+            this.btnMinimizar.Location = new System.Drawing.Point(848, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 19;
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = global::Ejemplo2.Properties.Resources.close;
-            this.btnCerrar.Location = new System.Drawing.Point(851, 8);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(40, 40);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 18;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btn_regresar
             // 
@@ -155,7 +140,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             this.ResumeLayout(false);
 
@@ -166,7 +150,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Button btnCaso;
         private System.Windows.Forms.Button btnHistorial;

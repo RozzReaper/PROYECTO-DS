@@ -36,11 +36,9 @@
             this.txtcel = new System.Windows.Forms.TextBox();
             this.txt_id = new System.Windows.Forms.TextBox();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nasalization Rg", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 31);
+            this.label1.Location = new System.Drawing.Point(105, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(378, 38);
             this.label1.TabIndex = 0;
@@ -118,23 +116,11 @@
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.btn_regresar_Click);
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = global::Ejemplo2.Properties.Resources.close;
-            this.btnCerrar.Location = new System.Drawing.Point(540, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(40, 40);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 19;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
             // btnMinimizar
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(494, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(546, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -145,7 +131,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.BurlyWood;
-            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -174,7 +159,6 @@
             this.Text = "LoginCliente";
             this.Load += new System.EventHandler(this.LoginCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -193,7 +177,6 @@
         private System.Windows.Forms.TextBox txtcel;
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.PictureBox btn_regresar;
-        private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Panel panel1;
     }

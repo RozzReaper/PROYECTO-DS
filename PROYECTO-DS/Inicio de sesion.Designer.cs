@@ -36,13 +36,11 @@
             this.txtpass = new System.Windows.Forms.TextBox();
             this.txtuser = new System.Windows.Forms.TextBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.txt_temple = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,25 +139,13 @@
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(817, 0);
+            this.btnMinimizar.Location = new System.Drawing.Point(848, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 11;
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = global::Ejemplo2.Properties.Resources.close;
-            this.btnCerrar.Location = new System.Drawing.Point(860, 0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(40, 40);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 10;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btn_regresar
             // 
@@ -196,7 +182,6 @@
             this.Controls.Add(this.txt_temple);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnMinimizar);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtpass);
@@ -212,7 +197,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,7 +210,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.TextBox txtuser;
-        private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox btn_regresar;
