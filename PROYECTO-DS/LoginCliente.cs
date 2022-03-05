@@ -38,5 +38,12 @@ namespace Ejemplo2
             Form6 frm = new Form6();
             frm.Show();
         }
+
+        private void btnLoginClientes_Click(object sender, EventArgs e)
+        {
+            //Herencia al evento
+            DatosLogin obj = new DatosLogin();
+            bool Valido = obj.login(txt_id.Text, txtname.Text, txtcel.Text);
+        }
     }
 }

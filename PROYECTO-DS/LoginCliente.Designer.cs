@@ -38,6 +38,7 @@
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLoginClientes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -139,12 +140,23 @@
             this.panel1.Size = new System.Drawing.Size(598, 86);
             this.panel1.TabIndex = 22;
             // 
+            // btnLoginClientes
+            // 
+            this.btnLoginClientes.Location = new System.Drawing.Point(214, 391);
+            this.btnLoginClientes.Name = "btnLoginClientes";
+            this.btnLoginClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnLoginClientes.TabIndex = 23;
+            this.btnLoginClientes.Text = "button1";
+            this.btnLoginClientes.UseVisualStyleBackColor = true;
+            this.btnLoginClientes.Click += new System.EventHandler(this.btnLoginClientes_Click);
+            // 
             // LoginCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(598, 510);
+            this.Controls.Add(this.btnLoginClientes);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.txtcel);
@@ -180,5 +192,6 @@
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnLoginClientes;
     }
 }
