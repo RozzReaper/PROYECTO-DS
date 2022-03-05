@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ejemplo2.Cache;
+using Ejemplo2.Repositorios;
 
 namespace Ejemplo2
 {
@@ -16,6 +18,8 @@ namespace Ejemplo2
         {
             InitializeComponent();
         }
+
+        Conexion cn = new Conexion();
 
         private void LoginCliente_Load(object sender, EventArgs e)
         {
@@ -42,8 +46,20 @@ namespace Ejemplo2
         private void btnLoginClientes_Click(object sender, EventArgs e)
         {
             //Herencia al evento
-            DatosLogin obj = new DatosLogin();
-            bool Valido = obj.login(txt_id.Text, txtname.Text, txtcel.Text);
+            Login_Clientes obj = new Login_Clientes();
+            bool Valido = obj.LoginC(txtname.Text, Convert.ToInt32(txtcel.Text), txt_clave.Text);
+
+
+            if (Valido)
+            {
+                this.Hide();
+                Datos_cliente data = new Datos_cliente();
+                data.Show();
+            }
+            else
+            {
+                MessageBox.Show("Nombre/Teléfono y/o Clave incorrectos");
+            }
         }
     }
 }

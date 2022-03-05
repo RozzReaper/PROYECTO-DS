@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Ejemplo2.Cache;
 
+
 namespace Ejemplo2.Repositorios
 {
     public class Login_Clientes:RepositorioM
@@ -55,11 +56,30 @@ namespace Ejemplo2.Repositorios
                 using (var comando = new SqlCommand())
                 {
                     comando.Connection = conexion;
-                    comando.CommandText = @"select * from Clientes where Nombres = @nombre and Teléfono = @telefono and Clave=@clave";
+                    comando.CommandText = @"select * from Clientes where Nombres =@nombre and Teléfono = @telefono and Clave=@clave";
                     comando.CommandType = System.Data.CommandType.Text;
                     comando.Parameters.AddWithValue("@nombre", nombre);
                     comando.Parameters.AddWithValue("@telefono", telefono);
                     comando.Parameters.AddWithValue("@clave", clave);
+                    SqlDataReader lector = comando.ExecuteReader();
+                    //Si la tabla tiene datos
+                    if(lector.HasRows)
+                    {
+                        //mientras se revisa con la base de datos a ver si existe las sentencias
+                        while (lector.Read())
+                        {
+                            //revisa cada elemento dependiendo de su numero de columna
+                            CacheS.Nombres = lector.GetString(1);
+                            CacheS.Telefono = lector.GetInt32(6);
+                            CacheS.Clave = lector.GetString(7);
+                        }
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
 
                 }
             }
