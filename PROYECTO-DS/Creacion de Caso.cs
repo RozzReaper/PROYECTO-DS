@@ -51,7 +51,7 @@ namespace Ejemplo2
             comando.Parameters.AddWithValue("@id", txtidemple.Text);
             comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
             comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
-            comando.Parameters.AddWithValue("@fecha", txtfecha.Text);
+            comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
             comando.ExecuteNonQuery();
             MessageBox.Show("Insertado");
         }
@@ -68,20 +68,19 @@ namespace Ejemplo2
 
         private void txtfecha_Enter(object sender, EventArgs e)
         {
-            if (txtfecha.Text == "YYYY-MM-DD")
-            {
-                txtfecha.Text = "";
-                txtfecha.ForeColor = Color.Black;
-            }
+
         }
 
         private void txtfecha_Leave(object sender, EventArgs e)
         {
-            if (txtfecha.Text == "")
-            {
-                txtfecha.Text = "YYYY-MM-DD";
-                txtfecha.ForeColor = Color.Gray;
-            }
+
+        }
+
+        private void dtpfecha_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime fecha=dtpfecha.Value;
+
+
         }
     }
 }

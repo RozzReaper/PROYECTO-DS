@@ -102,6 +102,7 @@ namespace Ejemplo2
             //Herencia al evento
             DatosLogin obj = new DatosLogin();
             bool Valido = obj.login(txtuser.Text, txtpass.Text, txt_temple.Text);
+            
             if(Valido)
             {
                 if(txt_temple.Text == "agente universal" || txt_temple.Text == "Agente Universal" || txt_temple.Text == "Agente universal")

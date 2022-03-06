@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Descripción = new System.Windows.Forms.Label();
-            this.txtfecha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtidemple = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.txtins = new System.Windows.Forms.Button();
             this.txt_desc = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpfecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,18 +99,6 @@
             this.Descripción.Size = new System.Drawing.Size(89, 19);
             this.Descripción.TabIndex = 25;
             this.Descripción.Text = "Descripción";
-            // 
-            // txtfecha
-            // 
-            this.txtfecha.ForeColor = System.Drawing.Color.Gray;
-            this.txtfecha.Location = new System.Drawing.Point(41, 223);
-            this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(157, 20);
-            this.txtfecha.TabIndex = 24;
-            this.txtfecha.Text = "YYYY-MM-DD";
-            this.txtfecha.TextChanged += new System.EventHandler(this.txtfecha_TextChanged);
-            this.txtfecha.Enter += new System.EventHandler(this.txtfecha_Enter);
-            this.txtfecha.Leave += new System.EventHandler(this.txtfecha_Leave);
             // 
             // label4
             // 
@@ -183,18 +171,27 @@
             this.panel1.Size = new System.Drawing.Size(834, 64);
             this.panel1.TabIndex = 30;
             // 
+            // dtpfecha
+            // 
+            this.dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpfecha.Location = new System.Drawing.Point(24, 276);
+            this.dtpfecha.Name = "dtpfecha";
+            this.dtpfecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpfecha.TabIndex = 31;
+            this.dtpfecha.ValueChanged += new System.EventHandler(this.dtpfecha_ValueChanged);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 499);
+            this.Controls.Add(this.dtpfecha);
             this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.txtins);
             this.Controls.Add(this.cmb_cate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtidemple);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtfecha);
             this.Controls.Add(this.Descripción);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_regresar);
@@ -221,7 +218,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Descripción;
-        private System.Windows.Forms.TextBox txtfecha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtidemple;
         private System.Windows.Forms.Label label5;
@@ -229,5 +225,6 @@
         private System.Windows.Forms.Button txtins;
         private System.Windows.Forms.TextBox txt_desc;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dtpfecha;
     }
 }
