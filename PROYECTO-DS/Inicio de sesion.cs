@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Ejemplo2.Cache;
+using Ejemplo2.Message;
 
 namespace Ejemplo2
 {
@@ -121,7 +122,8 @@ namespace Ejemplo2
             }
             else
             {
-                MessageBox.Show("Usuario/Contraseña/Tipo de empleado incorrecto");
+                MessageLogin messageLogin = new MessageLogin();
+                messageLogin.Show();
             }
 
             

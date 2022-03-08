@@ -62,6 +62,18 @@
     <Compile Include="LoginCliente.Designer.cs">
       <DependentUpon>LoginCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message\MessageCaso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageCaso.Designer.cs">
+      <DependentUpon>MessageCaso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageLogin.Designer.cs">
+      <DependentUpon>MessageLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositorios\DatosLogin.cs" />
     <Compile Include="Historial de Llamadas.cs">
       <SubType>Form</SubType>
@@ -137,6 +149,12 @@
     <EmbeddedResource Include="Creacion de Caso.resx">
       <DependentUpon>Creacion de Caso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageCaso.resx">
+      <DependentUpon>MessageCaso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageLogin.resx">
+      <DependentUpon>MessageLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -177,6 +195,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comprobado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using Ejemplo2.Message;
 
 namespace Ejemplo2
 {
@@ -53,7 +54,8 @@ namespace Ejemplo2
             comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
             comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
             comando.ExecuteNonQuery();
-            MessageBox.Show("Insertado");
+            MessageCaso messageCaso = new MessageCaso();
+            messageCaso.Show(); 
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

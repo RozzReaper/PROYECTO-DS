@@ -174,9 +174,9 @@
             // dtpfecha
             // 
             this.dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpfecha.Location = new System.Drawing.Point(24, 276);
+            this.dtpfecha.Location = new System.Drawing.Point(76, 214);
             this.dtpfecha.Name = "dtpfecha";
-            this.dtpfecha.Size = new System.Drawing.Size(200, 20);
+            this.dtpfecha.Size = new System.Drawing.Size(82, 20);
             this.dtpfecha.TabIndex = 31;
             this.dtpfecha.ValueChanged += new System.EventHandler(this.dtpfecha_ValueChanged);
             // 
