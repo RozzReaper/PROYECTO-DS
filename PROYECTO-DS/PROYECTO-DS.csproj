@@ -87,12 +87,6 @@
     <Compile Include="Menu Supervisor.Designer.cs">
       <DependentUpon>Menu Supervisor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Monitoreo de Agentes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Monitoreo de Agentes.Designer.cs">
-      <DependentUpon>Monitoreo de Agentes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Examinación de informes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,9 +127,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Supervisor.resx">
       <DependentUpon>Menu Supervisor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Monitoreo de Agentes.resx">
-      <DependentUpon>Monitoreo de Agentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examinación de informes.resx">
       <DependentUpon>Examinación de informes.cs</DependentUpon>

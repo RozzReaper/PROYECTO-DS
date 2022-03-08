@@ -39,9 +39,12 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLoginClientes = new System.Windows.Forms.Button();
+            this.dgvsiu = new System.Windows.Forms.DataGridView();
+            this.btnbuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvsiu)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -142,7 +145,7 @@
             // 
             // btnLoginClientes
             // 
-            this.btnLoginClientes.Location = new System.Drawing.Point(247, 392);
+            this.btnLoginClientes.Location = new System.Drawing.Point(253, 463);
             this.btnLoginClientes.Name = "btnLoginClientes";
             this.btnLoginClientes.Size = new System.Drawing.Size(75, 23);
             this.btnLoginClientes.TabIndex = 23;
@@ -150,12 +153,32 @@
             this.btnLoginClientes.UseVisualStyleBackColor = true;
             this.btnLoginClientes.Click += new System.EventHandler(this.btnLoginClientes_Click);
             // 
+            // dgvsiu
+            // 
+            this.dgvsiu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvsiu.Location = new System.Drawing.Point(315, 276);
+            this.dgvsiu.Name = "dgvsiu";
+            this.dgvsiu.Size = new System.Drawing.Size(240, 150);
+            this.dgvsiu.TabIndex = 24;
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Location = new System.Drawing.Point(132, 463);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscar.TabIndex = 25;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.txtbuscar_Click);
+            // 
             // LoginCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(598, 510);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.dgvsiu);
             this.Controls.Add(this.btnLoginClientes);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.txt_clave);
@@ -175,6 +198,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvsiu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +217,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLoginClientes;
+        private System.Windows.Forms.DataGridView dgvsiu;
+        private System.Windows.Forms.Button btnbuscar;
     }
 }
