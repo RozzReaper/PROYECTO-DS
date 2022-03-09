@@ -61,7 +61,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 200);
+            this.label2.Location = new System.Drawing.Point(129, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 0;
@@ -71,7 +71,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label3.Location = new System.Drawing.Point(120, 256);
+            this.label3.Location = new System.Drawing.Point(129, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 17);
             this.label3.TabIndex = 0;
@@ -81,7 +81,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label4.Location = new System.Drawing.Point(120, 308);
+            this.label4.Location = new System.Drawing.Point(129, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 17);
             this.label4.TabIndex = 0;
@@ -89,21 +89,21 @@
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(123, 220);
+            this.txtname.Location = new System.Drawing.Point(132, 133);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(331, 20);
             this.txtname.TabIndex = 2;
             // 
             // txtcel
             // 
-            this.txtcel.Location = new System.Drawing.Point(123, 276);
+            this.txtcel.Location = new System.Drawing.Point(132, 189);
             this.txtcel.Name = "txtcel";
             this.txtcel.Size = new System.Drawing.Size(186, 20);
             this.txtcel.TabIndex = 3;
             // 
             // txt_clave
             // 
-            this.txt_clave.Location = new System.Drawing.Point(123, 332);
+            this.txt_clave.Location = new System.Drawing.Point(132, 245);
             this.txt_clave.Name = "txt_clave";
             this.txt_clave.Size = new System.Drawing.Size(166, 20);
             this.txt_clave.TabIndex = 1;
@@ -155,11 +155,14 @@
             // 
             // dgvsiu
             // 
+            this.dgvsiu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvsiu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvsiu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvsiu.Location = new System.Drawing.Point(315, 276);
+            this.dgvsiu.Location = new System.Drawing.Point(170, 280);
             this.dgvsiu.Name = "dgvsiu";
             this.dgvsiu.Size = new System.Drawing.Size(240, 150);
             this.dgvsiu.TabIndex = 24;
+            this.dgvsiu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsiu_CellContentClick);
             // 
             // btnbuscar
             // 
@@ -217,7 +220,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLoginClientes;
-        private System.Windows.Forms.DataGridView dgvsiu;
         private System.Windows.Forms.Button btnbuscar;
+        public System.Windows.Forms.DataGridView dgvsiu;
     }
 }

@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ejemplo2.Cache;
+using Ejemplo2.Repositorios;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Ejemplo2
 {
@@ -16,6 +20,10 @@ namespace Ejemplo2
         {
             InitializeComponent();
         }
+
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
+            
+
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
@@ -30,6 +38,17 @@ namespace Ejemplo2
         }
 
         private void Datos_cliente_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
