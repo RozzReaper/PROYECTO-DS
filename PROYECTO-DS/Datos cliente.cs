@@ -52,5 +52,15 @@ namespace Ejemplo2
         {
 
         }
+
+        private void txtpendiente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

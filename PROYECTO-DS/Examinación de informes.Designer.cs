@@ -46,9 +46,9 @@
             // 
             this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(1236, 438);
+            this.btn_regresar.Location = new System.Drawing.Point(1236, 443);
             this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(52, 50);
+            this.btn_regresar.Size = new System.Drawing.Size(52, 45);
             this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_regresar.TabIndex = 18;
             this.btn_regresar.TabStop = false;
@@ -69,10 +69,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nasalization Rg", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(514, 23);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(522, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 29);
+            this.label1.Size = new System.Drawing.Size(268, 28);
             this.label1.TabIndex = 23;
             this.label1.Text = "Examinación de Caso";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -99,7 +99,7 @@
             this.dgv_casos.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgv_casos.EnableHeadersVisualStyles = false;
             this.dgv_casos.GridColor = System.Drawing.Color.BlueViolet;
-            this.dgv_casos.Location = new System.Drawing.Point(61, 97);
+            this.dgv_casos.Location = new System.Drawing.Point(61, 92);
             this.dgv_casos.Name = "dgv_casos";
             this.dgv_casos.ReadOnly = true;
             this.dgv_casos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

@@ -45,6 +45,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\CacheS.cs" />
@@ -75,12 +78,6 @@
       <DependentUpon>MessageLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Repositorios\DatosLogin.cs" />
-    <Compile Include="Historial de Llamadas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Historial de Llamadas.Designer.cs">
-      <DependentUpon>Historial de Llamadas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu Inicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,9 +122,6 @@
     <EmbeddedResource Include="Datos cliente.resx">
       <DependentUpon>Datos cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Historial de Llamadas.resx">
-      <DependentUpon>Historial de Llamadas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginCliente.resx">
       <DependentUpon>LoginCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +159,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -177,12 +172,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\boton-x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\boton-de-cierre.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close.png" />
@@ -210,6 +199,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BANNER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\boton-x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

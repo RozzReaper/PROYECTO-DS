@@ -50,7 +50,7 @@
             // 
             this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(764, 437);
+            this.btn_regresar.Location = new System.Drawing.Point(623, 338);
             this.btn_regresar.Name = "btn_regresar";
             this.btn_regresar.Size = new System.Drawing.Size(52, 50);
             this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -62,7 +62,7 @@
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(776, 9);
+            this.btnMinimizar.Location = new System.Drawing.Point(635, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,59 +73,61 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nasalization Rg", 24F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(259, 11);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(187, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 38);
+            this.label1.Size = new System.Drawing.Size(293, 37);
             this.label1.TabIndex = 22;
             this.label1.Text = "Creación de Caso";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label2.Location = new System.Drawing.Point(239, 112);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(61, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 19);
+            this.label2.Size = new System.Drawing.Size(87, 19);
             this.label2.TabIndex = 25;
             this.label2.Text = "Categoría";
             // 
             // Descripción
             // 
             this.Descripción.AutoSize = true;
-            this.Descripción.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.Descripción.Location = new System.Drawing.Point(239, 192);
+            this.Descripción.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Descripción.Location = new System.Drawing.Point(405, 90);
             this.Descripción.Name = "Descripción";
-            this.Descripción.Size = new System.Drawing.Size(89, 19);
+            this.Descripción.Size = new System.Drawing.Size(100, 19);
             this.Descripción.TabIndex = 25;
             this.Descripción.Text = "Descripción";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label4.Location = new System.Drawing.Point(38, 192);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(60, 231);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 19);
+            this.label4.Size = new System.Drawing.Size(178, 19);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Fecha (Año, mes, día)";
+            this.label4.Text = "Fecha (Mes, Día, Año)";
             // 
             // txtidemple
             // 
-            this.txtidemple.Location = new System.Drawing.Point(41, 143);
+            this.txtidemple.Enabled = false;
+            this.txtidemple.Location = new System.Drawing.Point(64, 121);
             this.txtidemple.Name = "txtidemple";
-            this.txtidemple.Size = new System.Drawing.Size(119, 20);
+            this.txtidemple.Size = new System.Drawing.Size(129, 20);
             this.txtidemple.TabIndex = 24;
+            this.txtidemple.TextChanged += new System.EventHandler(this.txtidemple_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label5.Location = new System.Drawing.Point(38, 112);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(60, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 19);
+            this.label5.Size = new System.Drawing.Size(109, 19);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Id de empleado";
+            this.label5.Text = "ID Empleado";
             // 
             // cmb_cate
             // 
@@ -134,8 +136,9 @@
             "Problemas de conexión",
             "Internet lento",
             "Fecha de instalación",
-            "Dia de pago"});
-            this.cmb_cate.Location = new System.Drawing.Point(242, 143);
+            "Dia de pago",
+            "Otro... (Especifique)"});
+            this.cmb_cate.Location = new System.Drawing.Point(64, 191);
             this.cmb_cate.Name = "cmb_cate";
             this.cmb_cate.Size = new System.Drawing.Size(129, 21);
             this.cmb_cate.TabIndex = 26;
@@ -144,7 +147,7 @@
             // txtins
             // 
             this.txtins.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold);
-            this.txtins.Location = new System.Drawing.Point(371, 437);
+            this.txtins.Location = new System.Drawing.Point(287, 338);
             this.txtins.Name = "txtins";
             this.txtins.Size = new System.Drawing.Size(94, 31);
             this.txtins.TabIndex = 27;
@@ -154,29 +157,29 @@
             // 
             // txt_desc
             // 
-            this.txt_desc.Location = new System.Drawing.Point(242, 223);
+            this.txt_desc.Location = new System.Drawing.Point(278, 121);
             this.txt_desc.Multiline = true;
             this.txt_desc.Name = "txt_desc";
-            this.txt_desc.Size = new System.Drawing.Size(367, 119);
+            this.txt_desc.Size = new System.Drawing.Size(367, 164);
             this.txt_desc.TabIndex = 29;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel1.BackColor = System.Drawing.Color.Indigo;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 64);
+            this.panel1.Size = new System.Drawing.Size(687, 64);
             this.panel1.TabIndex = 30;
             // 
             // dtpfecha
             // 
             this.dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpfecha.Location = new System.Drawing.Point(76, 214);
+            this.dtpfecha.Location = new System.Drawing.Point(65, 265);
             this.dtpfecha.Name = "dtpfecha";
-            this.dtpfecha.Size = new System.Drawing.Size(82, 20);
+            this.dtpfecha.Size = new System.Drawing.Size(128, 20);
             this.dtpfecha.TabIndex = 31;
             this.dtpfecha.ValueChanged += new System.EventHandler(this.dtpfecha_ValueChanged);
             // 
@@ -184,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 499);
+            this.ClientSize = new System.Drawing.Size(687, 400);
             this.Controls.Add(this.dtpfecha);
             this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.txtins);
@@ -198,7 +201,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form7";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creacion de Caso";
             this.Load += new System.EventHandler(this.Form7_Load);

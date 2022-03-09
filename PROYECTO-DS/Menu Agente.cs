@@ -41,9 +41,7 @@ namespace Ejemplo2
 
         private void btnAgente_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Historial_de_Llamadas frm = new Historial_de_Llamadas();
-            frm.Show();
+            
         }
 
         private void btnSupervisor_Click(object sender, EventArgs e)

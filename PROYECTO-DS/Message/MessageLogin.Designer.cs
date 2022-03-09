@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnOkL = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -51,27 +51,6 @@
             this.panel1.Size = new System.Drawing.Size(370, 49);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.Controls.Add(this.btnOkL);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 138);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(370, 51);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightBlue;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(370, 89);
-            this.panel3.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -83,26 +62,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "¡Error!";
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.advertencia;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(61, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(227, 44);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Usuario - Tipo de empleado - contraseña incorrecta";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel2.Controls.Add(this.btnOkL);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 138);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(370, 51);
+            this.panel2.TabIndex = 1;
             // 
             // btnOkL
             // 
@@ -118,6 +86,38 @@
             this.btnOkL.Text = "Ok";
             this.btnOkL.UseVisualStyleBackColor = false;
             this.btnOkL.Click += new System.EventHandler(this.btnOkL_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightBlue;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(370, 89);
+            this.panel3.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(96, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(227, 44);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Usuario - Tipo de empleado - contraseña incorrecta";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.advertencia;
+            this.pictureBox1.Location = new System.Drawing.Point(47, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MessageLogin
             // 

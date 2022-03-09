@@ -60,7 +60,7 @@ namespace Ejemplo2
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtfecha_TextChanged(object sender, EventArgs e)
@@ -81,7 +81,10 @@ namespace Ejemplo2
         private void dtpfecha_ValueChanged(object sender, EventArgs e)
         {
             DateTime fecha=dtpfecha.Value;
+        }
 
+        private void txtidemple_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

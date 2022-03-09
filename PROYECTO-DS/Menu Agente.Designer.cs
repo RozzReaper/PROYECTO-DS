@@ -30,14 +30,13 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCaso = new System.Windows.Forms.Button();
-            this.btnHistorial = new System.Windows.Forms.Button();
-            this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.btnlgncliente = new System.Windows.Forms.Button();
+            this.btn_regresar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,18 +60,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido, Agente Universal";
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(848, 7);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 14;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
             // btnCaso
             // 
             this.btnCaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -83,7 +70,7 @@
             this.btnCaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCaso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaso.ForeColor = System.Drawing.Color.LightGray;
-            this.btnCaso.Location = new System.Drawing.Point(249, 269);
+            this.btnCaso.Location = new System.Drawing.Point(249, 252);
             this.btnCaso.Name = "btnCaso";
             this.btnCaso.Size = new System.Drawing.Size(408, 40);
             this.btnCaso.TabIndex = 7;
@@ -91,23 +78,21 @@
             this.btnCaso.UseVisualStyleBackColor = false;
             this.btnCaso.Click += new System.EventHandler(this.btnSupervisor_Click);
             // 
-            // btnHistorial
+            // btnlgncliente
             // 
-            this.btnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHistorial.FlatAppearance.BorderSize = 0;
-            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistorial.ForeColor = System.Drawing.Color.LightGray;
-            this.btnHistorial.Location = new System.Drawing.Point(249, 157);
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(408, 40);
-            this.btnHistorial.TabIndex = 6;
-            this.btnHistorial.Text = "Historial de Llamadas";
-            this.btnHistorial.UseVisualStyleBackColor = false;
-            this.btnHistorial.Click += new System.EventHandler(this.btnAgente_Click);
+            this.btnlgncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnlgncliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlgncliente.FlatAppearance.BorderSize = 0;
+            this.btnlgncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlgncliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.btnlgncliente.ForeColor = System.Drawing.Color.LightGray;
+            this.btnlgncliente.Location = new System.Drawing.Point(249, 195);
+            this.btnlgncliente.Name = "btnlgncliente";
+            this.btnlgncliente.Size = new System.Drawing.Size(408, 40);
+            this.btnlgncliente.TabIndex = 16;
+            this.btnlgncliente.Text = "Búsqueda de Cliente";
+            this.btnlgncliente.UseVisualStyleBackColor = false;
+            this.btnlgncliente.Click += new System.EventHandler(this.btnlgncliente_Click);
             // 
             // btn_regresar
             // 
@@ -121,21 +106,17 @@
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnlgncliente
+            // btnMinimizar
             // 
-            this.btnlgncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.btnlgncliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnlgncliente.FlatAppearance.BorderSize = 0;
-            this.btnlgncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlgncliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.btnlgncliente.ForeColor = System.Drawing.Color.LightGray;
-            this.btnlgncliente.Location = new System.Drawing.Point(249, 212);
-            this.btnlgncliente.Name = "btnlgncliente";
-            this.btnlgncliente.Size = new System.Drawing.Size(408, 40);
-            this.btnlgncliente.TabIndex = 16;
-            this.btnlgncliente.Text = "Búsqueda de Cliente";
-            this.btnlgncliente.UseVisualStyleBackColor = false;
-            this.btnlgncliente.Click += new System.EventHandler(this.btnlgncliente_Click);
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
+            this.btnMinimizar.Location = new System.Drawing.Point(848, 7);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 14;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // Form6
             // 
@@ -146,7 +127,6 @@
             this.Controls.Add(this.btnlgncliente);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnCaso);
-            this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form6";
@@ -156,8 +136,8 @@
             this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -167,7 +147,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCaso;
-        private System.Windows.Forms.Button btnHistorial;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Button btnlgncliente;
