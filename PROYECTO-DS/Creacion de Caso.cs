@@ -60,10 +60,19 @@ namespace Ejemplo2
                 comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
                 comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
                 comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
-                comando.ExecuteNonQuery();
-               
-                MessageCaso messageCaso = new MessageCaso();
-                messageCaso.Show();
+                try
+                {
+                    comando.ExecuteNonQuery();
+                    MessageCaso messageCaso = new MessageCaso();
+                    messageCaso.Show();
+                    cn.Close();
+                }
+                catch
+                {
+                    MessageInformacion messageInformacion = new MessageInformacion();
+                    messageInformacion.Show();
+                }
+
             }
         }
 

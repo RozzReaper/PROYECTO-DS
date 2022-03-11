@@ -42,16 +42,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Controls.Add(label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 49);
-            this.panel1.TabIndex = 2;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -62,6 +52,16 @@
             label1.Size = new System.Drawing.Size(104, 21);
             label1.TabIndex = 0;
             label1.Text = "Información";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(370, 49);
+            this.panel1.TabIndex = 2;
             // 
             // panel2
             // 
@@ -101,18 +101,18 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(94, 21);
+            this.label2.Location = new System.Drawing.Point(61, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(236, 44);
+            this.label2.Size = new System.Drawing.Size(297, 44);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Los datos no deben estar vacíos";
+            this.label2.Text = "Verifique que los campos estén llenos o que exista la identidad del empleado";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.advertencia;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
