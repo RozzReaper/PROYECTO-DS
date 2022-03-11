@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PROYECTO-DS.exe" version="1.0.0.2" publicKeyToken="cacc85c3f2cbb7a7" language="es-HN" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\icono andromeda.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PROYECTO-DS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PROYECTO-DS.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PROYECTO-DS.exe" size="692128">
+      <assemblyIdentity name="PROYECTO-DS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MSphM/bkYafbvZKdQCiO9UjXxIZ3/6N62lPbsn2FJNo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Transitions.dll" size="17408">
+      <assemblyIdentity name="Transitions" version="1.2.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qWMPevMP4zMr45fH67NJL+LAEapRIG5afPjaQfIH2Fo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="PROYECTO-DS.exe.config" size="555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i5tW1P2qlVUd9vqDdlndbGBLuc/o7630puV9yBr8fvE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\boton-x.png" size="10675">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>e7Boss6FrfstY0tonZncGPLUf/ZklyAnIwcb7SWsDUU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\icono andromeda.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Myjj4VF/cBhNyD+7ndApVPx4b0XNLxc4gtKSOBmFjgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\student_work_office_desk_work_space_computer_working_support_icon_191191.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hqVGO3mRTIalv78bOHAoQrlir2TzuvHZM1MJlfn7aEA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ZERO\leo10" issuerKeyHash="c774f217f9b5b3558a09b91bf1312b70f66fdaa2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>JjNPI1sk0fiDLPfx4eHH/DwV0bsx+HVLUcqwUNIXDqo=</DigestValue></Reference></SignedInfo><SignatureValue>5jC/srTEpt2noT+g/iDD4sKMQU56T/A/ZHULNmeNgx/1mIH77THKbs3WIo9p21GjOfh3KftoptOSmQh0ByFPFsvaqSQk2y3taOWiQi5DDnKE9BbsKhKLA6oXFuKJ5Wje0IWIZkGjvMTJ+7nM2bErv6gGrBAKD8NhQKmm8OYrSqE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>8AB+xLd7/YDC/ama/r3sUPw1EIQ665lS6UkzDESLUIVPHYdpYVmVi4dmGTRErn7qGlW7gdhQUNZ3bmb/BNOvwtcTdJUrASfVhT8rxrC/pjvIcrcQ/HfmJUs/TlqdDcumBY3B7tyeg3PPAvpgRjflblfyG5WlVHRh026LjmLRj70=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="aa0e17d250b0ca514b75f831bbd1153cfcc7e1e1f1f72c83f8d1245b234f3326" Description="" Url=""><as:assemblyIdentity name="PROYECTO-DS.exe" version="1.0.0.2" publicKeyToken="cacc85c3f2cbb7a7" language="es-HN" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ZERO\leo10</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2VfzDJr1uAhP0enj61NgOHq9El4kV0Ti/TC4WAJAi/Q=</DigestValue></Reference></SignedInfo><SignatureValue>kreeO5WcuMQ17mQsXHNRxkMc8Ssc35j7VReOlCYF4o8JB7WyG/5fZ4QMcq/+3l4bQ2nvSllZuuyxk1h8c+5gVSTkQuoMqpJRVoAAqkM0yIZ6AetAJ3jRknS5lQIgWFpK2qokI6orFmfap6fVowwXMlArufp+se5BwQoHWYXnZfM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>8AB+xLd7/YDC/ama/r3sUPw1EIQ665lS6UkzDESLUIVPHYdpYVmVi4dmGTRErn7qGlW7gdhQUNZ3bmb/BNOvwtcTdJUrASfVhT8rxrC/pjvIcrcQ/HfmJUs/TlqdDcumBY3B7tyeg3PPAvpgRjflblfyG5WlVHRh026LjmLRj70=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQUtYh5iIym4dNeYXF3D9FHzANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAWgBFAFIATwBcAGwAZQBvADEAMDAeFw0yMjAzMTEyMjQyNTJaFw0yMzAzMTIwNDQyNTJaMB8xHTAbBgNVBAMeFABaAEUAUgBPAFwAbABlAG8AMQAwMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDwAH7Et3v9gML9qZr+vexQ/DUQhDrrmVLpSTMMRItQhU8dh2lhWZWLh2YZNESufuoaVbuB2FBQ1nduZv8E06/C1xN0lSsBJ9WFPyvGsL+mO8hytxD8d+YlSz9OWp0Ny6YFjcHu3J6Dc88C+mBGN+VuV/IblaVUdGHTbouOYtGPvQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHDvVf0FYjldzFj+G9kjn7nP1NYTsIVH1Rrmxgk3zqoJGCZ38Y2hF80DFgoOI1idWwtBsug0JinHKXQOxhcxVpzRqPnL9SZOK1mmr4vNID/S6XLlLfqrSI1Ls1F+H7d7F1HWBaty9uNvOcTrVtRA1qrV06flYnJ3SGE1HeQYbiP3</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
