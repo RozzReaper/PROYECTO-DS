@@ -39,16 +39,16 @@
             this.txtcel = new System.Windows.Forms.TextBox();
             this.txt_clave = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnLoginClientes = new System.Windows.Forms.Button();
             this.dgvsiu = new System.Windows.Forms.DataGridView();
             this.btnbuscar = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsiu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,6 +124,18 @@
             this.panel1.Size = new System.Drawing.Size(1200, 86);
             this.panel1.TabIndex = 22;
             // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
+            this.btnMinimizar.Location = new System.Drawing.Point(1148, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 20;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
             // btnLoginClientes
             // 
             this.btnLoginClientes.BackColor = System.Drawing.Color.OrangeRed;
@@ -131,7 +143,7 @@
             this.btnLoginClientes.FlatAppearance.BorderSize = 0;
             this.btnLoginClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoginClientes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoginClientes.Location = new System.Drawing.Point(123, 236);
+            this.btnLoginClientes.Location = new System.Drawing.Point(774, 320);
             this.btnLoginClientes.Name = "btnLoginClientes";
             this.btnLoginClientes.Size = new System.Drawing.Size(94, 35);
             this.btnLoginClientes.TabIndex = 5;
@@ -191,7 +203,7 @@
             this.btnbuscar.FlatAppearance.BorderSize = 0;
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.Location = new System.Drawing.Point(235, 236);
+            this.btnbuscar.Location = new System.Drawing.Point(165, 236);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(94, 35);
             this.btnbuscar.TabIndex = 4;
@@ -211,23 +223,10 @@
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.btn_regresar_Click);
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(1148, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 20;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LemonChiffon;
             this.panel2.Controls.Add(this.btnbuscar);
-            this.panel2.Controls.Add(this.btnLoginClientes);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
@@ -246,6 +245,7 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1200, 382);
             this.Controls.Add(this.dgvsiu);
+            this.Controls.Add(this.btnLoginClientes);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -257,9 +257,9 @@
             this.Load += new System.EventHandler(this.LoginCliente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsiu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

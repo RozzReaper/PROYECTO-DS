@@ -65,11 +65,41 @@
     <Compile Include="LoginCliente.Designer.cs">
       <DependentUpon>LoginCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message\MessageBusque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageBusque.Designer.cs">
+      <DependentUpon>MessageBusque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Message\MessageCaso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Message\MessageCaso.Designer.cs">
       <DependentUpon>MessageCaso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageCliente.Designer.cs">
+      <DependentUpon>MessageCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageCreacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageCreacion.Designer.cs">
+      <DependentUpon>MessageCreacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageIncorrecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageIncorrecto.Designer.cs">
+      <DependentUpon>MessageIncorrecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageInformacion.Designer.cs">
+      <DependentUpon>MessageInformacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Message\MessageLogin.cs">
       <SubType>Form</SubType>
@@ -143,8 +173,23 @@
     <EmbeddedResource Include="Creacion de Caso.resx">
       <DependentUpon>Creacion de Caso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageBusque.resx">
+      <DependentUpon>MessageBusque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageCaso.resx">
       <DependentUpon>MessageCaso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageCliente.resx">
+      <DependentUpon>MessageCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageCreacion.resx">
+      <DependentUpon>MessageCreacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageIncorrecto.resx">
+      <DependentUpon>MessageIncorrecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageInformacion.resx">
+      <DependentUpon>MessageInformacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageLogin.resx">
       <DependentUpon>MessageLogin.cs</DependentUpon>

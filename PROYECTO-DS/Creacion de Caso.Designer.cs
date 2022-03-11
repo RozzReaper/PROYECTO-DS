@@ -41,6 +41,7 @@
             this.txt_desc = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtpfecha = new System.Windows.Forms.DateTimePicker();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -112,7 +113,6 @@
             // 
             // txtidemple
             // 
-            this.txtidemple.Enabled = false;
             this.txtidemple.Location = new System.Drawing.Point(64, 121);
             this.txtidemple.Name = "txtidemple";
             this.txtidemple.Size = new System.Drawing.Size(129, 20);
@@ -147,7 +147,7 @@
             // txtins
             // 
             this.txtins.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold);
-            this.txtins.Location = new System.Drawing.Point(287, 338);
+            this.txtins.Location = new System.Drawing.Point(194, 338);
             this.txtins.Name = "txtins";
             this.txtins.Size = new System.Drawing.Size(94, 31);
             this.txtins.TabIndex = 27;
@@ -183,11 +183,23 @@
             this.dtpfecha.TabIndex = 31;
             this.dtpfecha.ValueChanged += new System.EventHandler(this.dtpfecha_ValueChanged);
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(349, 339);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(94, 31);
+            this.btnLimpiar.TabIndex = 27;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 400);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.dtpfecha);
             this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.txtins);
@@ -229,5 +241,6 @@
         private System.Windows.Forms.TextBox txt_desc;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dtpfecha;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

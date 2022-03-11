@@ -11,6 +11,7 @@ using Ejemplo2.Cache;
 using Ejemplo2.Repositorios;
 using System.Data.SqlClient;
 using System.Configuration;
+using Ejemplo2.Message;
 
 namespace Ejemplo2
 {
@@ -82,14 +83,15 @@ namespace Ejemplo2
                 }
                 catch
                 {
-                    MessageBox.Show("Por favor, busque los datos del cliente");
-
+                    MessageBusque messageBusque = new MessageBusque();
+                    messageBusque.Show();
                 }
 
             }
             else
             {
-                MessageBox.Show("Nombre/Teléfono y/o Clave incorrectos");
+                MessageIncorrecto messageIncorrecto = new MessageIncorrecto();
+                messageIncorrecto.Show();
             }
         }
 
@@ -98,7 +100,8 @@ namespace Ejemplo2
 
             if(txtname.Text == "" || txtcel.Text=="" || txt_clave.Text=="")
             {
-                MessageBox.Show("Por favor, ingrese datos suficientes/existentes");
+                MessageCliente messageLogin = new MessageCliente();
+                messageLogin.Show();
             }
             else
             {

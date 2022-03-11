@@ -46,16 +46,25 @@ namespace Ejemplo2
 
         private void txtins_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO Informes (FK_Empleados, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
-            cn.Open();
-            SqlCommand comando=new SqlCommand(query, cn);
-            comando.Parameters.AddWithValue("@id", txtidemple.Text);
-            comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
-            comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
-            comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
-            comando.ExecuteNonQuery();
-            MessageCaso messageCaso = new MessageCaso();
-            messageCaso.Show(); 
+            if (txtidemple.Text == "" || cmb_cate.Text == "" || txt_desc.Text == "")
+            { 
+                MessageCreacion messageCreacion = new MessageCreacion();
+                messageCreacion.Show();
+            }
+            else
+            {
+                string query = "INSERT INTO Informes (FK_Empleados, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
+                cn.Open();
+                SqlCommand comando=new SqlCommand(query, cn);
+                comando.Parameters.AddWithValue("@id", txtidemple.Text);
+                comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
+                comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
+                comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
+                comando.ExecuteNonQuery();
+               
+                MessageCaso messageCaso = new MessageCaso();
+                messageCaso.Show();
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -86,6 +95,12 @@ namespace Ejemplo2
         private void txtidemple_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtidemple.Clear();
+            txt_desc.Clear();
         }
     }
 }
