@@ -78,7 +78,7 @@ namespace Ejemplo2
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -125,8 +125,6 @@ namespace Ejemplo2
                 MessageLogin messageLogin = new MessageLogin();
                 messageLogin.Show();
             }
-
-            
         }
 
 

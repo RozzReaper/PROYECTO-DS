@@ -30,7 +30,6 @@ namespace Ejemplo2
 
         public string Contraseña { get { return contraseña; } set { contraseña = value; } }
 
-
         //Constructor
         public DatosLogin()
         {
