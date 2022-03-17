@@ -73,6 +73,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnmodi = new System.Windows.Forms.Button();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -215,7 +218,6 @@
             // 
             // txttelefono
             // 
-            this.txttelefono.Enabled = false;
             this.txttelefono.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttelefono.Location = new System.Drawing.Point(327, 154);
             this.txttelefono.Name = "txttelefono";
@@ -233,7 +235,6 @@
             // 
             // txtcalle
             // 
-            this.txtcalle.Enabled = false;
             this.txtcalle.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcalle.Location = new System.Drawing.Point(327, 74);
             this.txtcalle.Name = "txtcalle";
@@ -242,7 +243,6 @@
             // 
             // txtcasanum
             // 
-            this.txtcasanum.Enabled = false;
             this.txtcasanum.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcasanum.Location = new System.Drawing.Point(327, 112);
             this.txtcasanum.Name = "txtcasanum";
@@ -269,7 +269,6 @@
             // 
             // txtemail
             // 
-            this.txtemail.Enabled = false;
             this.txtemail.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.Location = new System.Drawing.Point(81, 114);
             this.txtemail.Name = "txtemail";
@@ -287,7 +286,6 @@
             // 
             // txtestado
             // 
-            this.txtestado.Enabled = false;
             this.txtestado.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtestado.Location = new System.Drawing.Point(81, 157);
             this.txtestado.Name = "txtestado";
@@ -520,6 +518,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Controls.Add(this.btnmodi);
+            this.panel3.Controls.Add(this.txtid);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.txtestado);
@@ -532,6 +532,7 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.txtcalle);
             this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(468, 62);
             this.panel3.Name = "panel3";
@@ -558,6 +559,35 @@
             this.panel4.Size = new System.Drawing.Size(968, 236);
             this.panel4.TabIndex = 28;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // btnmodi
+            // 
+            this.btnmodi.Location = new System.Drawing.Point(416, 188);
+            this.btnmodi.Name = "btnmodi";
+            this.btnmodi.Size = new System.Drawing.Size(75, 23);
+            this.btnmodi.TabIndex = 26;
+            this.btnmodi.Text = "Modificar";
+            this.btnmodi.UseVisualStyleBackColor = true;
+            this.btnmodi.Click += new System.EventHandler(this.btnmodi_Click);
+            // 
+            // txtid
+            // 
+            this.txtid.Enabled = false;
+            this.txtid.Location = new System.Drawing.Point(81, 47);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(100, 20);
+            this.txtid.TabIndex = 26;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(34, 51);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(20, 16);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "Id";
+            this.label22.Click += new System.EventHandler(this.label5_Click);
             // 
             // Datos_cliente
             // 
@@ -636,5 +666,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnmodi;
+        private System.Windows.Forms.Label label22;
+        public System.Windows.Forms.TextBox txtid;
     }
 }

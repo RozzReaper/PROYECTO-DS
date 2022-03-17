@@ -22,7 +22,25 @@ namespace Ejemplo2
         }
 
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
-            
+
+
+        void Modificar()
+        {
+            cn.Open();
+            try
+            {
+                SqlCommand cmd = new SqlCommand("UPDATE dbo.Clientes SET dbo.Clientes.Nombres ='" +this.txtnombre.Text+ "',dbo.Clientes.Email='" + this.txtemail.Text + "',dbo.Clientes.Estado='" + this.txtestado.Text + "',dbo.Clientes.Calle='" + this.txtcalle.Text + "',dbo.Clientes.Casa_num='" + this.txtcasanum.Text + "',dbo.Clientes.Teléfono='" + this.txttelefono.Text + "'WHERE dbo.Clientes.Id_cliente=" +Convert.ToInt32(this.txtid.Text + ""), cn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Modificado correctamente");
+                cn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("La cagó mijo");
+            }
+
+
+        }
 
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -61,6 +79,18 @@ namespace Ejemplo2
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnmodificar_Click(object sender, EventArgs e)
+        {
+            
+            
+            
+        }
+
+        private void btnmodi_Click(object sender, EventArgs e)
+        {
+            Modificar();
         }
     }
 }
