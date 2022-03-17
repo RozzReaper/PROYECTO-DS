@@ -54,6 +54,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Ejemplo2.Properties.Resources.minus;
             this.pictureBox2.Location = new System.Drawing.Point(1161, 12);
@@ -66,6 +67,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.close;
             this.pictureBox1.Location = new System.Drawing.Point(1207, 12);
