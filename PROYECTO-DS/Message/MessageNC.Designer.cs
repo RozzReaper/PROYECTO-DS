@@ -50,6 +50,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(370, 49);
             this.panel1.TabIndex = 3;
+            this.panel1.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -61,6 +62,7 @@
             this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "¡Error!";
+            this.label1.UseWaitCursor = true;
             // 
             // panel2
             // 
@@ -71,11 +73,12 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(370, 51);
             this.panel2.TabIndex = 4;
+            this.panel2.UseWaitCursor = true;
             // 
             // btnOkC
             // 
             this.btnOkC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.btnOkC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOkC.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnOkC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnOkC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOkC.ForeColor = System.Drawing.Color.LightGray;
@@ -85,6 +88,7 @@
             this.btnOkC.TabIndex = 0;
             this.btnOkC.Text = "Ok";
             this.btnOkC.UseVisualStyleBackColor = false;
+            this.btnOkC.UseWaitCursor = true;
             this.btnOkC.Click += new System.EventHandler(this.btnOkC_Click);
             // 
             // panel3
@@ -97,6 +101,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(370, 86);
             this.panel3.TabIndex = 5;
+            this.panel3.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -107,6 +112,7 @@
             this.label2.Size = new System.Drawing.Size(203, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "No se encontró al cliente";
+            this.label2.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
@@ -117,6 +123,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
             // 
             // MessageNC
             // 
@@ -128,6 +135,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MessageNC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageNC";
             this.UseWaitCursor = true;
             this.panel1.ResumeLayout(false);

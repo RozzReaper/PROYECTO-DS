@@ -104,7 +104,7 @@ namespace Ejemplo2
             
    
 
-
+            cn.Close();
         }
 
         private void txtbuscar_Click(object sender, EventArgs e)

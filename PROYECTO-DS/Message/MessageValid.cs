@@ -16,5 +16,10 @@ namespace Ejemplo2.Message
         {
             InitializeComponent();
         }
+
+        private void btnOkC_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

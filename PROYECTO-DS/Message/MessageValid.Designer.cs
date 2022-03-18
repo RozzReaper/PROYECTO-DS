@@ -85,6 +85,7 @@
             this.btnOkC.TabIndex = 0;
             this.btnOkC.Text = "Ok";
             this.btnOkC.UseVisualStyleBackColor = false;
+            this.btnOkC.Click += new System.EventHandler(this.btnOkC_Click);
             // 
             // panel3
             // 
@@ -127,6 +128,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MessageValid";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageValid";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
