@@ -103,17 +103,17 @@
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(96, 21);
+            this.label2.Location = new System.Drawing.Point(85, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(227, 44);
+            this.label2.Size = new System.Drawing.Size(258, 44);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Usuario - Tipo de empleado - contraseña incorrecta";
+            this.label2.Text = "Parámetros incorrectos / Incompletos. Por favor verifique";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

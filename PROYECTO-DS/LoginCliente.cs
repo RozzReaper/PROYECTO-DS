@@ -51,49 +51,59 @@ namespace Ejemplo2
             //Herencia al evento
             cn.Open();
             Login_Clientes obj = new Login_Clientes();
-            bool Valido = obj.LoginC(txtname.Text, Convert.ToInt32(txtcel.Text), txt_clave.Text);
+            try
+            {
+                bool Valido = obj.LoginC(txtname.Text, Convert.ToInt32(txtcel.Text), txt_clave.Text);
+
+                if (Valido)
+                {
+
+                    Datos_cliente datos = new Datos_cliente();
+                    this.Hide();
+                    datos.Show();
+
+                    try
+                    {
+                        datos.txtid.Text = dgvsiu.CurrentRow.Cells[0].Value.ToString();
+                        datos.txtnombre.Text = dgvsiu.CurrentRow.Cells[1].Value.ToString();
+                        datos.txtemail.Text = dgvsiu.CurrentRow.Cells[2].Value.ToString();
+                        datos.txtestado.Text = dgvsiu.CurrentRow.Cells[3].Value.ToString();
+                        datos.txtcalle.Text = dgvsiu.CurrentRow.Cells[4].Value.ToString();
+                        datos.txtcasanum.Text = dgvsiu.CurrentRow.Cells[5].Value.ToString();
+                        datos.txttelefono.Text = dgvsiu.CurrentRow.Cells[6].Value.ToString();
+                        datos.txtimpuesto.Text = dgvsiu.CurrentRow.Cells[7].Value.ToString();
+                        datos.txtcosto.Text = dgvsiu.CurrentRow.Cells[8].Value.ToString();
+                        datos.txtdescuento.Text = dgvsiu.CurrentRow.Cells[9].Value.ToString();
+                        datos.txtsubtotal.Text = dgvsiu.CurrentRow.Cells[10].Value.ToString();
+                        datos.txtpendiente.Text = dgvsiu.CurrentRow.Cells[11].Value.ToString();
+                        datos.txttotal.Text = dgvsiu.CurrentRow.Cells[12].Value.ToString();
+                        datos.txtfechainicio.Text = dgvsiu.CurrentRow.Cells[13].Value.ToString();
+                        datos.txtvelocidad.Text = dgvsiu.CurrentRow.Cells[14].Value.ToString();
+                        datos.txt_tipofibra.Text = dgvsiu.CurrentRow.Cells[15].Value.ToString();
+                        datos.txtdiapago.Text = dgvsiu.CurrentRow.Cells[16].Value.ToString();
+                        datos.txt_planestado.Text = dgvsiu.CurrentRow.Cells[17].Value.ToString();
+                    }
+                    catch
+                    {
+                        MessageBusque messageBusque = new MessageBusque();
+                        messageBusque.Show();
+                    }
+
+                }
+                else
+                {
+                    MessageIncorrecto messageIncorrecto = new MessageIncorrecto();
+                    messageIncorrecto.Show();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ingrese un cliente válido y/o verifique si los datos no están vacíos");
+            }
+            
    
 
-            if (Valido)
-            {
 
-                Datos_cliente datos = new Datos_cliente();
-                this.Hide();
-                datos.Show();
-
-                try
-                {
-                    datos.txtid.Text = dgvsiu.CurrentRow.Cells[0].Value.ToString();
-                    datos.txtnombre.Text = dgvsiu.CurrentRow.Cells[1].Value.ToString();
-                    datos.txtemail.Text = dgvsiu.CurrentRow.Cells[2].Value.ToString();
-                    datos.txtestado.Text = dgvsiu.CurrentRow.Cells[3].Value.ToString();
-                    datos.txtcalle.Text = dgvsiu.CurrentRow.Cells[4].Value.ToString();
-                    datos.txtcasanum.Text = dgvsiu.CurrentRow.Cells[5].Value.ToString();
-                    datos.txttelefono.Text = dgvsiu.CurrentRow.Cells[6].Value.ToString();
-                    datos.txtimpuesto.Text = dgvsiu.CurrentRow.Cells[7].Value.ToString();
-                    datos.txtcosto.Text = dgvsiu.CurrentRow.Cells[8].Value.ToString();
-                    datos.txtdescuento.Text = dgvsiu.CurrentRow.Cells[9].Value.ToString();
-                    datos.txtsubtotal.Text = dgvsiu.CurrentRow.Cells[10].Value.ToString();
-                    datos.txtpendiente.Text = dgvsiu.CurrentRow.Cells[11].Value.ToString();
-                    datos.txttotal.Text = dgvsiu.CurrentRow.Cells[12].Value.ToString();
-                    datos.txtfechainicio.Text = dgvsiu.CurrentRow.Cells[13].Value.ToString();
-                    datos.txtvelocidad.Text = dgvsiu.CurrentRow.Cells[14].Value.ToString();
-                    datos.txt_tipofibra.Text = dgvsiu.CurrentRow.Cells[15].Value.ToString();
-                    datos.txtdiapago.Text = dgvsiu.CurrentRow.Cells[16].Value.ToString();
-                    datos.txt_planestado.Text = dgvsiu.CurrentRow.Cells[17].Value.ToString();
-                }
-                catch
-                {
-                    MessageBusque messageBusque = new MessageBusque();
-                    messageBusque.Show();
-                }
-
-            }
-            else
-            {
-                MessageIncorrecto messageIncorrecto = new MessageIncorrecto();
-                messageIncorrecto.Show();
-            }
         }
 
         private void txtbuscar_Click(object sender, EventArgs e)
@@ -106,12 +116,25 @@ namespace Ejemplo2
             }
             else
             {
-                string query = "SELECT dbo.Clientes.Id_cliente, dbo.Clientes.Nombres, dbo.Clientes.Email, dbo.Clientes.Estado, dbo.Clientes.Calle, dbo.Clientes.Casa_num, dbo.Clientes.Teléfono, dbo.Historial_crediticio.Impuesto, dbo.Historial_crediticio.Costo_plan, dbo.Historial_crediticio.Descuento, dbo.Historial_crediticio.Subtotal, dbo.Historial_crediticio.Pendiente, dbo.Historial_crediticio.Total, dbo.Planes.Fecha_inicio, dbo.Planes.Velocidad, dbo.Planes.Tipo_fibra,dbo.Planes.Día_pago, dbo.Planes.Plan_estado FROM dbo.Clientes INNER JOIN dbo.Historial_crediticio ON dbo.Clientes.Id_cliente = dbo.Historial_crediticio.FK_Clientes INNER JOIN dbo.Planes ON dbo.Clientes.Id_cliente = dbo.Planes.FK_Clientes where Nombres = '" + txtname.Text +"'  and Teléfono = '"+txtcel.Text+"' and Clave='"+txt_clave.Text+"'";
-                SqlCommand comando = new SqlCommand(query, cn);
-                SqlDataAdapter data = new SqlDataAdapter(comando);
-                DataTable tabla = new DataTable();
-                data.Fill(tabla);
-                dgvsiu.DataSource = tabla;
+                try
+                {
+                    string query = "SELECT dbo.Clientes.Id_cliente, dbo.Clientes.Nombres, dbo.Clientes.Email, dbo.Clientes.Estado, dbo.Clientes.Calle, dbo.Clientes.Casa_num, dbo.Clientes.Teléfono, dbo.Historial_crediticio.Impuesto, dbo.Historial_crediticio.Costo_plan, dbo.Historial_crediticio.Descuento, dbo.Historial_crediticio.Subtotal, dbo.Historial_crediticio.Pendiente, dbo.Historial_crediticio.Total, dbo.Planes.Fecha_inicio, dbo.Planes.Velocidad, dbo.Planes.Tipo_fibra,dbo.Planes.Día_pago, dbo.Planes.Plan_estado FROM dbo.Clientes INNER JOIN dbo.Historial_crediticio ON dbo.Clientes.Id_cliente = dbo.Historial_crediticio.FK_Clientes INNER JOIN dbo.Planes ON dbo.Clientes.Id_cliente = dbo.Planes.FK_Clientes where Nombres = '" + txtname.Text + "'  and Teléfono = '" + txtcel.Text + "' and Clave='" + txt_clave.Text + "'";
+                    SqlCommand comando = new SqlCommand(query, cn);
+                    SqlDataAdapter data = new SqlDataAdapter(comando);
+                    DataTable tabla = new DataTable();
+                    data.Fill(tabla);
+                    dgvsiu.DataSource = tabla;
+
+                    if(dgvsiu.Rows.Count ==0)
+                    {
+                        MessageBox.Show("No se encontró al cliente");
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Formato de credenciales incorrecto");
+                }
+
             }
         }
 
