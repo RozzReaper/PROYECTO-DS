@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ejemplo2.Cache;
+using Ejemplo2.Message;
 
 
 namespace Ejemplo2.Repositorios

@@ -114,6 +114,12 @@
     <Compile Include="Message\MessageCaso.Designer.cs">
       <DependentUpon>MessageCaso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message\MessageCI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageCI.Designer.cs">
+      <DependentUpon>MessageCI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Message\MessageCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,18 @@
     </Compile>
     <Compile Include="Message\MessageLogin.Designer.cs">
       <DependentUpon>MessageLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageNC.Designer.cs">
+      <DependentUpon>MessageNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageValid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageValid.Designer.cs">
+      <DependentUpon>MessageValid.cs</DependentUpon>
     </Compile>
     <Compile Include="Repositorios\DatosLogin.cs" />
     <Compile Include="Menu Inicial.cs">
@@ -216,6 +234,9 @@
     <EmbeddedResource Include="Message\MessageCaso.resx">
       <DependentUpon>MessageCaso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageCI.resx">
+      <DependentUpon>MessageCI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageCliente.resx">
       <DependentUpon>MessageCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +251,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageLogin.resx">
       <DependentUpon>MessageLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageNC.resx">
+      <DependentUpon>MessageNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageValid.resx">
+      <DependentUpon>MessageValid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -289,6 +316,7 @@
   <ItemGroup>
     <None Include="Resources\icono andromeda.ico" />
     <Content Include="Resources\boton-x.png" />
+    <None Include="Resources\prohibido.png" />
     <Content Include="Resources\student_work_office_desk_work_space_computer_working_support_icon_191191.ico" />
   </ItemGroup>
   <ItemGroup>

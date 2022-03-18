@@ -1,6 +1,6 @@
 ﻿namespace Ejemplo2.Message
 {
-    partial class MessageBusque
+    partial class MessageValid
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageBusque));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,7 +49,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(370, 49);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 3;
             // 
             // label1
             // 
@@ -59,9 +58,9 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 21);
+            this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "¡Advertencia!";
+            this.label1.Text = "¡Error!";
             // 
             // panel2
             // 
@@ -71,7 +70,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 135);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(370, 51);
-            this.panel2.TabIndex = 3;
+            this.panel2.TabIndex = 4;
             // 
             // btnOkC
             // 
@@ -86,7 +85,6 @@
             this.btnOkC.TabIndex = 0;
             this.btnOkC.Text = "Ok";
             this.btnOkC.UseVisualStyleBackColor = false;
-            this.btnOkC.Click += new System.EventHandler(this.btnOkC_Click);
             // 
             // panel3
             // 
@@ -97,29 +95,29 @@
             this.panel3.Location = new System.Drawing.Point(0, 49);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(370, 86);
-            this.panel3.TabIndex = 4;
+            this.panel3.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(83, 21);
+            this.label2.Location = new System.Drawing.Point(94, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 50);
+            this.label2.Size = new System.Drawing.Size(221, 50);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Ingrese un cliente válido y/o verifique si los datos no están vacíos";
+            this.label2.Text = "Por favor, busque los datos del cliente";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.advertencia;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 21);
+            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.buscar;
+            this.pictureBox1.Location = new System.Drawing.Point(45, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // MessageBusque
+            // MessageValid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,10 +126,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MessageBusque";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MessageBusque";
+            this.Name = "MessageValid";
+            this.Text = "MessageValid";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

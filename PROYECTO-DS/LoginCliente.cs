@@ -98,7 +98,8 @@ namespace Ejemplo2
             }
             catch
             {
-                MessageBox.Show("Ingrese un cliente válido y/o verifique si los datos no están vacíos");
+                MessageValid messageValid = new MessageValid();
+                messageValid.Show();
             }
             
    
@@ -127,12 +128,14 @@ namespace Ejemplo2
 
                     if(dgvsiu.Rows.Count ==0)
                     {
-                        MessageBox.Show("No se encontró al cliente");
+                        MessageNC messageNC = new MessageNC();
+                        messageNC.Show();
                     }
                 }
                 catch
                 {
-                    MessageBox.Show("Formato de credenciales incorrecto");
+                    MessageCI messageCI = new MessageCI();     
+                    messageCI.Show();   
                 }
 
             }
