@@ -11,6 +11,7 @@ using Ejemplo2.Cache;
 using Ejemplo2.Repositorios;
 using System.Data.SqlClient;
 using System.Configuration;
+using Ejemplo2.Message;
 
 namespace Ejemplo2
 {
@@ -29,14 +30,14 @@ namespace Ejemplo2
             cn.Open();
             try
             {
-                SqlCommand cmd = new SqlCommand("UPDATE dbo.Clientes SET dbo.Clientes.Nombres ='" +this.txtnombre.Text+ "',dbo.Clientes.Email='" + this.txtemail.Text + "',dbo.Clientes.Estado='" + this.txtestado.Text + "',dbo.Clientes.Calle='" + this.txtcalle.Text + "',dbo.Clientes.Casa_num='" + this.txtcasanum.Text + "',dbo.Clientes.Teléfono='" + this.txttelefono.Text + "'WHERE dbo.Clientes.Id_cliente=" +Convert.ToInt32(this.txtid.Text + ""), cn);
+                SqlCommand cmd = new SqlCommand("UPDATE dbo.Clientes SET dbo.Clientes.Nombres ='" +this.txtnombre.Text+ "',dbo.Clientes.Email='" + this.txtemail.Text + "',dbo.Clientes.Estado='" + this.cmbestado.Text + "',dbo.Clientes.Calle='" + this.txtcalle.Text + "',dbo.Clientes.Casa_num='" + this.txtcasanum.Text + "',dbo.Clientes.Teléfono='" + this.txttelefono.Text + "'WHERE dbo.Clientes.Id_cliente=" +Convert.ToInt32(this.txtid.Text + ""), cn);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Modificado correctamente");
                 cn.Close();
             }
             catch
             {
-                MessageBox.Show("La cagó mijo");
+                MessageLogin login= new MessageLogin();
+                login.Show();
             }
 
 
@@ -57,7 +58,6 @@ namespace Ejemplo2
 
         private void Datos_cliente_Load(object sender, EventArgs e)
         {
-
 
         }
 
@@ -90,7 +90,18 @@ namespace Ejemplo2
 
         private void btnmodi_Click(object sender, EventArgs e)
         {
-            Modificar();
+            if(txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")
+            {
+                MessageCreacion creacion= new MessageCreacion();
+                creacion.Show();
+            }
+            else
+            {
+                Modificar();
+                MessageCaso caso= new MessageCaso();
+                caso.Show();
+            }
+            
         }
     }
 }

@@ -15,15 +15,18 @@ namespace Ejemplo2
 {
     public partial class Form7 : Form
     {
+        public string _Mensaje;
 
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
         public Form7()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            
         }
 
         private void Form7_Load(object sender, EventArgs e)
         {
+
 
         }
 
@@ -46,14 +49,14 @@ namespace Ejemplo2
 
         private void txtins_Click(object sender, EventArgs e)
         {
-            if (txtidemple.Text == "" || cmb_cate.Text == "" || txt_desc.Text == "")
+            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "")
             { 
                 MessageCreacion messageCreacion = new MessageCreacion();
                 messageCreacion.Show();
             }
             else
             {
-                string query = "INSERT INTO Informes (FK_Empleados, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
+                string query = "INSERT INTO Informes (FK_Agentes, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
                 cn.Open();
                 SqlCommand comando=new SqlCommand(query, cn);
                 comando.Parameters.AddWithValue("@id", txtidemple.Text);
@@ -72,6 +75,7 @@ namespace Ejemplo2
                     MessageInformacion messageInformacion = new MessageInformacion();
                     messageInformacion.Show();
                 }
+                cn.Close();
 
             }
         }

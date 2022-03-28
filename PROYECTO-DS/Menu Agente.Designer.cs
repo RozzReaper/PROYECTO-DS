@@ -35,6 +35,7 @@
             this.btnCaso = new System.Windows.Forms.Button();
             this.btnlgncliente = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
+            this.txtimport = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
@@ -119,12 +120,21 @@
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // txtimport
+            // 
+            this.txtimport.Location = new System.Drawing.Point(387, 132);
+            this.txtimport.Name = "txtimport";
+            this.txtimport.Size = new System.Drawing.Size(100, 20);
+            this.txtimport.TabIndex = 17;
+            this.txtimport.Visible = false;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.txtimport);
             this.Controls.Add(this.btnlgncliente);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnCaso);
@@ -141,6 +151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -152,5 +163,6 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Button btnlgncliente;
+        public System.Windows.Forms.TextBox txtimport;
     }
 }

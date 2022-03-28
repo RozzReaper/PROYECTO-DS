@@ -33,12 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginCliente));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtname = new System.Windows.Forms.TextBox();
             this.txtcel = new System.Windows.Forms.TextBox();
-            this.txt_clave = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnLoginClientes = new System.Windows.Forms.Button();
@@ -63,56 +59,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Búsqueda de cliente";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(67, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label3.Location = new System.Drawing.Point(65, 116);
+            this.label3.Location = new System.Drawing.Point(61, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "Teléfono";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label4.Location = new System.Drawing.Point(80, 169);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Clave";
-            // 
-            // txtname
-            // 
-            this.txtname.Location = new System.Drawing.Point(134, 57);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(229, 20);
-            this.txtname.TabIndex = 1;
-            // 
             // txtcel
             // 
-            this.txtcel.Location = new System.Drawing.Point(133, 113);
+            this.txtcel.Location = new System.Drawing.Point(129, 119);
             this.txtcel.Name = "txtcel";
             this.txtcel.Size = new System.Drawing.Size(230, 20);
             this.txtcel.TabIndex = 2;
-            // 
-            // txt_clave
-            // 
-            this.txt_clave.Location = new System.Drawing.Point(133, 168);
-            this.txt_clave.Name = "txt_clave";
-            this.txt_clave.Size = new System.Drawing.Size(229, 20);
-            this.txt_clave.TabIndex = 3;
             // 
             // panel1
             // 
@@ -228,11 +190,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.LemonChiffon;
             this.panel2.Controls.Add(this.btnbuscar);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtname);
-            this.panel2.Controls.Add(this.txt_clave);
             this.panel2.Controls.Add(this.txtcel);
             this.panel2.Location = new System.Drawing.Point(0, 84);
             this.panel2.Name = "panel2";
@@ -271,12 +229,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtcel;
-        private System.Windows.Forms.TextBox txt_clave;
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Panel panel1;

@@ -50,7 +50,6 @@
             this.txtfechainicio = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.txt_tipofibra = new System.Windows.Forms.TextBox();
-            this.txtestado = new System.Windows.Forms.TextBox();
             this.txtdiapago = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -72,6 +71,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cmbestado = new System.Windows.Forms.ComboBox();
             this.btnmodi = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -283,14 +283,6 @@
             this.txt_tipofibra.Name = "txt_tipofibra";
             this.txt_tipofibra.Size = new System.Drawing.Size(114, 22);
             this.txt_tipofibra.TabIndex = 24;
-            // 
-            // txtestado
-            // 
-            this.txtestado.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtestado.Location = new System.Drawing.Point(79, 161);
-            this.txtestado.Name = "txtestado";
-            this.txtestado.Size = new System.Drawing.Size(163, 22);
-            this.txtestado.TabIndex = 24;
             // 
             // txtdiapago
             // 
@@ -518,11 +510,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Controls.Add(this.cmbestado);
             this.panel3.Controls.Add(this.btnmodi);
             this.panel3.Controls.Add(this.txtid);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.txtestado);
             this.panel3.Controls.Add(this.txtnombre);
             this.panel3.Controls.Add(this.txtemail);
             this.panel3.Controls.Add(this.txttelefono);
@@ -538,6 +530,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(500, 219);
             this.panel3.TabIndex = 27;
+            // 
+            // cmbestado
+            // 
+            this.cmbestado.FormattingEnabled = true;
+            this.cmbestado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cmbestado.Location = new System.Drawing.Point(79, 164);
+            this.cmbestado.Name = "cmbestado";
+            this.cmbestado.Size = new System.Drawing.Size(160, 21);
+            this.cmbestado.TabIndex = 27;
             // 
             // btnmodi
             // 
@@ -645,7 +648,6 @@
         public System.Windows.Forms.TextBox txtfechainicio;
         public System.Windows.Forms.TextBox txtemail;
         public System.Windows.Forms.TextBox txt_tipofibra;
-        public System.Windows.Forms.TextBox txtestado;
         public System.Windows.Forms.TextBox txtdiapago;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -671,5 +673,6 @@
         private System.Windows.Forms.Button btnmodi;
         private System.Windows.Forms.Label label22;
         public System.Windows.Forms.TextBox txtid;
+        public System.Windows.Forms.ComboBox cmbestado;
     }
 }

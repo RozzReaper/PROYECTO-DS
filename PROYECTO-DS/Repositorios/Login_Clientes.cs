@@ -48,7 +48,7 @@ namespace Ejemplo2.Repositorios
         }
 
         //inicio de sesion
-        public bool LoginC(string nombre, int telefono, string clave)
+        public bool LoginC(int telefono)
         {
             using (var conexion = ObtenerConexion())
             {
@@ -57,11 +57,9 @@ namespace Ejemplo2.Repositorios
                 using (var comando = new SqlCommand())
                 {
                     comando.Connection = conexion;
-                    comando.CommandText = @"select * from Clientes where Nombres =@nombre and Teléfono = @telefono and Clave=@clave";
+                    comando.CommandText = @"select * from Clientes where Teléfono = @telefono";
                     comando.CommandType = System.Data.CommandType.Text;
-                    comando.Parameters.AddWithValue("@nombre", nombre);
                     comando.Parameters.AddWithValue("@telefono", telefono);
-                    comando.Parameters.AddWithValue("@clave", clave);
                     SqlDataReader lector = comando.ExecuteReader();
                     //Si la tabla tiene datos
                     if(lector.HasRows)

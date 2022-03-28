@@ -46,9 +46,10 @@ namespace Ejemplo2
 
         private void btnSupervisor_Click(object sender, EventArgs e)
         {
+            Form7 traslado = new Form7();
+            traslado.txtidemple.Text = txtimport.Text;
             this.Hide();
-            Form7 form7 = new Form7();
-            form7.Show();
+            traslado.Show();
         }
 
         private void btnlgncliente_Click(object sender, EventArgs e)

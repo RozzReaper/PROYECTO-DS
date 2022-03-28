@@ -42,7 +42,9 @@ namespace Ejemplo2
 
         //Inicio de sesion 
 
-        public bool login(string usuario, string contraseña, string t_empleado)
+        Form7 foru=new Form7();
+
+        public bool login(string usuario, string contraseña, string t_empleado, int id)
         {
             using (var conexion = ObtenerConexion())
             {
@@ -51,11 +53,13 @@ namespace Ejemplo2
                 {
                     //Segun el codigo de encripación, que el inicio también dependa de si el empleado es Agente o Supervisor
                     comando.Connection = conexion;
-                    comando.CommandText = @"select * from Usuario where n_usuario = @usuario and Tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
+                    comando.CommandText = @"select * from Usuario where Id_usuario = @id and n_usuario = @usuario and Tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
                     comando.CommandType = System.Data.CommandType.Text;
+                    comando.Parameters.AddWithValue("@id", id);
                     comando.Parameters.AddWithValue("@usuario", usuario);
                     comando.Parameters.AddWithValue("@t_empleado", t_empleado);
                     comando.Parameters.AddWithValue("@contraseña", contraseña);
+
                     SqlDataReader lector = comando.ExecuteReader();
                     //Si la tabla tiene datos
                     if(lector.HasRows)

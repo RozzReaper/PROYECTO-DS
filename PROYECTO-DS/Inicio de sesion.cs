@@ -10,17 +10,22 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Ejemplo2.Cache;
 using Ejemplo2.Message;
+using Ejemplo2.Repositorios;
+using System.Configuration;
 
 namespace Ejemplo2
 {
     public partial class Form2 : Form
     {
+        
         public Form2()
         {
             InitializeComponent();
+            
         }
 
         Conexion cn = new Conexion();
+
 
         public void login(string usuario, string contraseña) 
         {
@@ -98,39 +103,65 @@ namespace Ejemplo2
             frm.Show();
         }
 
+        
+        SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
             //Herencia al evento
-            DatosLogin obj = new DatosLogin();
-            bool Valido = obj.login(txtuser.Text, txtpass.Text, txt_temple.Text);
-            
-            if(Valido)
+            try
             {
-                if(txt_temple.Text == "agente universal" || txt_temple.Text == "Agente Universal" || txt_temple.Text == "Agente universal")
+                //Datos info;
+                //info.id = txtidentidad.Text;
+                DatosLogin obj = new DatosLogin();
+
+                bool Valido = obj.login(txtuser.Text, txtpass.Text, txt_temple.Text, Convert.ToInt32(txtidentidad.Text));
+
+                if (Valido)
                 {
-                    this.Hide();
-                    Form6 frm = new Form6();
-                    frm.Show();
+
+
+                    if (txt_temple.Text == "agente universal" || txt_temple.Text == "Agente Universal" || txt_temple.Text == "Agente universal")
+                    {
+                        txtcopiar.Text = txtidentidad.Text;
+                        Form6 forma = new Form6();
+                        forma.txtimport.Text = txtidentidad.Text;
+                        this.Hide();
+                        forma.Show();
+                        
+
+                    }
+                    else
+                        if (txt_temple.Text == "Supervisor" || txt_temple.Text == "supervisor")
+                    {
+
+
+                        this.Hide();
+                        Menu_Supervisor frm = new Menu_Supervisor();
+                        frm.Show();
+                    }
                 }
                 else
-                    if(txt_temple.Text == "Supervisor" || txt_temple.Text == "supervisor")
                 {
-                    this.Hide();
-                    Menu_Supervisor frm = new Menu_Supervisor();
-                    frm.Show();
+                    MessageLogin messageLogin = new MessageLogin();
+                    messageLogin.Show();
                 }
             }
-            else
+            catch
             {
                 MessageLogin messageLogin = new MessageLogin();
                 messageLogin.Show();
             }
+            
+            
+            conexion.Close();
         }
 
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void txt_temple_Enter(object sender, EventArgs e)

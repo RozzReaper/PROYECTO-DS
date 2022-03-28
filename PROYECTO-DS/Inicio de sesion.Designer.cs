@@ -39,6 +39,8 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.txt_temple = new System.Windows.Forms.TextBox();
+            this.txtidentidad = new System.Windows.Forms.TextBox();
+            this.txtcopiar = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -93,6 +95,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -174,12 +177,29 @@
             this.txt_temple.Enter += new System.EventHandler(this.txt_temple_Enter);
             this.txt_temple.Leave += new System.EventHandler(this.txt_temple_Leave);
             // 
+            // txtidentidad
+            // 
+            this.txtidentidad.Location = new System.Drawing.Point(386, 88);
+            this.txtidentidad.Name = "txtidentidad";
+            this.txtidentidad.Size = new System.Drawing.Size(100, 20);
+            this.txtidentidad.TabIndex = 13;
+            // 
+            // txtcopiar
+            // 
+            this.txtcopiar.Location = new System.Drawing.Point(556, 87);
+            this.txtcopiar.Name = "txtcopiar";
+            this.txtcopiar.Size = new System.Drawing.Size(100, 20);
+            this.txtcopiar.TabIndex = 14;
+            this.txtcopiar.Visible = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.txtcopiar);
+            this.Controls.Add(this.txtidentidad);
             this.Controls.Add(this.txt_temple);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.label1);
@@ -217,5 +237,7 @@
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_temple;
+        public System.Windows.Forms.TextBox txtidentidad;
+        public System.Windows.Forms.TextBox txtcopiar;
     }
 }

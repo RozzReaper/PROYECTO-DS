@@ -114,6 +114,7 @@
             // 
             // txtidemple
             // 
+            this.txtidemple.Enabled = false;
             this.txtidemple.Location = new System.Drawing.Point(64, 121);
             this.txtidemple.Name = "txtidemple";
             this.txtidemple.Size = new System.Drawing.Size(129, 20);
@@ -236,7 +237,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Descripción;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtidemple;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmb_cate;
         private System.Windows.Forms.Button txtins;
@@ -244,5 +244,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dtpfecha;
         private System.Windows.Forms.Button btnLimpiar;
+        public System.Windows.Forms.TextBox txtidemple;
     }
 }
