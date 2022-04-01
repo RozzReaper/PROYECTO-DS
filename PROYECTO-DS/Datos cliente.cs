@@ -93,16 +93,47 @@ namespace Ejemplo2
         {
             if (txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")
             {
+
                 MessageCreacion creacion= new MessageCreacion();
                 creacion.Show();
             }
             else
             {
-                Modificar();
-                MessageCaso caso= new MessageCaso();
-                caso.Show();
+                if (txttelefono.Text.Trim().Length != 8)
+                {
+                    MessageBox.Show("El Teléfono debe tener 8 dígitos");
+
+                }
+                else
+                {
+                    if (!txttelefono.Text[0].ToString().Equals("2") && !txttelefono.Text[0].ToString().Equals("3") && !txttelefono.Text[0].ToString().Equals("8") && !txttelefono.Text[0].ToString().Equals("9"))
+                    {
+                        MessageBox.Show("Error, el télefono debe empezar con 9, 2 3 u 8");
+                    }
+                    else
+                    {
+                        Modificar();
+                        MessageCaso caso = new MessageCaso();
+                        caso.Show();
+                    }
+
+                }
+
             }
             
+        }
+
+        private void txttelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string telefono = ("SELECT*FROM Empleados('" + txttelefono.Text + "%')");
+
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo Numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+            //Regex regex = new Regex("\\d[2-3,8-9]{1},\\d[0-9]{7}");
         }
     }
 }
