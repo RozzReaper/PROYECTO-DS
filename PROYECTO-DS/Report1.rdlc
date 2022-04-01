@@ -6,10 +6,10 @@
         <Source>Embedded</Source>
         <Value>andromeda</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>0.39458in</Top>
-        <Left>8.17583in</Left>
-        <Height>1.32292in</Height>
-        <Width>1.34375in</Width>
+        <Top>0in</Top>
+        <Left>7.73833in</Left>
+        <Height>1.17931in</Height>
+        <Width>1.23959in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -26,6 +26,7 @@
                 <Value>Reporte: Informes de Casos Agentes Universales</Value>
                 <Style>
                   <FontFamily>Century Gothic</FontFamily>
+                  <FontSize>12pt</FontSize>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -33,10 +34,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox11</rd:DefaultName>
-        <Top>0.2175in</Top>
-        <Left>3.66541in</Left>
+        <Top>0.46056in</Top>
+        <Left>3.25917in</Left>
         <Height>0.25in</Height>
-        <Width>2.53125in</Width>
+        <Width>4.25in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -48,23 +49,23 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Tablix Name="Tablix1">
+      <Tablix Name="Tablix2">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.73958in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.71875in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.07292in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.22917in</Width>
+              <Width>4.90625in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.26041in</Width>
+              <Width>1.23958in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -73,7 +74,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox1">
+                    <Textbox Name="Textbox12">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -87,7 +88,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -103,7 +104,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox3">
+                    <Textbox Name="Textbox14">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -117,7 +118,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -133,7 +134,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox5">
+                    <Textbox Name="Textbox16">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -147,7 +148,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <rd:DefaultName>Textbox16</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -163,21 +164,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox7">
+                    <Textbox Name="Textbox18">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Descripcion</Value>
+                              <Value>Descripción</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <rd:DefaultName>Textbox18</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -193,21 +194,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox9">
+                    <Textbox Name="Textbox20">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Creación fecha</Value>
+                              <Value>Fecha de Creación</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <rd:DefaultName>Textbox20</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -399,11 +400,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>InformesAU</DataSetName>
-        <Top>0.79042in</Top>
-        <Left>0.44667in</Left>
+        <DataSetName>Informe</DataSetName>
+        <Top>1.04389in</Top>
+        <Left>0.72792in</Left>
         <Height>0.5in</Height>
-        <Width>7.48958in</Width>
+        <Width>8.67708in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -411,11 +412,26 @@
           </Border>
         </Style>
       </Tablix>
+      <Image Name="LogoAndromeda2">
+        <Source>Embedded</Source>
+        <Value>andromeda</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0in</Top>
+        <Left>1.77083in</Left>
+        <Height>1.17931in</Height>
+        <Width>1.23959in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
     </ReportItems>
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>9.77083in</Width>
+  <Width>10.52083in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -434,7 +450,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="InformesAU">
+    <DataSet Name="Informe">
       <Query>
         <DataSourceName>InformesDATASET</DataSourceName>
         <CommandText>/* Local Query */</CommandText>

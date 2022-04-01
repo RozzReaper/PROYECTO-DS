@@ -19,7 +19,13 @@ namespace Ejemplo2
 
         private void ReporteInformes_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'informesDATASET.Informes' table. You can move, or remove it, as needed.
+            this.informesTableAdapter.Fill(this.informesDATASET.Informes);
+            // TODO: This line of code loads data into the 'informesDATASET.Informes' table. You can move, or remove it, as needed.
+            this.informesTableAdapter.Fill(this.informesDATASET.Informes);
 
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
