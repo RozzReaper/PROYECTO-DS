@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_casos = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_casos)).BeginInit();
@@ -47,7 +48,7 @@
             // 
             this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(1236, 443);
+            this.btn_regresar.Location = new System.Drawing.Point(1236, 457);
             this.btn_regresar.Name = "btn_regresar";
             this.btn_regresar.Size = new System.Drawing.Size(52, 45);
             this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,11 +137,31 @@
             this.panel1.TabIndex = 24;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
+            // btnReporte
+            // 
+            this.btnReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.btnReporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReporte.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnReporte.FlatAppearance.BorderSize = 0;
+            this.btnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnReporte.ForeColor = System.Drawing.Color.LightGray;
+            this.btnReporte.Location = new System.Drawing.Point(453, 457);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(408, 40);
+            this.btnReporte.TabIndex = 25;
+            this.btnReporte.Text = "GENERAR REPORTE";
+            this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 500);
+            this.ClientSize = new System.Drawing.Size(1300, 509);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.dgv_casos);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.panel1);
@@ -167,5 +188,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgv_casos;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnReporte;
     }
 }

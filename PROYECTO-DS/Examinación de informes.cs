@@ -60,5 +60,11 @@ namespace Ejemplo2
         {
 
         }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            ReporteInformes reporteInformes = new ReporteInformes();
+            reporteInformes.Show();
+        }
     }
 }

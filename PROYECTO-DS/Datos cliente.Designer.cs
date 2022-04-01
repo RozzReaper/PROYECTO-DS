@@ -537,7 +537,7 @@
             this.cmbestado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cmbestado.Location = new System.Drawing.Point(79, 164);
+            this.cmbestado.Location = new System.Drawing.Point(79, 160);
             this.cmbestado.Name = "cmbestado";
             this.cmbestado.Size = new System.Drawing.Size(160, 21);
             this.cmbestado.TabIndex = 27;

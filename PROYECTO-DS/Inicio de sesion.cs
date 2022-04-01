@@ -186,5 +186,23 @@ namespace Ejemplo2
         {
 
         }
+
+        private void txtidentidad_Enter(object sender, EventArgs e)
+        {
+            if (txtidentidad.Text == "ID EMPLEADO")
+            {
+                txtidentidad.Text = "";
+                txtidentidad.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtidentidad_Leave(object sender, EventArgs e)
+        {
+            if (txtidentidad.Text == "")
+            {
+                txtidentidad.Text = "ID EMPLEADO";
+                txtidentidad.ForeColor= Color.DimGray;
+            }
+        }
     }
 }
