@@ -55,7 +55,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 450);
+            this.panel1.Size = new System.Drawing.Size(280, 455);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -195,7 +195,8 @@
             // 
             // txtcopiar
             // 
-            this.txtcopiar.Location = new System.Drawing.Point(544, 418);
+            this.txtcopiar.Enabled = false;
+            this.txtcopiar.Location = new System.Drawing.Point(544, 465);
             this.txtcopiar.Name = "txtcopiar";
             this.txtcopiar.Size = new System.Drawing.Size(100, 20);
             this.txtcopiar.TabIndex = 14;
@@ -206,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(900, 450);
+            this.ClientSize = new System.Drawing.Size(900, 455);
             this.Controls.Add(this.txtidentidad);
             this.Controls.Add(this.txt_temple);
             this.Controls.Add(this.btn_regresar);

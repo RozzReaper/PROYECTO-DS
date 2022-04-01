@@ -76,6 +76,7 @@
             this.txtid = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtidfinal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -156,7 +157,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(968, 64);
+            this.panel1.Size = new System.Drawing.Size(969, 64);
             this.panel1.TabIndex = 23;
             // 
             // txtsubtotal
@@ -590,16 +591,25 @@
             this.panel4.Controls.Add(this.txtfechainicio);
             this.panel4.Location = new System.Drawing.Point(0, 279);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(968, 236);
+            this.panel4.Size = new System.Drawing.Size(968, 222);
             this.panel4.TabIndex = 28;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // txtidfinal
+            // 
+            this.txtidfinal.Enabled = false;
+            this.txtidfinal.Location = new System.Drawing.Point(764, 507);
+            this.txtidfinal.Name = "txtidfinal";
+            this.txtidfinal.Size = new System.Drawing.Size(100, 20);
+            this.txtidfinal.TabIndex = 26;
             // 
             // Datos_cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(968, 513);
+            this.ClientSize = new System.Drawing.Size(969, 501);
+            this.Controls.Add(this.txtidfinal);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -622,6 +632,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -674,5 +685,6 @@
         private System.Windows.Forms.Label label22;
         public System.Windows.Forms.TextBox txtid;
         public System.Windows.Forms.ComboBox cmbestado;
+        public System.Windows.Forms.TextBox txtidfinal;
     }
 }

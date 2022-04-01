@@ -42,9 +42,10 @@ namespace Ejemplo2
 
         private void btn_regresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form6 frm6 = new Form6();
+            frm6.txtimport.Text = txtidemple.Text;
             frm6.Show();
+            this.Hide();
         }
 
         private void txtins_Click(object sender, EventArgs e)

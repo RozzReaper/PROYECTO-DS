@@ -41,13 +41,15 @@ namespace Ejemplo2
 
         private void btn_regresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form6 frm = new Form6();
+            frm.txtimport.Text = txtsearch.Text;
             frm.Show();
+            this.Hide();
         }
 
         private void btnLoginClientes_Click(object sender, EventArgs e)
         {
+
             //Herencia al evento
             cn.Open();
             Login_Clientes obj = new Login_Clientes();
@@ -57,8 +59,8 @@ namespace Ejemplo2
 
                 if (Valido)
                 {
-
                     Datos_cliente datos = new Datos_cliente();
+                    datos.txtidfinal.Text = txtsearch.Text;                    
                     this.Hide();
                     datos.Show();
 
@@ -71,6 +73,7 @@ namespace Ejemplo2
                         }
                         else
                         {
+
                             datos.txtid.Text = dgvsiu.CurrentRow.Cells[0].Value.ToString();
                             datos.txtnombre.Text = dgvsiu.CurrentRow.Cells[1].Value.ToString();
                             datos.txtemail.Text = dgvsiu.CurrentRow.Cells[2].Value.ToString();

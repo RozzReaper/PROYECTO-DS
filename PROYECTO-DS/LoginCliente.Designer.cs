@@ -42,6 +42,7 @@
             this.btnbuscar = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsiu)).BeginInit();
@@ -197,12 +198,21 @@
             this.panel2.Size = new System.Drawing.Size(460, 299);
             this.panel2.TabIndex = 26;
             // 
+            // txtsearch
+            // 
+            this.txtsearch.Enabled = false;
+            this.txtsearch.Location = new System.Drawing.Point(541, 389);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(100, 20);
+            this.txtsearch.TabIndex = 27;
+            // 
             // LoginCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1200, 382);
+            this.ClientSize = new System.Drawing.Size(1200, 383);
+            this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.dgvsiu);
             this.Controls.Add(this.btnLoginClientes);
             this.Controls.Add(this.btn_regresar);
@@ -223,6 +233,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -238,5 +249,6 @@
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvsiu;
+        public System.Windows.Forms.TextBox txtsearch;
     }
 }

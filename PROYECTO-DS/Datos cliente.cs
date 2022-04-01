@@ -51,9 +51,10 @@ namespace Ejemplo2
 
         private void btn_regresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
             LoginCliente loginCliente = new LoginCliente();
+            loginCliente.txtsearch.Text = txtidfinal.Text;
             loginCliente.Show();
+            this.Hide();
         }
 
         private void Datos_cliente_Load(object sender, EventArgs e)
@@ -90,7 +91,7 @@ namespace Ejemplo2
 
         private void btnmodi_Click(object sender, EventArgs e)
         {
-            if(txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")
+            if (txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")
             {
                 MessageCreacion creacion= new MessageCreacion();
                 creacion.Show();

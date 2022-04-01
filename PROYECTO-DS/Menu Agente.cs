@@ -17,9 +17,10 @@ namespace Ejemplo2
             InitializeComponent();
         }
 
+
         private void Form6_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -54,8 +55,10 @@ namespace Ejemplo2
 
         private void btnlgncliente_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             LoginCliente loginCliente = new LoginCliente();
+            loginCliente.txtsearch.Text = txtimport.Text;
+            this.Hide();
             loginCliente.Show();
         }
     }
