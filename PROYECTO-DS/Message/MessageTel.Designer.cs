@@ -1,6 +1,6 @@
 ﻿namespace Ejemplo2.Message
 {
-    partial class MessageCaso
+    partial class MessageTel
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageCaso));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,7 +49,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(370, 49);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 3;
             // 
             // label1
             // 
@@ -59,9 +58,9 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 21);
+            this.label1.Size = new System.Drawing.Size(48, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Logrado";
+            this.label1.Text = "¡Error";
             // 
             // panel2
             // 
@@ -71,7 +70,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 135);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(370, 51);
-            this.panel2.TabIndex = 2;
+            this.panel2.TabIndex = 4;
             // 
             // btnOkC
             // 
@@ -97,43 +96,40 @@
             this.panel3.Location = new System.Drawing.Point(0, 49);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(370, 86);
-            this.panel3.TabIndex = 3;
+            this.panel3.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(94, 33);
+            this.label2.Location = new System.Drawing.Point(76, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(236, 23);
+            this.label2.Size = new System.Drawing.Size(264, 44);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Caso creado correctamente";
+            this.label2.Text = "Error, el télefono debe empezar con 2, 3, 8 u 9";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.comprobado;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 21);
+            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.cancelar;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // MessageCaso
+            // MessageTel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(370, 186);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "MessageCaso";
+            this.Name = "MessageTel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MessageCaso";
+            this.Text = "MessageTel";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

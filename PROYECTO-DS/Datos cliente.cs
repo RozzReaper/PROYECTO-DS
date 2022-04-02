@@ -101,14 +101,15 @@ namespace Ejemplo2
             {
                 if (txttelefono.Text.Trim().Length != 8)
                 {
-                    MessageBox.Show("El Teléfono debe tener 8 dígitos");
-
+                    Tel8digi tel8Digi = new Tel8digi(); 
+                    tel8Digi.Show();
                 }
                 else
                 {
                     if (!txttelefono.Text[0].ToString().Equals("2") && !txttelefono.Text[0].ToString().Equals("3") && !txttelefono.Text[0].ToString().Equals("8") && !txttelefono.Text[0].ToString().Equals("9"))
                     {
-                        MessageBox.Show("Error, el télefono debe empezar con 9, 2 3 u 8");
+                        MessageTel messageTel = new MessageTel();   
+                        messageTel.Show();
                     }
                     else
                     {
@@ -129,7 +130,8 @@ namespace Ejemplo2
 
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
-                MessageBox.Show("Solo Numeros");
+                MessageNume messageNume = new MessageNume();
+                messageNume.Show();
                 e.Handled = true;
                 return;
             }

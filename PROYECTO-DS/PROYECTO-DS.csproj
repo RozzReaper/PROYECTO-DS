@@ -188,11 +188,29 @@
     <Compile Include="Message\MessageNC.Designer.cs">
       <DependentUpon>MessageNC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message\MessageNume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageNume.Designer.cs">
+      <DependentUpon>MessageNume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageTel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageTel.Designer.cs">
+      <DependentUpon>MessageTel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Message\MessageValid.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Message\MessageValid.Designer.cs">
       <DependentUpon>MessageValid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\Tel8digi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\Tel8digi.Designer.cs">
+      <DependentUpon>Tel8digi.cs</DependentUpon>
     </Compile>
     <Compile Include="ReporteInformes.cs">
       <SubType>Form</SubType>
@@ -294,8 +312,17 @@
     <EmbeddedResource Include="Message\MessageNC.resx">
       <DependentUpon>MessageNC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageNume.resx">
+      <DependentUpon>MessageNume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageTel.resx">
+      <DependentUpon>MessageTel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageValid.resx">
       <DependentUpon>MessageValid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\Tel8digi.resx">
+      <DependentUpon>Tel8digi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
