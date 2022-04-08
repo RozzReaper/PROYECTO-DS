@@ -33,11 +33,13 @@ namespace Ejemplo2
             Application.Exit();
         }
 
+        //Evento click del boton btnMinimizar
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
+        //Evento click del boton btnAgente
         private void btnAgente_Click(object sender, EventArgs e)
         {
             this.Hide();

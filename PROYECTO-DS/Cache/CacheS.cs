@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Almacenamiento de datos momentaneos para el registro del cliente y empleado
 namespace Ejemplo2.Cache
 {
     public static class CacheS

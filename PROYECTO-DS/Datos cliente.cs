@@ -23,20 +23,20 @@ namespace Ejemplo2
         }
 
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
-
+        //Se hace uso de la conexion establecida con el servidor
 
         void Modificar()
         {
-            cn.Open();
+            cn.Open();//Se abre la conexion con al BD
             try
             {
                 SqlCommand cmd = new SqlCommand("UPDATE dbo.Clientes SET dbo.Clientes.Nombres ='" +this.txtnombre.Text+ "',dbo.Clientes.Email='" + this.txtemail.Text + "',dbo.Clientes.Estado='" + this.cmbestado.Text + "',dbo.Clientes.Calle='" + this.txtcalle.Text + "',dbo.Clientes.Casa_num='" + this.txtcasanum.Text + "',dbo.Clientes.Teléfono='" + this.txttelefono.Text + "'WHERE dbo.Clientes.Id_cliente=" +Convert.ToInt32(this.txtid.Text + ""), cn);
-                cmd.ExecuteNonQuery();
-                cn.Close();
+                cmd.ExecuteNonQuery();//Se declara un comando para añadir el query usado para actualizar los datos
+                cn.Close();//cambiando los valores de las posibles variables por los valores puestos en los textbox, se ejecuta y cierra la conexion
             }
             catch
             {
-                MessageLogin login= new MessageLogin();
+                MessageLogin login= new MessageLogin();//En caso que falle, lanza un error diciendo que el proceso no tuvo éxito
                 login.Show();
             }
 
@@ -51,8 +51,8 @@ namespace Ejemplo2
 
         private void btn_regresar_Click(object sender, EventArgs e)
         {
-            LoginCliente loginCliente = new LoginCliente();
-            loginCliente.txtsearch.Text = txtidfinal.Text;
+            LoginCliente loginCliente = new LoginCliente();//Se instancia el formulario para usar sus campos y variables
+            loginCliente.txtsearch.Text = txtidfinal.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
             loginCliente.Show();
             this.Hide();
         }
@@ -91,28 +91,29 @@ namespace Ejemplo2
 
         private void btnmodi_Click(object sender, EventArgs e)
         {
-            if (txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")
+            if (txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")//Primera validación si los parámetros están incompletos
             {
 
-                MessageCreacion creacion= new MessageCreacion();
+                MessageCreacion creacion= new MessageCreacion();//Se mandará un formulario que contendrá el mensaje de error
                 creacion.Show();
             }
             else
             {
-                if (txttelefono.Text.Trim().Length != 8)
+                if (txttelefono.Text.Trim().Length != 8)//Segunda validación, si el numero ingresado supera el largo de 8 digitos
                 {
                     Tel8digi tel8Digi = new Tel8digi(); 
-                    tel8Digi.Show();
+                    tel8Digi.Show();//Se lanza un mensaje de error, mostrando que el numero debe de ser de esa cantidad
                 }
-                else
+                else//Usando la propiedad para acceder al contenido del primer digito, se hace un if para que, si no coincide con los numeros posteriores->
                 {
                     if (!txttelefono.Text[0].ToString().Equals("2") && !txttelefono.Text[0].ToString().Equals("3") && !txttelefono.Text[0].ToString().Equals("8") && !txttelefono.Text[0].ToString().Equals("9"))
                     {
-                        MessageTel messageTel = new MessageTel();   
+                        MessageTel messageTel = new MessageTel();//<-Mostrar un mensaje informando que el numero solo debe comenzar con 2,3,8 o 9
                         messageTel.Show();
                     }
                     else
                     {
+                        //En caso de que coincida, mostrar un mensaje señanlando que el parametro se inserto de forma exitosa
                         Modificar();
                         MessageCaso caso = new MessageCaso();
                         caso.Show();
@@ -124,18 +125,18 @@ namespace Ejemplo2
             
         }
 
-        private void txttelefono_KeyPress(object sender, KeyPressEventArgs e)
+        private void txttelefono_KeyPress(object sender, KeyPressEventArgs e)//Mediante el uso del evento KeyPress, se conoce el tipo de dato que se está escribiendo
         {
-            string telefono = ("SELECT*FROM Empleados('" + txttelefono.Text + "%')");
+            //string telefono = ("SELECT*FROM Empleados('" + txttelefono.Text + "%')");
 
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
             {
-                MessageNume messageNume = new MessageNume();
+                MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
                 messageNume.Show();
                 e.Handled = true;
                 return;
             }
-            //Regex regex = new Regex("\\d[2-3,8-9]{1},\\d[0-9]{7}");
+            
         }
     }
 }

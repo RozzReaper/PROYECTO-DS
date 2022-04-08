@@ -24,12 +24,11 @@ namespace Ejemplo2
             
         }
 
+        //Instancia para la conexión con la Base de Datos
         Conexion cn = new Conexion();
-
 
         public void login(string usuario, string contraseña) 
         {
-
                 
         }
 
@@ -43,6 +42,7 @@ namespace Ejemplo2
 
         }
 
+        //Evento "Enter" del control "txtuser"
         private void txtuser_Enter(object sender, EventArgs e)
         {
             if (txtuser.Text == "USUARIO") 
@@ -52,6 +52,7 @@ namespace Ejemplo2
             }
         }
 
+        //Evento "Leave" del control "txtuser"
         private void txtuser_Leave(object sender, EventArgs e)
         {
             if (txtuser.Text == "")
@@ -61,6 +62,7 @@ namespace Ejemplo2
             }
         }
 
+        //Evento "Enter" del control "txtpass"
         private void txtpass_Enter(object sender, EventArgs e)
         {
             if (txtpass.Text == "CONTRASEÑA")
@@ -71,6 +73,7 @@ namespace Ejemplo2
             }
         }
 
+        //Evento "Leave" del control "txtpass"
         private void txtpass_Leave(object sender, EventArgs e)
         {
             if (txtpass.Text == "")
@@ -86,6 +89,7 @@ namespace Ejemplo2
             
         }
 
+        //Evento "ClicK" del control "btnMinimizar"
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -96,6 +100,7 @@ namespace Ejemplo2
 
         }
 
+        //Evento "Click" del control "btnRegresar"
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -112,31 +117,30 @@ namespace Ejemplo2
             //Herencia al evento
             try
             {
-                //Datos info;
-                //info.id = txtidentidad.Text;
+                //Datos info
+                //Instancia de la clase DatosLogin para loguearse.
                 DatosLogin obj = new DatosLogin();
 
+                //Declaración booleana para verificar si los datos ingresados coinciden con datos existentes en la Base de Datos.
                 bool Valido = obj.login(txtuser.Text, txtpass.Text, txt_temple.Text, Convert.ToInt32(txtidentidad.Text));
 
                 if (Valido)
                 {
 
-
+                    //Validación a la hora de ingresar la palabra "Agente Universal" de tres formas distintas las cuales son las únicas válidas.
                     if (txt_temple.Text == "agente universal" || txt_temple.Text == "Agente Universal" || txt_temple.Text == "Agente universal")
                     {
+                        //Herencia del ID del Usuario que loguea
                         txtcopiar.Text = txtidentidad.Text;
                         Form6 forma = new Form6();
                         forma.txtimport.Text = txtidentidad.Text;
                         this.Hide();
                         forma.Show();
-                        
-
                     }
-                    else
-                        if (txt_temple.Text == "Supervisor" || txt_temple.Text == "supervisor")
+                    //Validación a la hora de ingresar la palabra "Supervisor" de dos formas distintas las cuales son las únicas válidas.
+                    else if (txt_temple.Text == "Supervisor" || txt_temple.Text == "supervisor")
                     {
-
-
+                        //Instancia del formulario Menu_Supervisor, que al cumplirse la validación y los datos coincidir con algún usuario "Supervisor", será redirigido a este mismo.
                         this.Hide();
                         Menu_Supervisor frm = new Menu_Supervisor();
                         frm.Show();
@@ -144,16 +148,17 @@ namespace Ejemplo2
                 }
                 else
                 {
+                    //Al fallar la condición principal del if, se hace llamado del MessageBox "Message Login" al instanciarse, y este mismo mostrará el mensaje de error correspondiente
                     MessageLogin messageLogin = new MessageLogin();
                     messageLogin.Show();
                 }
             }
             catch
             {
+                //Si catch atrapa un error, se hace llamado del MessageBox "Message Login" al instanciarse, y este mismo mostrará el mensaje de error correspondiente
                 MessageLogin messageLogin = new MessageLogin();
                 messageLogin.Show();
             }
-            
             
             conexion.Close();
         }
@@ -164,6 +169,7 @@ namespace Ejemplo2
             
         }
 
+        //Evento "Enter" del control "txt_temple"
         private void txt_temple_Enter(object sender, EventArgs e)
         {
             if (txt_temple.Text == "TIPO DE EMPLEADO")
@@ -173,6 +179,7 @@ namespace Ejemplo2
             }
         }
 
+        //Evento "Leave" del control "txt_temple"
         private void txt_temple_Leave(object sender, EventArgs e)
         {
             if (txt_temple.Text == "")
@@ -187,6 +194,7 @@ namespace Ejemplo2
 
         }
 
+        //Evento "Enter" del control "txtidentidad"
         private void txtidentidad_Enter(object sender, EventArgs e)
         {
             if (txtidentidad.Text == "ID EMPLEADO")
@@ -196,6 +204,7 @@ namespace Ejemplo2
             }
         }
 
+        //Evento "Leave" del control "txtidentidad"
         private void txtidentidad_Leave(object sender, EventArgs e)
         {
             if (txtidentidad.Text == "")

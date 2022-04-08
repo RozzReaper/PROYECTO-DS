@@ -19,23 +19,28 @@ namespace Ejemplo2
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
+        //Evento Click del botón "Minimizar"
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
+        //Evento Click del control "btn_regresar"
         private void btn_regresar_Click(object sender, EventArgs e)
         {
+            //Ocultamos el formulario actual para poder mostrar el formulario instanciado
             this.Hide();
             Menu_Supervisor menu_Supervisor = new Menu_Supervisor();
             menu_Supervisor.Show();
         }
 
-        Casos casos= new Casos();
+        //Instancia de la clase Casos
+        Casos casos = new Casos();
 
+        //Al cargar el formulario se asigna un valor al DataTable existente que coincida con los datos del DataGridView
         private void Form5_Load(object sender, EventArgs e)
         {
             dgv_casos.DataSource = casos.mostrarcasos();
@@ -61,6 +66,7 @@ namespace Ejemplo2
 
         }
 
+        //Botón que redirige a la visualización del Reporte de la Tabla
         private void btnReporte_Click(object sender, EventArgs e)
         {
             ReporteInformes reporteInformes = new ReporteInformes();

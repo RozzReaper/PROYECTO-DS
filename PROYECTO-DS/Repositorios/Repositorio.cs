@@ -11,6 +11,7 @@ namespace Ejemplo2
 {
     public abstract class Repositorio
     {
+        //Utilizamos la biblioteca System.data.sqlclient para utilizar una forma de conectar visual studio a sql
         private readonly string CadenaConexion;
 
         public Repositorio()

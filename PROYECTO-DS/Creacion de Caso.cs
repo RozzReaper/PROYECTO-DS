@@ -16,7 +16,7 @@ namespace Ejemplo2
     public partial class Form7 : Form
     {
         public string _Mensaje;
-
+        //representa la conexion y con ello, se acceden a sus propiedades
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
         public Form7()
         {
@@ -32,7 +32,7 @@ namespace Ejemplo2
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -42,15 +42,15 @@ namespace Ejemplo2
 
         private void btn_regresar_Click(object sender, EventArgs e)
         {
-            Form6 frm6 = new Form6();
-            frm6.txtimport.Text = txtidemple.Text;
+            Form6 frm6 = new Form6();//Se instancia el formulario que contiene el id del empleado
+            frm6.txtimport.Text = txtidemple.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
             frm6.Show();
             this.Hide();
         }
 
         private void txtins_Click(object sender, EventArgs e)
         {
-            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "")
+            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "")//Validación, si los textos están vacíos lanzar un mensaje de error
             { 
                 MessageCreacion messageCreacion = new MessageCreacion();
                 messageCreacion.Show();
@@ -58,15 +58,15 @@ namespace Ejemplo2
             else
             {
                 string query = "INSERT INTO Informes (FK_Agentes, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
-                cn.Open();
+                cn.Open();//declarar un string para la insersión de datos
                 SqlCommand comando=new SqlCommand(query, cn);
-                comando.Parameters.AddWithValue("@id", txtidemple.Text);
+                comando.Parameters.AddWithValue("@id", txtidemple.Text);//igualar las variables del query con las variables declaradas en el void
                 comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
                 comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
                 comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
                 try
                 {
-                    comando.ExecuteNonQuery();
+                    comando.ExecuteNonQuery();//ejeuta las intrucciones, como es un codigo propenso a dar errores, se pone en un try catch
                     MessageCaso messageCaso = new MessageCaso();
                     messageCaso.Show();
                     cn.Close();
@@ -76,7 +76,7 @@ namespace Ejemplo2
                     MessageInformacion messageInformacion = new MessageInformacion();
                     messageInformacion.Show();
                 }
-                cn.Close();
+                cn.Close();//Se cierra la conexion
 
             }
         }
@@ -113,7 +113,7 @@ namespace Ejemplo2
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txtidemple.Clear();
+            txtidemple.Clear();//Mediante esta propiedad, se borra el texto del cuadro de dialogo
             txt_desc.Clear();
         }
     }

@@ -24,6 +24,7 @@ namespace Ejemplo2.Message
 
         private void btnOkL_Click(object sender, EventArgs e)
         {
+            //Boton de "minimizacion" del message
             this.Hide();
         }
     }

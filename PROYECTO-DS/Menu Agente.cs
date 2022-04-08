@@ -17,7 +17,6 @@ namespace Ejemplo2
             InitializeComponent();
         }
 
-
         private void Form6_Load(object sender, EventArgs e)
         {
             
@@ -25,14 +24,16 @@ namespace Ejemplo2
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
+        //Evento click del boton btnMinimizar_Click
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
+        //Evento click del boton btnRegresar
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -45,21 +46,23 @@ namespace Ejemplo2
             
         }
 
+        //Evento click del boton btnSupervisor_Click
         private void btnSupervisor_Click(object sender, EventArgs e)
         {
             Form7 traslado = new Form7();
-            traslado.txtidemple.Text = txtimport.Text;
+            traslado.txtidemple.Text = txtimport.Text; //Se iguala el contenido del text box que contiene el id al del siguiente formulario
             this.Hide();
             traslado.Show();
         }
-
+        //Evento click del boton btnlgncliente_Click
         private void btnlgncliente_Click(object sender, EventArgs e)
         {
-            
             LoginCliente loginCliente = new LoginCliente();
-            loginCliente.txtsearch.Text = txtimport.Text;
+            loginCliente.txtsearch.Text = txtimport.Text; //Text box para busqueda de cliente
             this.Hide();
             loginCliente.Show();
         }
+
+       
     }
 }

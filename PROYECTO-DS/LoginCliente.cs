@@ -21,8 +21,8 @@ namespace Ejemplo2
         {
             InitializeComponent();
         }
-        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
-        Conexion conexion = new Conexion();
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);//Se declara la conexion
+        Conexion conexion = new Conexion();//Se instancia la clase que contiene la conexion
 
         private void LoginCliente_Load(object sender, EventArgs e)
         {
@@ -31,7 +31,7 @@ namespace Ejemplo2
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Minimized;//Se usa una propiedad para minimizar el formulario
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -42,9 +42,9 @@ namespace Ejemplo2
         private void btn_regresar_Click(object sender, EventArgs e)
         {
             Form6 frm = new Form6();
-            frm.txtimport.Text = txtsearch.Text;
+            frm.txtimport.Text = txtsearch.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
             frm.Show();
-            this.Hide();
+            this.Hide();//Mediante una orpiedad, se oculta el formulario presentado, para mostrar el siguiente
         }
 
         private void btnLoginClientes_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace Ejemplo2
             Login_Clientes obj = new Login_Clientes();
             try
             {
-                bool Valido = obj.LoginC(Convert.ToInt32(txtcel.Text));
+                bool Valido = obj.LoginC(Convert.ToInt32(txtcel.Text)); //Se extrapola el valor booleano y se iguala el parametro definido al text box
 
                 if (Valido)
                 {
@@ -66,7 +66,7 @@ namespace Ejemplo2
 
                     try
                     {
-                        if (dgvsiu.Rows.Count == 0)
+                        if (dgvsiu.Rows.Count == 0)//Si los datos son nulos, mostrar un error el cual dice que no existe dicho cliente
                         {
                             MessageNC messageNC = new MessageNC();
                             messageNC.Show();
@@ -74,8 +74,8 @@ namespace Ejemplo2
                         else
                         {
 
-                            datos.txtid.Text = dgvsiu.CurrentRow.Cells[0].Value.ToString();
-                            datos.txtnombre.Text = dgvsiu.CurrentRow.Cells[1].Value.ToString();
+                            datos.txtid.Text = dgvsiu.CurrentRow.Cells[0].Value.ToString();//Se envian los datos de el dgv hacia los textbox
+                            datos.txtnombre.Text = dgvsiu.CurrentRow.Cells[1].Value.ToString();//Del siguiente formulario
                             datos.txtemail.Text = dgvsiu.CurrentRow.Cells[2].Value.ToString();
                             datos.cmbestado.Text = dgvsiu.CurrentRow.Cells[3].Value.ToString();
                             datos.txtcalle.Text = dgvsiu.CurrentRow.Cells[4].Value.ToString();
@@ -104,6 +104,7 @@ namespace Ejemplo2
                 }
                 else
                 {
+                    //Resultado si el booleano no funcionaba, lanzando un mensaje de error
                     MessageIncorrecto messageIncorrecto = new MessageIncorrecto();
                     messageIncorrecto.Show();
                 }
@@ -116,29 +117,29 @@ namespace Ejemplo2
             
    
 
-            cn.Close();
+            cn.Close();//Se cierra la conexion
         }
 
         private void txtbuscar_Click(object sender, EventArgs e)
         {
 
-            if(txtcel.Text=="")
+            if(txtcel.Text=="")//Primera validación si el campo telefono está vacío
             {
                 MessageCliente messageLogin = new MessageCliente();
                 messageLogin.Show();
             }
             else
             {
-                try
+                try//Se declara un string el cual contendrá la sentencia para buscar a los clientes
                 {
                     string query = "SELECT dbo.Clientes.Id_cliente, dbo.Clientes.Nombres, dbo.Clientes.Email, dbo.Clientes.Estado, dbo.Clientes.Calle, dbo.Clientes.Casa_num, dbo.Clientes.Teléfono, dbo.Historial_crediticio.Impuesto, dbo.Historial_crediticio.Costo_plan, dbo.Historial_crediticio.Descuento, dbo.Historial_crediticio.Subtotal, dbo.Historial_crediticio.Pendiente, dbo.Historial_crediticio.Total, dbo.Planes.Fecha_inicio, dbo.Planes.Velocidad, dbo.Planes.Tipo_fibra,dbo.Planes.Día_pago, dbo.Planes.Plan_estado FROM dbo.Clientes INNER JOIN dbo.Historial_crediticio ON dbo.Clientes.Id_cliente = dbo.Historial_crediticio.FK_Clientes INNER JOIN dbo.Planes ON dbo.Clientes.Id_cliente = dbo.Planes.FK_Clientes where Teléfono = '" + txtcel.Text +  "'";
                     SqlCommand comando = new SqlCommand(query, cn);
                     SqlDataAdapter data = new SqlDataAdapter(comando);
-                    DataTable tabla = new DataTable();
-                    data.Fill(tabla);
+                    DataTable tabla = new DataTable();//Haciendo uso de un data adapter, se lleva a cabo la consulta
+                    data.Fill(tabla);//Llenado de datos pata luego igualarlo al dgv existente
                     dgvsiu.DataSource = tabla;
 
-                    if(dgvsiu.Rows.Count ==0)
+                    if(dgvsiu.Rows.Count ==0)//Si el dgv está vácío, tirar un mensaje de error
                     {
                         MessageNC messageNC = new MessageNC();
                         messageNC.Show();

@@ -19,6 +19,7 @@ namespace Ejemplo2.Message
 
         private void btnOkC_Click(object sender, EventArgs e)
         {
+            //Boton de "minimizacion" del message
             this.Close();
         }
 

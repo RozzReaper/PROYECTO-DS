@@ -13,7 +13,7 @@ namespace Ejemplo2
         protected List<SqlParameter> Parametros;
 
         //Ejecutar Procedimientos de Querys
-        protected void ExecuteNonQuery(String transactSql)
+        protected void ExecuteNonQuery(String transactSql) //Extrae la conexion de el Repositorio, y junto con la biblioteca es usada para tener sus propíedades
         {
             using (var Conexion = ObtenerConexion())
             {
