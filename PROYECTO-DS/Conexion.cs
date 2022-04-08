@@ -11,6 +11,7 @@ namespace Ejemplo2
 {
     public class Conexion
     {
+        //Utilizamos la biblioteca System.data.sqlclient para utilizar una forma de conectar visual studio a sql
         public SqlConnection cadenaconexion()
         {
             SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
