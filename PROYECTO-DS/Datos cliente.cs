@@ -12,6 +12,7 @@ using Ejemplo2.Repositorios;
 using System.Data.SqlClient;
 using System.Configuration;
 using Ejemplo2.Message;
+using System.Text.RegularExpressions;
 
 namespace Ejemplo2
 {
@@ -39,11 +40,30 @@ namespace Ejemplo2
                 MessageLogin login= new MessageLogin();//En caso que falle, lanza un error diciendo que el proceso no tuvo éxito
                 login.Show();
             }
-
+            cn.Close();
 
         }
 
-
+        public static bool ValidarEmail(string comprobarEmail)
+        {
+            string emailFormato;
+            emailFormato = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            if (Regex.IsMatch(comprobarEmail, emailFormato))
+            {
+                if (Regex.Replace(comprobarEmail, emailFormato, String.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -110,13 +130,34 @@ namespace Ejemplo2
                     {
                         MessageTel messageTel = new MessageTel();//<-Mostrar un mensaje informando que el numero solo debe comenzar con 2,3,8 o 9
                         messageTel.Show();
+
                     }
                     else
                     {
-                        //En caso de que coincida, mostrar un mensaje señanlando que el parametro se inserto de forma exitosa
-                        Modificar();
-                        MessageCaso caso = new MessageCaso();
-                        caso.Show();
+                        if (txtcasanum.Text.Trim().Length > 4)//Segunda validación, si el numero ingresado supera el largo de 8 digitos
+                        {
+                            MessageBox.Show("El número de casa no debe pasar los 4 caracteres");//mensaje de error num casa M
+                        }
+                        else
+                        {
+                            if (ValidarEmail(txtemail.Text) == false)
+                            {
+                                MessageBox.Show("Correo no válido, formato obligatorio: nombredeusuario@dominio.extension" +
+                                " por favor escriba un correo válido", "Validacion de correo electronico", MessageBoxButtons.OK, MessageBoxIcon.Information);//Validación correo M
+                            }
+                            else
+                            {
+
+                                    //En caso de que coincida, mostrar un mensaje señanlando que el parametro se inserto de forma exitosa
+                                    Modificar();
+                                    MessageCaso caso = new MessageCaso();
+                                    caso.Show();
+                            }
+                        }
+
+
+
+
                     }
 
                 }
@@ -129,14 +170,116 @@ namespace Ejemplo2
         {
             //string telefono = ("SELECT*FROM Empleados('" + txttelefono.Text + "%')");
 
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+            if (e.Handled = char.IsWhiteSpace(e.KeyChar))
             {
-                MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
-                messageNume.Show();
-                e.Handled = true;
-                return;
+                MessageBox.Show("No se permiten espacios");// mensaje de error para espacios M
             }
+            else
+            {
+                if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+                {
+                    MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                    messageNume.Show();
+                    e.Handled = true;
+                    return;
+
+                }
+
+            }
+
+
             
+        }
+
+
+        private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+
+
+        }
+
+        private void txtemail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.Handled = char.IsWhiteSpace(e.KeyChar))
+            {
+                MessageBox.Show("No se permiten espacios");// mensaje de error para espacios M
+            }
+        }
+
+        private void txtcasanum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.Handled = char.IsWhiteSpace(e.KeyChar))
+            {
+                MessageBox.Show("No se permiten espacios");// mensaje de error para espacios M
+            }
+            else
+            {
+                if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+                {
+                    MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                    messageNume.Show();
+                    e.Handled = true;
+                    return;
+
+                }
+            }
+
+        }
+
+        private void txtcalle_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.Handled = char.IsWhiteSpace(e.KeyChar))
+            {
+                MessageBox.Show("No se permiten espacios");// mensaje de error para espacios M
+            }
+            else
+            {
+                if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+                {
+                    MessageBox.Show("Sin caracteres especiales");
+                    e.Handled = true;
+                    return;
+                }
+                else
+                {
+                    if (txtcalle.Text.Trim().Length >= 50)//Validación de limite de caracteres M
+                    {
+                        MessageBox.Show("Se excede el límite de caracteres");
+                        e.Handled = true;
+                        return;
+                    }
+                }
+            }
+
+
+            
+        }
+
+        private void txtcasanum_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcasanum_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void cmbestado_DropDownStyleChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtemail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcalle_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

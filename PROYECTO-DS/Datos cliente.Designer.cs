@@ -77,6 +77,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtidfinal = new System.Windows.Forms.TextBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -198,6 +199,7 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(161, 22);
             this.txtnombre.TabIndex = 24;
+            this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
             // 
             // txtcosto
             // 
@@ -242,6 +244,8 @@
             this.txtcalle.Name = "txtcalle";
             this.txtcalle.Size = new System.Drawing.Size(164, 22);
             this.txtcalle.TabIndex = 24;
+            this.txtcalle.TextChanged += new System.EventHandler(this.txtcalle_TextChanged);
+            this.txtcalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcalle_KeyPress);
             // 
             // txtcasanum
             // 
@@ -250,6 +254,9 @@
             this.txtcasanum.Name = "txtcasanum";
             this.txtcasanum.Size = new System.Drawing.Size(164, 22);
             this.txtcasanum.TabIndex = 24;
+            this.txtcasanum.Click += new System.EventHandler(this.txtcasanum_Click);
+            this.txtcasanum.TextChanged += new System.EventHandler(this.txtcasanum_TextChanged);
+            this.txtcasanum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcasanum_KeyPress);
             // 
             // txtimpuesto
             // 
@@ -276,6 +283,8 @@
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(163, 22);
             this.txtemail.TabIndex = 24;
+            this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
+            this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
             // txt_tipofibra
             // 
@@ -530,11 +539,12 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(468, 62);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(500, 219);
+            this.panel3.Size = new System.Drawing.Size(501, 219);
             this.panel3.TabIndex = 27;
             // 
             // cmbestado
             // 
+            this.cmbestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbestado.FormattingEnabled = true;
             this.cmbestado.Items.AddRange(new object[] {
             "Activo",
@@ -543,6 +553,7 @@
             this.cmbestado.Name = "cmbestado";
             this.cmbestado.Size = new System.Drawing.Size(160, 21);
             this.cmbestado.TabIndex = 27;
+            this.cmbestado.DropDownStyleChanged += new System.EventHandler(this.cmbestado_DropDownStyleChanged);
             // 
             // btnmodi
             // 
@@ -687,5 +698,6 @@
         public System.Windows.Forms.TextBox txtid;
         public System.Windows.Forms.ComboBox cmbestado;
         public System.Windows.Forms.TextBox txtidfinal;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

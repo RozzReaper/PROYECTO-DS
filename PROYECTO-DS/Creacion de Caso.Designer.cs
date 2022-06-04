@@ -133,6 +133,7 @@
             // 
             // cmb_cate
             // 
+            this.cmb_cate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_cate.FormattingEnabled = true;
             this.cmb_cate.Items.AddRange(new object[] {
             "Problemas de conexión",
@@ -184,6 +185,9 @@
             this.dtpfecha.Size = new System.Drawing.Size(128, 20);
             this.dtpfecha.TabIndex = 31;
             this.dtpfecha.ValueChanged += new System.EventHandler(this.dtpfecha_ValueChanged);
+            this.dtpfecha.TabIndexChanged += new System.EventHandler(this.dtpfecha_TabIndexChanged);
+            this.dtpfecha.TabStopChanged += new System.EventHandler(this.dtpfecha_TabStopChanged);
+            this.dtpfecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dtpfecha_KeyPress);
             // 
             // btnLimpiar
             // 

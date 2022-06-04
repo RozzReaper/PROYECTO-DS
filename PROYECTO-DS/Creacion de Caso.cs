@@ -57,27 +57,40 @@ namespace Ejemplo2
             }
             else
             {
-                string query = "INSERT INTO Informes (FK_Agentes, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
-                cn.Open();//declarar un string para la insersión de datos
-                SqlCommand comando=new SqlCommand(query, cn);
-                comando.Parameters.AddWithValue("@id", txtidemple.Text);//igualar las variables del query con las variables declaradas en el void
-                comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
-                comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
-                comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
-                try
-                {
-                    comando.ExecuteNonQuery();//ejeuta las intrucciones, como es un codigo propenso a dar errores, se pone en un try catch
-                    MessageCaso messageCaso = new MessageCaso();
-                    messageCaso.Show();
-                    cn.Close();
-                }
-                catch
-                {
-                    MessageInformacion messageInformacion = new MessageInformacion();
-                    messageInformacion.Show();
-                }
-                cn.Close();//Se cierra la conexion
+                DateTime hoy = DateTime.Today;
 
+                if (dtpfecha.Value.Date > hoy)
+                {
+                    MessageBox.Show("No se puede seleccionar una fecha mayor a la presente");//Validación para fecha M
+                }
+                else if (dtpfecha.Value.AddYears(10) <= hoy)
+                {
+
+                    MessageBox.Show("Fecha demasiado antigua");
+                }
+                else
+                {
+                    string query = "INSERT INTO Informes (FK_Agentes, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
+                    cn.Open();//declarar un string para la insersión de datos
+                    SqlCommand comando = new SqlCommand(query, cn);
+                    comando.Parameters.AddWithValue("@id", txtidemple.Text);//igualar las variables del query con las variables declaradas en el void
+                    comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
+                    comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
+                    comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
+                    try
+                    {
+                        comando.ExecuteNonQuery();//ejeuta las intrucciones, como es un codigo propenso a dar errores, se pone en un try catch
+                        MessageCaso messageCaso = new MessageCaso();
+                        messageCaso.Show();
+                        cn.Close();
+                    }
+                    catch
+                    {
+                        MessageInformacion messageInformacion = new MessageInformacion();
+                        messageInformacion.Show();
+                    }
+                    cn.Close();//Se cierra la conexion
+                }
             }
         }
 
@@ -113,8 +126,22 @@ namespace Ejemplo2
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txtidemple.Clear();//Mediante esta propiedad, se borra el texto del cuadro de dialogo
             txt_desc.Clear();
+        }
+
+        private void dtpfecha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void dtpfecha_TabStopChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpfecha_TabIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
