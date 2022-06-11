@@ -245,7 +245,7 @@ namespace Ejemplo2
                 }
                 else
                 {
-                    if (txtcalle.Text.Trim().Length >= 50)//Validación de limite de caracteres M
+                    if (txtcalle.Text.Trim().Length >= 50)//Validación de limite de caracteres PONER EN LOS DEMAS TEXTBOX
                     {
                         MessageBox.Show("Se excede el límite de caracteres");
                         e.Handled = true;
