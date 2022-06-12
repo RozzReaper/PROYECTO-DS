@@ -68,6 +68,10 @@ namespace Ejemplo2
 
                     MessageBox.Show("Fecha demasiado antigua");
                 }
+                else if (string.IsNullOrWhiteSpace(txt_desc.Text))
+                {
+                    MessageBox.Show("No se permite campos vacios en la descripción");
+                }
                 else
                 {
                     string query = "INSERT INTO Informes (FK_Agentes, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
@@ -127,6 +131,9 @@ namespace Ejemplo2
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txt_desc.Clear();
+            DateTime hoy = DateTime.Today;
+            dtpfecha.Text = hoy.ToString();
+            cmb_cate.SelectedIndex = -1;
         }
 
         private void dtpfecha_KeyPress(object sender, KeyPressEventArgs e)
@@ -147,6 +154,16 @@ namespace Ejemplo2
         private void txt_desc_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_desc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txt_desc.Text.Trim().Length >= 250)//Validación de limite de caracteres M
+            {
+                MessageBox.Show("Se excede el límite de caracteres");
+                e.Handled = true;
+                return;
+            }
         }
     }
 }
