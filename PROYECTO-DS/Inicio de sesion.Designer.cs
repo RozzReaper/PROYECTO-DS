@@ -185,7 +185,6 @@
             this.txtidentidad.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtidentidad.ForeColor = System.Drawing.Color.DimGray;
             this.txtidentidad.Location = new System.Drawing.Point(386, 109);
-            this.txtidentidad.Multiline = true;
             this.txtidentidad.Name = "txtidentidad";
             this.txtidentidad.Size = new System.Drawing.Size(408, 20);
             this.txtidentidad.TabIndex = 2;
@@ -247,7 +246,7 @@
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_temple;
-        public System.Windows.Forms.TextBox txtidentidad;
         public System.Windows.Forms.TextBox txtcopiar;
+        private System.Windows.Forms.TextBox txtidentidad;
     }
 }

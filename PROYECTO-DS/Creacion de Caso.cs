@@ -143,5 +143,10 @@ namespace Ejemplo2
         {
 
         }
+
+        private void txt_desc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

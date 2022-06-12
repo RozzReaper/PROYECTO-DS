@@ -165,6 +165,7 @@
             this.txt_desc.Name = "txt_desc";
             this.txt_desc.Size = new System.Drawing.Size(367, 164);
             this.txt_desc.TabIndex = 29;
+            this.txt_desc.TextChanged += new System.EventHandler(this.txt_desc_TextChanged);
             // 
             // panel1
             // 
