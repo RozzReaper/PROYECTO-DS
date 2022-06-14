@@ -62,10 +62,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nasalization Rg", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 39);
+            this.label2.Size = new System.Drawing.Size(241, 38);
             this.label2.TabIndex = 13;
             this.label2.Text = "ANDROMEDA";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -184,7 +184,7 @@
             this.txtidentidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtidentidad.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtidentidad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtidentidad.Location = new System.Drawing.Point(386, 109);
+            this.txtidentidad.Location = new System.Drawing.Point(386, 110);
             this.txtidentidad.Name = "txtidentidad";
             this.txtidentidad.Size = new System.Drawing.Size(408, 20);
             this.txtidentidad.TabIndex = 2;

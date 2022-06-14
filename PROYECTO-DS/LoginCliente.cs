@@ -164,5 +164,27 @@ namespace Ejemplo2
 
             
         }
+
+        private void txtcel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.Handled = char.IsWhiteSpace(e.KeyChar))
+            {
+                MessageBox.Show("No se permiten espacios");// mensaje de error para espacios M
+            }
+            else if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+            {
+                MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                messageNume.Show();
+                e.Handled = true;
+                return;
+
+            }
+            else if (txtcel.Text.Trim().Length >= 8)//Validación de limite de caracteres M
+            {
+                MessageBox.Show("Se excede el límite de caracteres");
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

@@ -199,6 +199,7 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(161, 22);
             this.txtnombre.TabIndex = 24;
+            this.txtnombre.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
             this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
             // 
             // txtcosto

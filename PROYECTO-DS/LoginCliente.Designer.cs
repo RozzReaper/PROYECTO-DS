@@ -76,6 +76,7 @@
             this.txtcel.Name = "txtcel";
             this.txtcel.Size = new System.Drawing.Size(230, 20);
             this.txtcel.TabIndex = 2;
+            this.txtcel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcel_KeyPress);
             // 
             // panel1
             // 
