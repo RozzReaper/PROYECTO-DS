@@ -66,11 +66,11 @@ namespace Ejemplo2
                 else if (dtpfecha.Value.AddYears(10) <= hoy)
                 {
 
-                    MessageBox.Show("Fecha demasiado antigua");
+                    MessageBox.Show("Fecha demasiado antigua");//validacion para fecha M
                 }
                 else if (string.IsNullOrWhiteSpace(txt_desc.Text))
                 {
-                    MessageBox.Show("No se permite campos vacios en la descripción");
+                    MessageBox.Show("No se permite campos vacios en la descripción");//validacion para fecha M
                 }
                 else
                 {
@@ -160,7 +160,7 @@ namespace Ejemplo2
         {
             if (txt_desc.Text.Trim().Length >= 250)//Validación de limite de caracteres M
             {
-                MessageBox.Show("Se excede el límite de caracteres");
+                MessageBox.Show("Se excede el límite de caracteres");//validacion para limite caracteres M
                 e.Handled = true;
                 return;
             }
