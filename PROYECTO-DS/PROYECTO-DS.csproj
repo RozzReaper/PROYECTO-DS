@@ -164,6 +164,30 @@
     <Compile Include="Message\MessageCreacion.Designer.cs">
       <DependentUpon>MessageCreacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message\MessageDescLimite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageDescLimite.Designer.cs">
+      <DependentUpon>MessageDescLimite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageDescVacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageDescVacia.Designer.cs">
+      <DependentUpon>MessageDescVacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageFechaAntigua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageFechaAntigua.Designer.cs">
+      <DependentUpon>MessageFechaAntigua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\MessageFechaMayor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\MessageFechaMayor.Designer.cs">
+      <DependentUpon>MessageFechaMayor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Message\MessageIncorrecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +323,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageCreacion.resx">
       <DependentUpon>MessageCreacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageDescLimite.resx">
+      <DependentUpon>MessageDescLimite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageDescVacia.resx">
+      <DependentUpon>MessageDescVacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageFechaAntigua.resx">
+      <DependentUpon>MessageFechaAntigua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\MessageFechaMayor.resx">
+      <DependentUpon>MessageFechaMayor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageIncorrecto.resx">
       <DependentUpon>MessageIncorrecto.cs</DependentUpon>

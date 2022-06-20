@@ -50,7 +50,7 @@ namespace Ejemplo2
 
         private void txtins_Click(object sender, EventArgs e)
         {
-            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "")//Validación, si los textos están vacíos lanzar un mensaje de error
+            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "" || cmb_cate.SelectedIndex == -1)//Validación, si los textos están vacíos lanzar un mensaje de error
             { 
                 MessageCreacion messageCreacion = new MessageCreacion();
                 messageCreacion.Show();
@@ -61,16 +61,19 @@ namespace Ejemplo2
 
                 if (dtpfecha.Value.Date > hoy)
                 {
-                    MessageBox.Show("No se puede seleccionar una fecha mayor a la presente");//Validación para fecha M
+                    MessageFechaMayor messageFechaMayor = new MessageFechaMayor();
+                    messageFechaMayor.Show();
                 }
                 else if (dtpfecha.Value.AddYears(10) <= hoy)
                 {
 
-                    MessageBox.Show("Fecha demasiado antigua");//validacion para fecha M
+                    MessageFechaAntigua messageFechaAntigua = new MessageFechaAntigua();
+                    messageFechaAntigua.Show();
                 }
                 else if (string.IsNullOrWhiteSpace(txt_desc.Text))
                 {
-                    MessageBox.Show("No se permite campos vacios en la descripción");//validacion para fecha M
+                    MessageDescVacia messageDescVacia = new MessageDescVacia();
+                    messageDescVacia.Show();
                 }
                 else
                 {
@@ -160,7 +163,9 @@ namespace Ejemplo2
         {
             if (txt_desc.Text.Trim().Length >= 250)//Validación de limite de caracteres M
             {
-                MessageBox.Show("Se excede el límite de caracteres");//validacion para limite caracteres M
+                txt_desc.Clear();
+                MessageDescLimite messageDescLimite = new MessageDescLimite();
+                messageDescLimite.Show();
                 e.Handled = true;
                 return;
             }
