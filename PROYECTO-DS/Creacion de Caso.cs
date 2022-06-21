@@ -166,17 +166,12 @@ namespace Ejemplo2
             {
 
                 //validacion para limite de caracteres 
-                if (e.KeyChar == 08)
-                {
+                MessageDescLimite messageDescLimite = new MessageDescLimite();
+                messageDescLimite.Show();
+                txt_desc.Clear();    
+                e.Handled = true;
+                return;
 
-                }
-                else
-                {
-                    MessageDescLimite messageDescLimite = new MessageDescLimite();
-                    messageDescLimite.Show();
-                    e.Handled = true;
-                    return;
-                }
             }
         }
     }
