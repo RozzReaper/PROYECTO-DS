@@ -50,7 +50,8 @@ namespace Ejemplo2
 
         private void txtins_Click(object sender, EventArgs e)
         {
-            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "" || cmb_cate.SelectedIndex == -1)//Validación, si los textos están vacíos lanzar un mensaje de error
+
+            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "" || cmb_cate.Text =="")//Validación, si los textos están vacíos lanzar un mensaje de error
             { 
                 MessageCreacion messageCreacion = new MessageCreacion();
                 messageCreacion.Show();
@@ -163,11 +164,19 @@ namespace Ejemplo2
         {
             if (txt_desc.Text.Trim().Length >= 250)//Validación de limite de caracteres M
             {
-                txt_desc.Clear();
-                MessageDescLimite messageDescLimite = new MessageDescLimite();
-                messageDescLimite.Show();
-                e.Handled = true;
-                return;
+
+                //validacion para limite de caracteres 
+                if (e.KeyChar == 08)
+                {
+
+                }
+                else
+                {
+                    MessageDescLimite messageDescLimite = new MessageDescLimite();
+                    messageDescLimite.Show();
+                    e.Handled = true;
+                    return;
+                }
             }
         }
     }
