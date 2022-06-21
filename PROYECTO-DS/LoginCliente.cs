@@ -181,9 +181,17 @@ namespace Ejemplo2
             }
             else if (txtcel.Text.Trim().Length >= 8)//Validación de limite de caracteres M
             {
-                MessageBox.Show("Se excede el límite de caracteres");//validacion para limite de caracteres M
-                e.Handled = true;
-                return;
+                //validacion para limite de caracteres 
+                if (e.KeyChar == 08)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Se excede el límite de caracteres");
+                    e.Handled = true;
+                    return;
+                }
             }
         }
 

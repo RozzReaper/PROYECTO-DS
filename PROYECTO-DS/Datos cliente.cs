@@ -184,9 +184,17 @@ namespace Ejemplo2
                 }
             else if (txttelefono.Text.Trim().Length >= 8)//Validación de limite de caracteres M
             {
-                MessageBox.Show("Se excede el límite de caracteres");//validacion para limite de caracteres 
-                e.Handled = true;
-                return;
+                //validacion para limite de caracteres 
+                if(e.KeyChar == 08)
+                {
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Se excede el límite de caracteres");
+                    e.Handled = true;
+                    return;
+                }
             }
 
 
@@ -200,9 +208,17 @@ namespace Ejemplo2
         {
             if (txtnombre.Text.Trim().Length >= 50)//Validación de limite de caracteres M
             {
-                MessageBox.Show("Se excede el límite de caracteres");//validacion para limite de caracteres 
-                e.Handled = true;
-                return;
+                //validacion para limite de caracteres 
+                if (e.KeyChar == 08)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Se excede el límite de caracteres");
+                    e.Handled = true;
+                    return;
+                }
             }
 
 
@@ -216,9 +232,17 @@ namespace Ejemplo2
             }
             else if (txtemail.Text.Trim().Length >= 175)//Validación de limite de caracteres M
             {
-                MessageBox.Show("Se excede el límite de caracteres");//validacion para limite de caracteres 
-                e.Handled = true;
-                return;
+                //validacion para limite de caracteres 
+                if (e.KeyChar == 08)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Se excede el límite de caracteres");
+                    e.Handled = true;
+                    return;
+                }
             }
 
         }
@@ -240,9 +264,17 @@ namespace Ejemplo2
                 }
             else if (txtcasanum.Text.Trim().Length >= 4)//Validación de limite de caracteres M
             {
-                MessageBox.Show("Se excede el límite de caracteres");//validacion para limite de caracteres 
-                e.Handled = true;
-                return;
+                //validacion para limite de caracteres 
+                if (e.KeyChar == 08)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Se excede el límite de caracteres");
+                    e.Handled = true;
+                    return;
+                }
             }
 
         }
@@ -266,9 +298,17 @@ namespace Ejemplo2
                 {
                     if (txtcalle.Text.Trim().Length >= 50)//Validación de limite de caracteres PONER EN LOS DEMAS TEXTBOX
                     {
-                        MessageBox.Show("Se excede el límite de caracteres");//validacion para limite de caracteres 
-                        e.Handled = true;
-                        return;
+                        //validacion para limite de caracteres 
+                        if (e.KeyChar == 08)
+                        {
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Se excede el límite de caracteres");
+                            e.Handled = true;
+                            return;
+                        }
                     }
                 }
             }
