@@ -169,7 +169,8 @@ namespace Ejemplo2
         {
             if (e.Handled = char.IsWhiteSpace(e.KeyChar))
             {
-                MessageBox.Show("No se permiten espacios");// mensaje de error para espacios M
+                MessageDescVacia messageDescVacia = new MessageDescVacia();
+                messageDescVacia.Show();// mensaje de error para espacios
             }
             else if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
             {
@@ -188,7 +189,8 @@ namespace Ejemplo2
                 }
                 else
                 {
-                    MessageBox.Show("Se excede el límite de caracteres");
+                    MessageDescLimite messageDescLimite = new MessageDescLimite();
+                    messageDescLimite.Show();//validacion para limite de caracteres
                     e.Handled = true;
                     return;
                 }

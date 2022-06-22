@@ -64,10 +64,16 @@
     <ManifestKeyFile>PROYECTO-DS_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -133,6 +139,12 @@
     </Compile>
     <Compile Include="LoginCliente.Designer.cs">
       <DependentUpon>LoginCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\Correo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\Correo.Designer.cs">
+      <DependentUpon>Correo.cs</DependentUpon>
     </Compile>
     <Compile Include="Message\MessageBusque.cs">
       <SubType>Form</SubType>
@@ -236,6 +248,12 @@
     <Compile Include="Message\Tel8digi.Designer.cs">
       <DependentUpon>Tel8digi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message\ValCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message\ValCasa.Designer.cs">
+      <DependentUpon>ValCasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteInformes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +327,9 @@
     <EmbeddedResource Include="Creacion de Caso.resx">
       <DependentUpon>Creacion de Caso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Message\Correo.resx">
+      <DependentUpon>Correo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Message\MessageBusque.resx">
       <DependentUpon>MessageBusque.cs</DependentUpon>
     </EmbeddedResource>
@@ -360,6 +381,9 @@
     <EmbeddedResource Include="Message\Tel8digi.resx">
       <DependentUpon>Tel8digi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Message\ValCasa.resx">
+      <DependentUpon>ValCasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -386,6 +410,7 @@
       <DependentUpon>InformesDATASET.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
