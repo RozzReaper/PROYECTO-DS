@@ -36,9 +36,11 @@
             this.btnlgncliente = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.txtimport = new System.Windows.Forms.TextBox();
+            this.btn_helper = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,11 +124,25 @@
             // 
             // txtimport
             // 
-            this.txtimport.Location = new System.Drawing.Point(387, 132);
+            this.txtimport.Location = new System.Drawing.Point(403, 132);
             this.txtimport.Name = "txtimport";
             this.txtimport.Size = new System.Drawing.Size(100, 20);
             this.txtimport.TabIndex = 17;
             this.txtimport.Visible = false;
+            // 
+            // btn_helper
+            // 
+            this.btn_helper.BackColor = System.Drawing.Color.Transparent;
+            this.btn_helper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_helper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_helper.Image = global::Ejemplo2.Properties.Resources.question_mark_circle_icon_152550;
+            this.btn_helper.Location = new System.Drawing.Point(12, 389);
+            this.btn_helper.Name = "btn_helper";
+            this.btn_helper.Size = new System.Drawing.Size(48, 49);
+            this.btn_helper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_helper.TabIndex = 18;
+            this.btn_helper.TabStop = false;
+            this.btn_helper.Click += new System.EventHandler(this.btn_helper_Click);
             // 
             // Form6
             // 
@@ -134,6 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.btn_helper);
             this.Controls.Add(this.txtimport);
             this.Controls.Add(this.btnlgncliente);
             this.Controls.Add(this.btn_regresar);
@@ -150,6 +167,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +182,6 @@
         private System.Windows.Forms.PictureBox btn_regresar;
         private System.Windows.Forms.Button btnlgncliente;
         public System.Windows.Forms.TextBox txtimport;
+        private System.Windows.Forms.PictureBox btn_helper;
     }
 }

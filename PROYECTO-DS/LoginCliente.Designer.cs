@@ -43,11 +43,13 @@
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtsearch = new System.Windows.Forms.TextBox();
+            this.btn_helper = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsiu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -191,6 +193,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel2.Controls.Add(this.btn_helper);
             this.panel2.Controls.Add(this.btnbuscar);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtcel);
@@ -207,6 +210,20 @@
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(100, 20);
             this.txtsearch.TabIndex = 27;
+            // 
+            // btn_helper
+            // 
+            this.btn_helper.BackColor = System.Drawing.Color.Transparent;
+            this.btn_helper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_helper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_helper.Image = global::Ejemplo2.Properties.Resources.question_mark_circle_icon_152550;
+            this.btn_helper.Location = new System.Drawing.Point(12, 238);
+            this.btn_helper.Name = "btn_helper";
+            this.btn_helper.Size = new System.Drawing.Size(48, 49);
+            this.btn_helper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_helper.TabIndex = 19;
+            this.btn_helper.TabStop = false;
+            this.btn_helper.Click += new System.EventHandler(this.btn_helper_Click);
             // 
             // LoginCliente
             // 
@@ -234,6 +251,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +270,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvsiu;
         public System.Windows.Forms.TextBox txtsearch;
+        private System.Windows.Forms.PictureBox btn_helper;
     }
 }

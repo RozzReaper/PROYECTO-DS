@@ -465,6 +465,7 @@
     <None Include="Resources\BANNER.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\question_mark_circle_icon_152550.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll" />
     <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll" />

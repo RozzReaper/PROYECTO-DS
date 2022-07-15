@@ -12,6 +12,7 @@ using Ejemplo2.Repositorios;
 using System.Data.SqlClient;
 using System.Configuration;
 using Ejemplo2.Message;
+using System.Diagnostics;
 
 namespace Ejemplo2
 {
@@ -200,6 +201,11 @@ namespace Ejemplo2
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_helper_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://download1487.mediafire.com/enblzttx104g/9wzs5rgemh5yu73/Manual_Usuario.pdf");
         }
     }
 }
