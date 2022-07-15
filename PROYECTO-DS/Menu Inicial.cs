@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace Ejemplo2
 {
@@ -60,6 +61,11 @@ namespace Ejemplo2
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://download1487.mediafire.com/enblzttx104g/9wzs5rgemh5yu73/Manual_Usuario.pdf");
         }
     }
 }
