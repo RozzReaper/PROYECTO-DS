@@ -169,7 +169,6 @@ namespace Ejemplo2
 
         private void txttelefono_KeyPress(object sender, KeyPressEventArgs e)//Mediante el uso del evento KeyPress, se conoce el tipo de dato que se está escribiendo
         {
-            //string telefono = ("SELECT*FROM Empleados('" + txttelefono.Text + "%')");
 
             if (e.Handled = char.IsWhiteSpace(e.KeyChar))
             {
@@ -199,10 +198,6 @@ namespace Ejemplo2
                     return;
                 }
             }
-
-
-
-
 
         }
 

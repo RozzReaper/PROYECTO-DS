@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Ejemplo2.Api;
+using Ejemplo2.Message;
+using System;
 using System.Windows.Forms;
-using Ejemplo2.Api;
 
 namespace MatthiWare.SmsAndCallClient
 {
@@ -21,6 +22,7 @@ namespace MatthiWare.SmsAndCallClient
             cbApis.Items.Add(new TwilioWrapperClient(Credentials.TWILIO_ACC_SID, Credentials.TWILIO_AUTH_TOKEN));
         }
 
+
         private void cbApis_SelectedValueChanged(object sender, EventArgs e)
         {
             m_currentApi = cbApis.SelectedItem as IClient;
@@ -30,11 +32,8 @@ namespace MatthiWare.SmsAndCallClient
 
             if (!m_currentApi.IsInitialized)
                 m_currentApi.Init();
+        
 
-            cbCall.Checked = m_currentApi.CanCall;
-            cbSms.Checked = m_currentApi.CanSendSms;
-
-            btnCall.Enabled = m_currentApi.CanCall;
             btnText.Enabled = m_currentApi.CanSendSms;
 
             txtFrom.Enabled = m_currentApi.FromNumberRequired;
@@ -57,21 +56,7 @@ namespace MatthiWare.SmsAndCallClient
             SetStatus();
         }
 
-        private async void btnCall_Click(object sender, EventArgs e)
-        {
-            btnCall.Enabled = false;
 
-            string from = txtFrom.Text;
-            string to = txtTo.Text;
-            string body = txtBody.Text;
-
-            SetStatus("Sending...");
-
-            m_lastResponse = await m_currentApi.CallAsync(from, to, body);
-
-            btnCall.Enabled = true;
-            SetStatus();
-        }
 
         private void SetStatus()
         {
@@ -92,8 +77,71 @@ namespace MatthiWare.SmsAndCallClient
                 return;
 
             await m_lastResponse.UpdateAsync();
+            txtBody.Clear();
+            txtFrom.Clear();
+            txtTo.Clear();
 
             SetStatus();
+        }
+
+        private void txtFrom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if ((e.KeyChar >= 33 && e.KeyChar <=42 && e.KeyChar >= 44 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+            {
+                MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                messageNume.Show();
+                e.Handled = true;
+                return;
+
+            }
+            else if (txtFrom.Text.Trim().Length >= 18)//Validación de limite de caracteres M
+            {
+                //validacion para limite de caracteres 
+                if (e.KeyChar == 18)
+                {
+
+                }
+                else
+                {
+                    MessageDescLimite messageDescLimite = new MessageDescLimite();
+                    messageDescLimite.Show();//validacion para limite de caracteresv
+                    e.Handled = true;
+                    return;
+                }
+            }
+        }
+
+        private void cbApis_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 42 && e.KeyChar >= 44 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+            {
+                MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                messageNume.Show();
+                e.Handled = true;
+                return;
+
+            }
+            else if (txtFrom.Text.Trim().Length >= 18)//Validación de limite de caracteres M
+            {
+                //validacion para limite de caracteres 
+                if (e.KeyChar == 18)
+                {
+
+                }
+                else
+                {
+                    MessageDescLimite messageDescLimite = new MessageDescLimite();
+                    messageDescLimite.Show();//validacion para limite de caracteresv
+                    e.Handled = true;
+                    return;
+                }
+            }
         }
     }
 }

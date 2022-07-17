@@ -30,8 +30,6 @@
         {
             this.cbApis = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbSms = new System.Windows.Forms.CheckBox();
-            this.cbCall = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtFrom = new System.Windows.Forms.TextBox();
@@ -39,7 +37,6 @@
             this.txtBody = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnText = new System.Windows.Forms.Button();
-            this.btnCall = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnUpdateStatus = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -51,6 +48,7 @@
             this.cbApis.Name = "cbApis";
             this.cbApis.Size = new System.Drawing.Size(203, 21);
             this.cbApis.TabIndex = 0;
+            this.cbApis.SelectedIndexChanged += new System.EventHandler(this.cbApis_SelectedIndexChanged);
             this.cbApis.SelectedValueChanged += new System.EventHandler(this.cbApis_SelectedValueChanged);
             // 
             // label1
@@ -61,28 +59,6 @@
             this.label1.Size = new System.Drawing.Size(92, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Select API to use:";
-            // 
-            // cbSms
-            // 
-            this.cbSms.AutoSize = true;
-            this.cbSms.Enabled = false;
-            this.cbSms.Location = new System.Drawing.Point(15, 43);
-            this.cbSms.Name = "cbSms";
-            this.cbSms.Size = new System.Drawing.Size(141, 17);
-            this.cbSms.TabIndex = 2;
-            this.cbSms.Text = "Can send text messages";
-            this.cbSms.UseVisualStyleBackColor = true;
-            // 
-            // cbCall
-            // 
-            this.cbCall.AutoSize = true;
-            this.cbCall.Enabled = false;
-            this.cbCall.Location = new System.Drawing.Point(15, 66);
-            this.cbCall.Name = "cbCall";
-            this.cbCall.Size = new System.Drawing.Size(64, 17);
-            this.cbCall.TabIndex = 3;
-            this.cbCall.Text = "Can call";
-            this.cbCall.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -108,6 +84,7 @@
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(262, 20);
             this.txtFrom.TabIndex = 6;
+            this.txtFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFrom_KeyPress);
             // 
             // txtTo
             // 
@@ -115,6 +92,7 @@
             this.txtTo.Name = "txtTo";
             this.txtTo.Size = new System.Drawing.Size(262, 20);
             this.txtTo.TabIndex = 7;
+            this.txtTo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTo_KeyPress);
             // 
             // txtBody
             // 
@@ -136,24 +114,13 @@
             // btnText
             // 
             this.btnText.Enabled = false;
-            this.btnText.Location = new System.Drawing.Point(15, 309);
+            this.btnText.Location = new System.Drawing.Point(94, 309);
             this.btnText.Name = "btnText";
             this.btnText.Size = new System.Drawing.Size(141, 23);
             this.btnText.TabIndex = 10;
             this.btnText.Text = "Sms";
             this.btnText.UseVisualStyleBackColor = true;
             this.btnText.Click += new System.EventHandler(this.btnText_Click);
-            // 
-            // btnCall
-            // 
-            this.btnCall.Enabled = false;
-            this.btnCall.Location = new System.Drawing.Point(162, 309);
-            this.btnCall.Name = "btnCall";
-            this.btnCall.Size = new System.Drawing.Size(151, 23);
-            this.btnCall.TabIndex = 11;
-            this.btnCall.Text = "Call";
-            this.btnCall.UseVisualStyleBackColor = true;
-            this.btnCall.Click += new System.EventHandler(this.btnCall_Click);
             // 
             // lblStatus
             // 
@@ -181,7 +148,6 @@
             this.ClientSize = new System.Drawing.Size(330, 365);
             this.Controls.Add(this.btnUpdateStatus);
             this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.btnCall);
             this.Controls.Add(this.btnText);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtBody);
@@ -189,11 +155,10 @@
             this.Controls.Add(this.txtFrom);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbCall);
-            this.Controls.Add(this.cbSms);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbApis);
             this.Name = "TW";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,8 +169,6 @@
 
         private System.Windows.Forms.ComboBox cbApis;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cbSms;
-        private System.Windows.Forms.CheckBox cbCall;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtFrom;
@@ -213,7 +176,6 @@
         private System.Windows.Forms.TextBox txtBody;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnText;
-        private System.Windows.Forms.Button btnCall;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnUpdateStatus;
     }
