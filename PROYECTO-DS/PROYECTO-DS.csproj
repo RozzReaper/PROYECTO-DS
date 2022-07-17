@@ -76,6 +76,12 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.1.1.2\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.1.2\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -100,9 +106,16 @@
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.1.2\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -115,8 +128,16 @@
     <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
     </Reference>
+    <Reference Include="Twilio, Version=5.77.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.77.0\lib\net451\Twilio.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\ClickatellWrapperClient.cs" />
+    <Compile Include="Api\Credentials.cs" />
+    <Compile Include="Api\IClient.cs" />
+    <Compile Include="Api\IResponse.cs" />
+    <Compile Include="Api\TwilioWrapperClient.cs" />
     <Compile Include="Bitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +166,12 @@
     </Compile>
     <Compile Include="LoginCliente.Designer.cs">
       <DependentUpon>LoginCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Twilio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Twilio.designer.cs">
+      <DependentUpon>Twilio.cs</DependentUpon>
     </Compile>
     <Compile Include="Message\Correo.cs">
       <SubType>Form</SubType>
@@ -318,6 +345,9 @@
     <EmbeddedResource Include="LoginCliente.resx">
       <DependentUpon>LoginCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Twilio.resx">
+      <DependentUpon>Twilio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu Inicial.resx">
       <DependentUpon>Menu Inicial.cs</DependentUpon>
     </EmbeddedResource>
@@ -488,5 +518,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,6 +37,7 @@
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.txtimport = new System.Windows.Forms.TextBox();
             this.btn_helper = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
@@ -144,12 +145,23 @@
             this.btn_helper.TabStop = false;
             this.btn_helper.Click += new System.EventHandler(this.btn_helper_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(415, 321);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Twilio";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_helper);
             this.Controls.Add(this.txtimport);
             this.Controls.Add(this.btnlgncliente);
@@ -183,5 +195,6 @@
         private System.Windows.Forms.Button btnlgncliente;
         public System.Windows.Forms.TextBox txtimport;
         private System.Windows.Forms.PictureBox btn_helper;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Twilio.TwiML;
 
 namespace Ejemplo2
 {
@@ -14,6 +15,8 @@ namespace Ejemplo2
         [STAThread]
         static void Main()
         {
+            Console.WriteLine(new VoiceResponse().Say("{body}", language: "en", voice: "alice").Hangup());
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
