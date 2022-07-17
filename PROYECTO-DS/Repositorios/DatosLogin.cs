@@ -13,18 +13,18 @@ namespace Ejemplo2
     public class DatosLogin : RepositorioM
     {
         //Se añaden Campos de la tabla login
-        private int Id_usuario;
-        private int FK_Empleados;
-        private string Tipo_empleado;
+        private int id_usuario;
+        private int fk_empleados;
+        private string tipo_empleado;
         private string n_usuario;
         private string contraseña;
 
         //Metodos de Acesso
-        public int ID { get { return Id_usuario; } set { Id_usuario = value; } }
+        public int ID { get { return id_usuario; } set { id_usuario = value; } }
 
-        public int ID_Empleado { get { return FK_Empleados; } set { FK_Empleados = value; } }
+        public int ID_Empleado { get { return fk_empleados; } set { fk_empleados = value; } }
 
-        public string TP_Empleado { get { return Tipo_empleado; } set { Tipo_empleado = value; } }
+        public string TP_Empleado { get { return tipo_empleado; } set { tipo_empleado = value; } }
 
         public string Usuario { get { return n_usuario; } set { n_usuario = value; } }
 
@@ -33,9 +33,9 @@ namespace Ejemplo2
         //Constructor
         public DatosLogin()
         {
-            Id_usuario = ID;
-            FK_Empleados = ID_Empleado;
-            Tipo_empleado = TP_Empleado;
+            id_usuario = ID;
+            fk_empleados = ID_Empleado;
+            tipo_empleado = TP_Empleado;
             n_usuario = Usuario;
             contraseña = Contraseña;
         }
@@ -53,7 +53,7 @@ namespace Ejemplo2
                 {
                     //Segun el codigo de encripación, que el inicio también dependa de si el empleado es Agente o Supervisor
                     comando.Connection = conexion;
-                    comando.CommandText = @"select * from Usuario where Id_usuario = @id and n_usuario = @usuario and Tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
+                    comando.CommandText = @"select * from Usuario where fk_empleados = @id and n_usuario = @usuario and tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
                     comando.CommandType = System.Data.CommandType.Text;
                     comando.Parameters.AddWithValue("@id", id);
                     comando.Parameters.AddWithValue("@usuario", usuario);
@@ -68,7 +68,7 @@ namespace Ejemplo2
                         while (lector.Read())
                         {
                             //revisa cada elemento dependiendo de su numero de columna
-                            CacheS.Id_Usuario = lector.GetInt32(0);
+                            CacheS.Id_Usuario = lector.GetInt32(1);
                             CacheS.usuario=lector.GetString(3);
                             CacheS.t_empleado=lector.GetString(2);
                         }
