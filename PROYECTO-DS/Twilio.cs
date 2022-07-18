@@ -73,14 +73,14 @@ namespace MatthiWare.SmsAndCallClient
 
         private async void btnUpdateStatus_Click(object sender, EventArgs e)
         {
+            txtBody.Clear();
+            txtFrom.Clear();
+            txtTo.Clear();
+            cbApis.SelectedIndex = -1;
             if (m_lastResponse == null || !m_lastResponse.CanUpdate)
                 return;
 
             await m_lastResponse.UpdateAsync();
-            txtBody.Clear();
-            txtFrom.Clear();
-            txtTo.Clear();
-
             SetStatus();
         }
 
@@ -141,6 +141,21 @@ namespace MatthiWare.SmsAndCallClient
                     e.Handled = true;
                     return;
                 }
+            }
+        }
+
+        private void txtBody_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtBody.Text.Trim().Length >= 250)//Validación de limite de caracteres M
+            {
+
+                //validacion para limite de caracteres 
+                MessageDescLimite messageDescLimite = new MessageDescLimite();
+                messageDescLimite.Show();
+                txtBody.Clear();
+                e.Handled = true;
+                return;
+
             }
         }
     }

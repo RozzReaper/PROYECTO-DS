@@ -101,6 +101,7 @@
             this.txtBody.Name = "txtBody";
             this.txtBody.Size = new System.Drawing.Size(298, 146);
             this.txtBody.TabIndex = 8;
+            this.txtBody.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBody_KeyPress);
             // 
             // label4
             // 
