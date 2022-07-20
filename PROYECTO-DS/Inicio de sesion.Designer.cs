@@ -54,29 +54,26 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(373, 560);
+            this.panel1.Size = new System.Drawing.Size(280, 455);
             this.panel1.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nasalization Rg", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 368);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(333, 50);
+            this.label2.Size = new System.Drawing.Size(241, 38);
             this.label2.TabIndex = 13;
             this.label2.Text = "ANDROMEDA";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Ejemplo2.Properties.Resources.andromeda;
-            this.pictureBox3.Location = new System.Drawing.Point(44, 108);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(33, 88);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(277, 256);
+            this.pictureBox3.Size = new System.Drawing.Size(208, 208);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
@@ -86,10 +83,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(716, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(537, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 49);
+            this.label1.Size = new System.Drawing.Size(120, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOGIN";
             // 
@@ -104,10 +100,9 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(515, 405);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Location = new System.Drawing.Point(386, 329);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(544, 49);
+            this.btnLogin.Size = new System.Drawing.Size(408, 40);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "ACCEDER";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -119,10 +114,9 @@
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtpass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtpass.Location = new System.Drawing.Point(515, 325);
-            this.txtpass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpass.Location = new System.Drawing.Point(386, 264);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(544, 25);
+            this.txtpass.Size = new System.Drawing.Size(408, 20);
             this.txtpass.TabIndex = 4;
             this.txtpass.Text = "CONTRASEÑA";
             this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
@@ -134,10 +128,9 @@
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtuser.ForeColor = System.Drawing.Color.DimGray;
-            this.txtuser.Location = new System.Drawing.Point(515, 197);
-            this.txtuser.Margin = new System.Windows.Forms.Padding(4);
+            this.txtuser.Location = new System.Drawing.Point(386, 160);
             this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(544, 25);
+            this.txtuser.Size = new System.Drawing.Size(408, 20);
             this.txtuser.TabIndex = 2;
             this.txtuser.Text = "USUARIO";
             this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
@@ -147,10 +140,9 @@
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(1131, 15);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimizar.Location = new System.Drawing.Point(848, 12);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(53, 49);
+            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 11;
             this.btnMinimizar.TabStop = false;
@@ -160,10 +152,9 @@
             // 
             this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(1115, 478);
-            this.btn_regresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_regresar.Location = new System.Drawing.Point(836, 388);
             this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(69, 62);
+            this.btn_regresar.Size = new System.Drawing.Size(52, 50);
             this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_regresar.TabIndex = 12;
             this.btn_regresar.TabStop = false;
@@ -175,10 +166,9 @@
             this.txtidentidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtidentidad.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtidentidad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtidentidad.Location = new System.Drawing.Point(515, 135);
-            this.txtidentidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidentidad.Location = new System.Drawing.Point(386, 110);
             this.txtidentidad.Name = "txtidentidad";
-            this.txtidentidad.Size = new System.Drawing.Size(544, 25);
+            this.txtidentidad.Size = new System.Drawing.Size(408, 20);
             this.txtidentidad.TabIndex = 2;
             this.txtidentidad.Text = "ID EMPLEADO";
             this.txtidentidad.Enter += new System.EventHandler(this.txtidentidad_Enter);
@@ -187,10 +177,9 @@
             // txtcopiar
             // 
             this.txtcopiar.Enabled = false;
-            this.txtcopiar.Location = new System.Drawing.Point(725, 572);
-            this.txtcopiar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcopiar.Location = new System.Drawing.Point(544, 465);
             this.txtcopiar.Name = "txtcopiar";
-            this.txtcopiar.Size = new System.Drawing.Size(132, 22);
+            this.txtcopiar.Size = new System.Drawing.Size(100, 20);
             this.txtcopiar.TabIndex = 14;
             this.txtcopiar.Visible = false;
             // 
@@ -198,24 +187,26 @@
             // 
             this.cmb_temple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.cmb_temple.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.cmb_temple.ForeColor = System.Drawing.Color.DimGray;
+            this.cmb_temple.ForeColor = System.Drawing.Color.LightGray;
             this.cmb_temple.FormattingEnabled = true;
             this.cmb_temple.Items.AddRange(new object[] {
             "Agente Universal",
             "Supervisor"});
-            this.cmb_temple.Location = new System.Drawing.Point(515, 257);
+            this.cmb_temple.Location = new System.Drawing.Point(386, 209);
+            this.cmb_temple.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_temple.Name = "cmb_temple";
-            this.cmb_temple.Size = new System.Drawing.Size(544, 31);
+            this.cmb_temple.Size = new System.Drawing.Size(409, 29);
             this.cmb_temple.TabIndex = 15;
-            this.cmb_temple.Text = "TIPO DE EMPLEADO";
+            this.cmb_temple.Enter += new System.EventHandler(this.cmb_temple_Enter);
             this.cmb_temple.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmb_temple_KeyPress);
+            this.cmb_temple.Leave += new System.EventHandler(this.cmb_temple_Leave);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1200, 560);
+            this.ClientSize = new System.Drawing.Size(900, 455);
             this.Controls.Add(this.cmb_temple);
             this.Controls.Add(this.txtidentidad);
             this.Controls.Add(this.btn_regresar);
@@ -228,7 +219,6 @@
             this.Controls.Add(this.txtcopiar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

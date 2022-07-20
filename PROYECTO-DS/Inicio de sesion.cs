@@ -12,16 +12,17 @@ using Ejemplo2.Cache;
 using Ejemplo2.Message;
 using Ejemplo2.Repositorios;
 using System.Configuration;
-
+using System.Drawing.Drawing2D;
 namespace Ejemplo2
 {
     public partial class Form2 : Form
     {
-        
+
         public Form2()
         {
             InitializeComponent();
         }
+
 
         //Instancia para la conexión con la Base de Datos
         Conexion cn = new Conexion();
@@ -130,6 +131,7 @@ namespace Ejemplo2
                         forma.txtimport.Text = txtidentidad.Text;
                         this.Hide();
                         forma.Show();
+                        
                     }
                     //Validación a la hora de seleccionar el rol "Supervisor"
                     else if (cmb_temple.Text == "Supervisor")
@@ -161,5 +163,26 @@ namespace Ejemplo2
         {
             e.Handled = true;
         }
+
+        private void cmb_temple_Enter(object sender, EventArgs e)
+        {
+          cmb_temple.ForeColor = Color.DimGray;
+
+        }
+
+        private void cmb_temple_Leave(object sender, EventArgs e)
+        {
+          cmb_temple.ForeColor = Color.DimGray;
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -42,8 +42,8 @@
             this.btnbuscar = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtsearch = new System.Windows.Forms.TextBox();
             this.btn_helper = new System.Windows.Forms.PictureBox();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsiu)).BeginInit();
@@ -201,14 +201,6 @@
             this.panel2.Size = new System.Drawing.Size(460, 299);
             this.panel2.TabIndex = 26;
             // 
-            // txtsearch
-            // 
-            this.txtsearch.Enabled = false;
-            this.txtsearch.Location = new System.Drawing.Point(541, 389);
-            this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(100, 20);
-            this.txtsearch.TabIndex = 27;
-            // 
             // btn_helper
             // 
             this.btn_helper.BackColor = System.Drawing.Color.Transparent;
@@ -222,6 +214,14 @@
             this.btn_helper.TabIndex = 19;
             this.btn_helper.TabStop = false;
             this.btn_helper.Click += new System.EventHandler(this.btn_helper_Click);
+            // 
+            // txtsearch
+            // 
+            this.txtsearch.Enabled = false;
+            this.txtsearch.Location = new System.Drawing.Point(541, 389);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(100, 20);
+            this.txtsearch.TabIndex = 27;
             // 
             // LoginCliente
             // 

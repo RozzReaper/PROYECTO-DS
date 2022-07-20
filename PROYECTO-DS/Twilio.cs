@@ -2,6 +2,11 @@
 using Ejemplo2.Message;
 using System;
 using System.Windows.Forms;
+using Ejemplo2.Cache;
+using Ejemplo2.Repositorios;
+using System.ComponentModel;
+using System.Diagnostics;
+using Ejemplo2;
 
 namespace MatthiWare.SmsAndCallClient
 {
@@ -112,11 +117,6 @@ namespace MatthiWare.SmsAndCallClient
             }
         }
 
-        private void cbApis_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtTo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 33 && e.KeyChar <= 42 && e.KeyChar >= 44 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
@@ -157,6 +157,14 @@ namespace MatthiWare.SmsAndCallClient
                 return;
 
             }
+        }
+
+        private void btn_regresar_Click(object sender, EventArgs e)
+        {
+            Form6 frm = new Form6();
+            frm.txtimport.Text = txttwilio.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
+            frm.Show();
+            this.Hide();//Mediante una orpiedad, se oculta el formulario presentado, para mostrar el siguiente
         }
     }
 }

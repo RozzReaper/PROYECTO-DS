@@ -39,16 +39,19 @@
             this.btnText = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnUpdateStatus = new System.Windows.Forms.Button();
+            this.btn_regresar = new System.Windows.Forms.PictureBox();
+            this.txttwilio = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             this.SuspendLayout();
             // 
             // cbApis
             // 
+            this.cbApis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbApis.FormattingEnabled = true;
             this.cbApis.Location = new System.Drawing.Point(110, 12);
             this.cbApis.Name = "cbApis";
             this.cbApis.Size = new System.Drawing.Size(203, 21);
             this.cbApis.TabIndex = 0;
-            this.cbApis.SelectedIndexChanged += new System.EventHandler(this.cbApis_SelectedIndexChanged);
             this.cbApis.SelectedValueChanged += new System.EventHandler(this.cbApis_SelectedValueChanged);
             // 
             // label1
@@ -142,11 +145,32 @@
             this.btnUpdateStatus.UseVisualStyleBackColor = true;
             this.btnUpdateStatus.Click += new System.EventHandler(this.btnUpdateStatus_Click);
             // 
+            // btn_regresar
+            // 
+            this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
+            this.btn_regresar.Location = new System.Drawing.Point(361, 336);
+            this.btn_regresar.Name = "btn_regresar";
+            this.btn_regresar.Size = new System.Drawing.Size(52, 50);
+            this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_regresar.TabIndex = 22;
+            this.btn_regresar.TabStop = false;
+            this.btn_regresar.Click += new System.EventHandler(this.btn_regresar_Click);
+            // 
+            // txttwilio
+            // 
+            this.txttwilio.Location = new System.Drawing.Point(425, 247);
+            this.txttwilio.Name = "txttwilio";
+            this.txttwilio.Size = new System.Drawing.Size(100, 20);
+            this.txttwilio.TabIndex = 23;
+            // 
             // TW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 365);
+            this.ClientSize = new System.Drawing.Size(423, 393);
+            this.Controls.Add(this.txttwilio);
+            this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btnUpdateStatus);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnText);
@@ -161,6 +185,7 @@
             this.Name = "TW";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +204,8 @@
         private System.Windows.Forms.Button btnText;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnUpdateStatus;
+        private System.Windows.Forms.PictureBox btn_regresar;
+        public System.Windows.Forms.TextBox txttwilio;
     }
 }
 

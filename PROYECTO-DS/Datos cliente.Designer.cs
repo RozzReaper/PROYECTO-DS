@@ -77,7 +77,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtidfinal = new System.Windows.Forms.TextBox();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -582,7 +581,7 @@
             this.panel4.Controls.Add(this.txtfechainicio);
             this.panel4.Location = new System.Drawing.Point(0, 279);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(968, 222);
+            this.panel4.Size = new System.Drawing.Size(969, 222);
             this.panel4.TabIndex = 28;
             // 
             // txtidfinal
@@ -675,6 +674,5 @@
         public System.Windows.Forms.TextBox txtid;
         public System.Windows.Forms.ComboBox cmbestado;
         public System.Windows.Forms.TextBox txtidfinal;
-        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
