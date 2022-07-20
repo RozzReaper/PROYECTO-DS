@@ -161,7 +161,6 @@
             this.dgvsiu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvsiu.Size = new System.Drawing.Size(679, 91);
             this.dgvsiu.TabIndex = 24;
-            this.dgvsiu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsiu_CellContentClick);
             // 
             // btnbuscar
             // 
@@ -201,7 +200,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(460, 299);
             this.panel2.TabIndex = 26;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txtsearch
             // 
@@ -243,7 +241,6 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginCliente";
-            this.Load += new System.EventHandler(this.LoginCliente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();

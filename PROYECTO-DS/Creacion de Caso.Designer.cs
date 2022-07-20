@@ -119,7 +119,6 @@
             this.txtidemple.Name = "txtidemple";
             this.txtidemple.Size = new System.Drawing.Size(129, 20);
             this.txtidemple.TabIndex = 24;
-            this.txtidemple.TextChanged += new System.EventHandler(this.txtidemple_TextChanged);
             // 
             // label5
             // 
@@ -145,7 +144,6 @@
             this.cmb_cate.Name = "cmb_cate";
             this.cmb_cate.Size = new System.Drawing.Size(129, 21);
             this.cmb_cate.TabIndex = 26;
-            this.cmb_cate.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtins
             // 
@@ -165,7 +163,6 @@
             this.txt_desc.Name = "txt_desc";
             this.txt_desc.Size = new System.Drawing.Size(367, 164);
             this.txt_desc.TabIndex = 29;
-            this.txt_desc.TextChanged += new System.EventHandler(this.txt_desc_TextChanged);
             this.txt_desc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_desc_KeyPress);
             // 
             // panel1
@@ -186,10 +183,6 @@
             this.dtpfecha.Name = "dtpfecha";
             this.dtpfecha.Size = new System.Drawing.Size(128, 20);
             this.dtpfecha.TabIndex = 31;
-            this.dtpfecha.ValueChanged += new System.EventHandler(this.dtpfecha_ValueChanged);
-            this.dtpfecha.TabIndexChanged += new System.EventHandler(this.dtpfecha_TabIndexChanged);
-            this.dtpfecha.TabStopChanged += new System.EventHandler(this.dtpfecha_TabStopChanged);
-            this.dtpfecha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dtpfecha_KeyPress);
             // 
             // btnLimpiar
             // 
@@ -225,7 +218,6 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creacion de Caso";
-            this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.panel1.ResumeLayout(false);

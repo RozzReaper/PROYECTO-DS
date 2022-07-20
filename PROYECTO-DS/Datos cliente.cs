@@ -77,38 +77,6 @@ namespace Ejemplo2
             this.Hide();
         }
 
-        private void Datos_cliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtpendiente_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnmodificar_Click(object sender, EventArgs e)
-        {
-            
-            
-            
-        }
-
         private void btnmodi_Click(object sender, EventArgs e)
         {
             if (txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")//Primera validación si los parámetros están incompletos
@@ -148,16 +116,12 @@ namespace Ejemplo2
                             }
                             else
                             {
-
-                                    //En caso de que coincida, mostrar un mensaje señanlando que el parametro se inserto de forma exitosa
-                                    Modificar();
-                                    MessageCaso caso = new MessageCaso();
-                                    caso.Show();
+                                //En caso de que coincida, mostrar un mensaje señanlando que el parametro se inserto de forma exitosa
+                                Modificar();
+                                MessageCaso caso = new MessageCaso();
+                                caso.Show();
                             }
                         }
-
-
-
 
                     }
 
@@ -186,11 +150,7 @@ namespace Ejemplo2
             else if (txttelefono.Text.Trim().Length >= 8)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
-                if(e.KeyChar == 08)
-                {
-                    
-                }
-                else
+                if(e.KeyChar != 08)
                 {
                     MessageDescLimite messageDescLimite = new MessageDescLimite();
                     messageDescLimite.Show();//validacion para limite de caracteresv
@@ -201,17 +161,12 @@ namespace Ejemplo2
 
         }
 
-
         private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (txtnombre.Text.Trim().Length >= 50)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
-                if (e.KeyChar == 08)
-                {
-
-                }
-                else
+                if (e.KeyChar != 08)
                 {
                     MessageDescLimite messageDescLimite = new MessageDescLimite();
                     messageDescLimite.Show();//validacion para limite de caracteres
@@ -219,7 +174,6 @@ namespace Ejemplo2
                     return;
                 }
             }
-
 
         }
 
@@ -233,11 +187,7 @@ namespace Ejemplo2
             else if (txtemail.Text.Trim().Length >= 175)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
-                if (e.KeyChar == 08)
-                {
-
-                }
-                else
+                if (e.KeyChar != 08)
                 {
                     MessageDescLimite messageDescLimite = new MessageDescLimite();
                     messageDescLimite.Show();//validacion para limite de caracteres
@@ -257,21 +207,17 @@ namespace Ejemplo2
                 messageDescVacia.Show();// mensaje de error para espacios
             }
             else if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
-                {
+            {
                     MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
                     messageNume.Show();
                     e.Handled = true;
                     return;
 
-                }
+            }
             else if (txtcasanum.Text.Trim().Length >= 4)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
-                if (e.KeyChar == 08)
-                {
-
-                }
-                else
+                if (e.KeyChar != 08)
                 {
                     MessageDescLimite messageDescLimite = new MessageDescLimite();
                     messageDescLimite.Show();//validacion para limite de caracteres
@@ -303,53 +249,19 @@ namespace Ejemplo2
                 {
                     if (txtcalle.Text.Trim().Length >= 50)//Validación de limite de caracteres PONER EN LOS DEMAS TEXTBOX
                     {
-                        //validacion para limite de caracteres 
-                        if (e.KeyChar == 08)
-                        {
-
-                        }
-                        else
+                        //validacion para limite de caracteres
+                        if(e.KeyChar != 08)
                         {
                             MessageDescLimite messageDescLimite = new MessageDescLimite();
-                            messageDescLimite.Show();//validacion para limite de caracteres
+                            messageDescLimite.Show();//validacion para el tipo de caracter
                             e.Handled = true;
                             return;
                         }
                     }
                 }
             }
-
-
             
         }
 
-        private void txtcasanum_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtcasanum_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void cmbestado_DropDownStyleChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtemail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtcalle_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtnombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

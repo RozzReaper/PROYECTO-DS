@@ -25,9 +25,6 @@ namespace Ejemplo2
             this.informesTableAdapter.Fill(this.informesDATASET.Informes);
 
             this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
         }
 
         private void btn_regresar_Click(object sender, EventArgs e)

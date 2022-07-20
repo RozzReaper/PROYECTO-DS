@@ -59,7 +59,6 @@
             this.label1.Size = new System.Drawing.Size(335, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Bienvenido, Supervisor";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnMinimizar
             // 
@@ -118,7 +117,6 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Supervisor";
-            this.Load += new System.EventHandler(this.Menu_Supervisor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();

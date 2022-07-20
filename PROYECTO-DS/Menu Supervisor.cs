@@ -17,11 +17,6 @@ namespace Ejemplo2
             InitializeComponent();//Llamada al constructor para inicializar los parametros
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_regresar_Click(object sender, EventArgs e)
         {
             //Boton para regresar a la pantalla anterior
@@ -30,25 +25,10 @@ namespace Ejemplo2
             form2.Show();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             //Boton para minimizar pantalla
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnHistorial_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Menu_Supervisor_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCaso_Click(object sender, EventArgs e)

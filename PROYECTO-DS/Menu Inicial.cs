@@ -19,16 +19,6 @@ namespace Ejemplo2
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -46,26 +36,6 @@ namespace Ejemplo2
             this.Hide();
             Form2 a = new Form2();
             a.Show();
-        }
-
-        private void btnSupervisor_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btn_helper_Click(object sender, EventArgs e)

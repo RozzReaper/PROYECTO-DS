@@ -15,23 +15,11 @@ namespace Ejemplo2
 {
     public partial class Form7 : Form
     {
-        public string _Mensaje;
         //representa la conexion y con ello, se acceden a sus propiedades
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
         public Form7()
         {
             InitializeComponent(); 
-            
-        }
-
-        private void Form7_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
             
         }
 
@@ -102,62 +90,12 @@ namespace Ejemplo2
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtfecha_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtfecha_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtfecha_Leave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpfecha_ValueChanged(object sender, EventArgs e)
-        {
-            DateTime fecha=dtpfecha.Value;
-        }
-
-        private void txtidemple_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txt_desc.Clear();
             DateTime hoy = DateTime.Today;
             dtpfecha.Text = hoy.ToString();
             cmb_cate.SelectedIndex = -1;
-        }
-
-        private void dtpfecha_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void dtpfecha_TabStopChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpfecha_TabIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_desc_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void txt_desc_KeyPress(object sender, KeyPressEventArgs e)

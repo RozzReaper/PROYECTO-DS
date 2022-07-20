@@ -22,22 +22,12 @@ namespace Ejemplo2
         {
             InitializeComponent();
         }
+
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);//Se declara la conexion
-        Conexion conexion = new Conexion();//Se instancia la clase que contiene la conexion
-
-        private void LoginCliente_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;//Se usa una propiedad para minimizar el formulario
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_regresar_Click(object sender, EventArgs e)
@@ -155,17 +145,6 @@ namespace Ejemplo2
             }
         }
 
-        private void btndetalles_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvsiu_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            
-        }
-
         private void txtcel_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.Handled = char.IsWhiteSpace(e.KeyChar))
@@ -196,11 +175,6 @@ namespace Ejemplo2
                     return;
                 }
             }
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btn_helper_Click(object sender, EventArgs e)

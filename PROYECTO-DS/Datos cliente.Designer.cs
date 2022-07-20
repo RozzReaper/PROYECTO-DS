@@ -178,7 +178,6 @@
             this.txtpendiente.Name = "txtpendiente";
             this.txtpendiente.Size = new System.Drawing.Size(100, 22);
             this.txtpendiente.TabIndex = 24;
-            this.txtpendiente.TextChanged += new System.EventHandler(this.txtpendiente_TextChanged);
             // 
             // txttotal
             // 
@@ -199,7 +198,6 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(161, 22);
             this.txtnombre.TabIndex = 24;
-            this.txtnombre.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
             this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
             // 
             // txtcosto
@@ -245,7 +243,6 @@
             this.txtcalle.Name = "txtcalle";
             this.txtcalle.Size = new System.Drawing.Size(164, 22);
             this.txtcalle.TabIndex = 24;
-            this.txtcalle.TextChanged += new System.EventHandler(this.txtcalle_TextChanged);
             this.txtcalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcalle_KeyPress);
             // 
             // txtcasanum
@@ -255,8 +252,6 @@
             this.txtcasanum.Name = "txtcasanum";
             this.txtcasanum.Size = new System.Drawing.Size(164, 22);
             this.txtcasanum.TabIndex = 24;
-            this.txtcasanum.Click += new System.EventHandler(this.txtcasanum_Click);
-            this.txtcasanum.TextChanged += new System.EventHandler(this.txtcasanum_TextChanged);
             this.txtcasanum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcasanum_KeyPress);
             // 
             // txtimpuesto
@@ -284,7 +279,6 @@
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(163, 22);
             this.txtemail.TabIndex = 24;
-            this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
             this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
             // txt_tipofibra
@@ -314,7 +308,6 @@
             this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 25;
             this.label5.Text = "Nombre";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -355,7 +348,6 @@
             this.label9.Size = new System.Drawing.Size(53, 16);
             this.label9.TabIndex = 25;
             this.label9.Text = "# Casa";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -366,7 +358,6 @@
             this.label10.Size = new System.Drawing.Size(61, 16);
             this.label10.TabIndex = 25;
             this.label10.Text = "Teléfono";
-            this.label10.Click += new System.EventHandler(this.label9_Click);
             // 
             // label11
             // 
@@ -377,7 +368,6 @@
             this.label11.Size = new System.Drawing.Size(66, 16);
             this.label11.TabIndex = 25;
             this.label11.Text = "Impuesto";
-            this.label11.Click += new System.EventHandler(this.label5_Click);
             // 
             // label12
             // 
@@ -388,7 +378,6 @@
             this.label12.Size = new System.Drawing.Size(102, 16);
             this.label12.TabIndex = 25;
             this.label12.Text = "Costo del plan";
-            this.label12.Click += new System.EventHandler(this.label5_Click);
             // 
             // label13
             // 
@@ -399,7 +388,6 @@
             this.label13.Size = new System.Drawing.Size(74, 16);
             this.label13.TabIndex = 25;
             this.label13.Text = "Descuento";
-            this.label13.Click += new System.EventHandler(this.label5_Click);
             // 
             // label14
             // 
@@ -410,7 +398,6 @@
             this.label14.Size = new System.Drawing.Size(60, 16);
             this.label14.TabIndex = 25;
             this.label14.Text = "Subtotal";
-            this.label14.Click += new System.EventHandler(this.label5_Click);
             // 
             // label15
             // 
@@ -421,7 +408,6 @@
             this.label15.Size = new System.Drawing.Size(71, 16);
             this.label15.TabIndex = 25;
             this.label15.Text = "Pendiente";
-            this.label15.Click += new System.EventHandler(this.label5_Click);
             // 
             // label16
             // 
@@ -432,7 +418,6 @@
             this.label16.Size = new System.Drawing.Size(38, 16);
             this.label16.TabIndex = 25;
             this.label16.Text = "Total";
-            this.label16.Click += new System.EventHandler(this.label5_Click);
             // 
             // label17
             // 
@@ -443,7 +428,6 @@
             this.label17.Size = new System.Drawing.Size(107, 16);
             this.label17.TabIndex = 25;
             this.label17.Text = "Fecha de inicio";
-            this.label17.Click += new System.EventHandler(this.label5_Click);
             // 
             // label18
             // 
@@ -454,7 +438,6 @@
             this.label18.Size = new System.Drawing.Size(90, 16);
             this.label18.TabIndex = 25;
             this.label18.Text = "Tipo de fibra";
-            this.label18.Click += new System.EventHandler(this.label5_Click);
             // 
             // label19
             // 
@@ -465,7 +448,6 @@
             this.label19.Size = new System.Drawing.Size(88, 16);
             this.label19.TabIndex = 25;
             this.label19.Text = "Día de pago";
-            this.label19.Click += new System.EventHandler(this.label5_Click);
             // 
             // label20
             // 
@@ -476,7 +458,6 @@
             this.label20.Size = new System.Drawing.Size(109, 16);
             this.label20.TabIndex = 25;
             this.label20.Text = "Estado del plan";
-            this.label20.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtvelocidad
             // 
@@ -496,7 +477,6 @@
             this.label21.Size = new System.Drawing.Size(75, 16);
             this.label21.TabIndex = 25;
             this.label21.Text = "Velocidad";
-            this.label21.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel2
             // 
@@ -554,7 +534,6 @@
             this.cmbestado.Name = "cmbestado";
             this.cmbestado.Size = new System.Drawing.Size(160, 21);
             this.cmbestado.TabIndex = 27;
-            this.cmbestado.DropDownStyleChanged += new System.EventHandler(this.cmbestado_DropDownStyleChanged);
             // 
             // btnmodi
             // 
@@ -585,7 +564,6 @@
             this.label22.Size = new System.Drawing.Size(20, 16);
             this.label22.TabIndex = 25;
             this.label22.Text = "Id";
-            this.label22.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel4
             // 
@@ -606,7 +584,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(968, 222);
             this.panel4.TabIndex = 28;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // txtidfinal
             // 
@@ -633,7 +610,6 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos_cliente";
-            this.Load += new System.EventHandler(this.Datos_cliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.panel1.ResumeLayout(false);

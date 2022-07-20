@@ -21,26 +21,10 @@ namespace Ejemplo2
         public Form2()
         {
             InitializeComponent();
-            
         }
 
         //Instancia para la conexión con la Base de Datos
         Conexion cn = new Conexion();
-
-        public void login(string usuario, string contraseña) 
-        {
-                
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         //Evento "Enter" del control "txtuser"
         private void txtuser_Enter(object sender, EventArgs e)
@@ -84,20 +68,30 @@ namespace Ejemplo2
             }
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        //Evento "Enter" del control "txtidentidad"
+        private void txtidentidad_Enter(object sender, EventArgs e)
         {
-            
+            if (txtidentidad.Text == "ID EMPLEADO")
+            {
+                txtidentidad.Text = "";
+                txtidentidad.ForeColor = Color.LightGray;
+            }
+        }
+
+        //Evento "Leave" del control "txtidentidad"
+        private void txtidentidad_Leave(object sender, EventArgs e)
+        {
+            if (txtidentidad.Text == "")
+            {
+                txtidentidad.Text = "ID EMPLEADO";
+                txtidentidad.ForeColor = Color.DimGray;
+            }
         }
 
         //Evento "ClicK" del control "btnMinimizar"
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void txtuser_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         //Evento "Click" del control "btnRegresar"
@@ -122,13 +116,13 @@ namespace Ejemplo2
                 DatosLogin obj = new DatosLogin();
 
                 //Declaración booleana para verificar si los datos ingresados coinciden con datos existentes en la Base de Datos.
-                bool Valido = obj.login(txtuser.Text, txtpass.Text, txt_temple.Text, Convert.ToInt32(txtidentidad.Text));
+                bool Valido = obj.login(txtuser.Text, txtpass.Text, cmb_temple.Text, Convert.ToInt32(txtidentidad.Text));
 
                 if (Valido)
                 {
 
-                    //Validación a la hora de ingresar la palabra "Agente Universal" de tres formas distintas las cuales son las únicas válidas.
-                    if (txt_temple.Text == "agente universal" || txt_temple.Text == "Agente Universal" || txt_temple.Text == "Agente universal")
+                    //Validación a la hora de seleccionar el rol "Agente Universal"
+                    if (cmb_temple.Text == "Agente Universal")
                     {
                         //Herencia del ID del Usuario que loguea
                         txtcopiar.Text = txtidentidad.Text;
@@ -137,8 +131,8 @@ namespace Ejemplo2
                         this.Hide();
                         forma.Show();
                     }
-                    //Validación a la hora de ingresar la palabra "Supervisor" de dos formas distintas las cuales son las únicas válidas.
-                    else if (txt_temple.Text == "Supervisor" || txt_temple.Text == "supervisor")
+                    //Validación a la hora de seleccionar el rol "Supervisor"
+                    else if (cmb_temple.Text == "Supervisor")
                     {
                         //Instancia del formulario Menu_Supervisor, que al cumplirse la validación y los datos coincidir con algún usuario "Supervisor", será redirigido a este mismo.
                         this.Hide();
@@ -163,55 +157,9 @@ namespace Ejemplo2
             conexion.Close();
         }
 
-
-        private void Form2_Load(object sender, EventArgs e)
+        private void cmb_temple_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
-        }
-
-        //Evento "Enter" del control "txt_temple"
-        private void txt_temple_Enter(object sender, EventArgs e)
-        {
-            if (txt_temple.Text == "TIPO DE EMPLEADO")
-            {
-                txt_temple.Text = "";
-                txt_temple.ForeColor = Color.LightGray;
-            }
-        }
-
-        //Evento "Leave" del control "txt_temple"
-        private void txt_temple_Leave(object sender, EventArgs e)
-        {
-            if (txt_temple.Text == "")
-            {
-                txt_temple.Text = "TIPO DE EMPLEADO";
-                txt_temple.ForeColor = Color.DimGray;
-            }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //Evento "Enter" del control "txtidentidad"
-        private void txtidentidad_Enter(object sender, EventArgs e)
-        {
-            if (txtidentidad.Text == "ID EMPLEADO")
-            {
-                txtidentidad.Text = "";
-                txtidentidad.ForeColor = Color.LightGray;
-            }
-        }
-
-        //Evento "Leave" del control "txtidentidad"
-        private void txtidentidad_Leave(object sender, EventArgs e)
-        {
-            if (txtidentidad.Text == "")
-            {
-                txtidentidad.Text = "ID EMPLEADO";
-                txtidentidad.ForeColor= Color.DimGray;
-            }
+            e.Handled = true;
         }
     }
 }

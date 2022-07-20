@@ -19,15 +19,6 @@ namespace Ejemplo2
             InitializeComponent();
         }
 
-        private void Form6_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         //Evento click del boton btnMinimizar_Click
         private void btnMinimizar_Click(object sender, EventArgs e)
