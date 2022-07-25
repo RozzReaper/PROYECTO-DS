@@ -71,6 +71,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.cmbestado = new System.Windows.Forms.ComboBox();
             this.btnmodi = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
@@ -109,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(119, 14);
+            this.label3.Location = new System.Drawing.Point(119, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(277, 32);
             this.label3.TabIndex = 0;
@@ -193,7 +195,7 @@
             this.txtnombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             this.txtnombre.Enabled = false;
             this.txtnombre.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(80, 84);
+            this.txtnombre.Location = new System.Drawing.Point(91, 83);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(161, 22);
             this.txtnombre.TabIndex = 24;
@@ -274,9 +276,9 @@
             // txtemail
             // 
             this.txtemail.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(79, 122);
+            this.txtemail.Location = new System.Drawing.Point(90, 148);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(163, 22);
+            this.txtemail.Size = new System.Drawing.Size(162, 22);
             this.txtemail.TabIndex = 24;
             this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
@@ -312,7 +314,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 128);
+            this.label6.Location = new System.Drawing.Point(16, 154);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 16);
             this.label6.TabIndex = 25;
@@ -322,11 +324,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(23, 164);
+            this.label7.Location = new System.Drawing.Point(16, 188);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 16);
             this.label7.TabIndex = 25;
             this.label7.Text = "Estado";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -501,6 +504,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Controls.Add(this.txtapellido);
+            this.panel3.Controls.Add(this.label23);
             this.panel3.Controls.Add(this.cmbestado);
             this.panel3.Controls.Add(this.btnmodi);
             this.panel3.Controls.Add(this.txtid);
@@ -522,6 +527,28 @@
             this.panel3.Size = new System.Drawing.Size(501, 219);
             this.panel3.TabIndex = 27;
             // 
+            // txtapellido
+            // 
+            this.txtapellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtapellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.txtapellido.Enabled = false;
+            this.txtapellido.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtapellido.Location = new System.Drawing.Point(91, 115);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(161, 22);
+            this.txtapellido.TabIndex = 29;
+            this.txtapellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellido_KeyPress);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(16, 118);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(69, 16);
+            this.label23.TabIndex = 28;
+            this.label23.Text = "Apellidos";
+            // 
             // cmbestado
             // 
             this.cmbestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -529,7 +556,7 @@
             this.cmbestado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cmbestado.Location = new System.Drawing.Point(79, 160);
+            this.cmbestado.Location = new System.Drawing.Point(90, 187);
             this.cmbestado.Name = "cmbestado";
             this.cmbestado.Size = new System.Drawing.Size(160, 21);
             this.cmbestado.TabIndex = 27;
@@ -597,7 +624,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(969, 501);
+            this.ClientSize = new System.Drawing.Size(969, 502);
             this.Controls.Add(this.txtidfinal);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -674,5 +701,7 @@
         public System.Windows.Forms.TextBox txtid;
         public System.Windows.Forms.ComboBox cmbestado;
         public System.Windows.Forms.TextBox txtidfinal;
+        public System.Windows.Forms.TextBox txtapellido;
+        private System.Windows.Forms.Label label23;
     }
 }

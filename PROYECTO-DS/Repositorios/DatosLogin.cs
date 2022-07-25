@@ -53,7 +53,7 @@ namespace Ejemplo2
                 {
                     //Segun el codigo de encripación, que el inicio también dependa de si el empleado es Agente o Supervisor
                     comando.Connection = conexion;
-                    comando.CommandText = @"select * from Usuario where fk_empleados = @id and n_usuario = @usuario and tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
+                    comando.CommandText = @"select * from usuario where fk_empleados = @id and n_usuario = @usuario and tipo_empleado = @t_empleado and CONVERT(nvarchar(max), DECRYPTBYPASSPHRASE('password', contraseña))= @contraseña";
                     comando.CommandType = System.Data.CommandType.Text;
                     comando.Parameters.AddWithValue("@id", id);
                     comando.Parameters.AddWithValue("@usuario", usuario);

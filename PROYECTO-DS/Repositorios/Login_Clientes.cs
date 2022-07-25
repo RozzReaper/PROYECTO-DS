@@ -14,37 +14,40 @@ namespace Ejemplo2.Repositorios
     public class Login_Clientes:RepositorioM
     {
         //se añaden campos
-        private int Id_cliente;
-        private string Nombres;
-        private string Email;
-        private string Estado;
-        private string Calle;
-        private int Casa_num;
-        private int Telefono;
-        private string Clave;
+        private int id_cliente;
+        private string nombres;
+        private string apellidos;
+        private string email;
+        private string estado;
+        private string calle;
+        private int casa_num;
+        private int telefono;
+        private string clave;
 
         //metodos de acceso
 
-        public int Id_c { get { return Id_cliente; } set { Id_cliente = value; } }
-        public string Nom { get { return Nombres; } set { Nombres = value; } }
-        public string Mail { get { return Email; } set { Email = value; } }
-        public string Estd { get { return Estado; } set { Estado = value; } }
-        public string Cal { get { return Calle; } set { Calle = value; } }
-        public int C_num { get { return Casa_num; } set { Casa_num = value; } }
-        public int Tel { get { return Telefono; } set { Telefono = value; } }
-        public string Cla { get { return Clave; } set { Clave = value; } }
+        public int Id_c { get { return id_cliente; } set { id_cliente = value; } }
+        public string Nom { get { return nombres; } set { nombres = value; } }
+        public string Ape { get { return apellidos; } set { apellidos = value; } }
+        public string Mail { get { return email; } set { email = value; } }
+        public string Estd { get { return estado; } set { estado = value; } }
+        public string Cal { get { return calle; } set { calle = value; } }
+        public int C_num { get { return casa_num; } set { casa_num = value; } }
+        public int Tel { get { return telefono; } set { telefono = value; } }
+        public string Cla { get { return clave; } set { clave = value; } }
 
         //constructor
         public Login_Clientes()
         {
-            Id_cliente = Id_c;
-            Nombres = Nom;
-            Email = Mail;
-            Estado = Estd;
-            Calle = Cal;
-            Casa_num = C_num;
-            Telefono = Tel;
-            Clave = Cla;
+            id_cliente = Id_c;
+            nombres = Nom;
+            apellidos = Ape;
+            email = Mail;
+            estado = Estd;
+            calle = Cal;
+            casa_num = C_num;
+            telefono = Tel;
+            clave = Cla;
         }
 
         //inicio de sesion
@@ -57,7 +60,7 @@ namespace Ejemplo2.Repositorios
                 using (var comando = new SqlCommand())
                 {
                     comando.Connection = conexion;
-                    comando.CommandText = @"select * from Clientes where Teléfono = @telefono";
+                    comando.CommandText = @"select * from clientes where telefono = @telefono";
                     comando.CommandType = System.Data.CommandType.Text;
                     comando.Parameters.AddWithValue("@telefono", telefono);
                     SqlDataReader lector = comando.ExecuteReader();
@@ -68,9 +71,7 @@ namespace Ejemplo2.Repositorios
                         while (lector.Read())
                         {
                             //revisa cada elemento dependiendo de su numero de columna
-                            CacheS.Nombres = lector.GetString(1);
-                            CacheS.Telefono = lector.GetInt32(6);
-                            CacheS.Clave = lector.GetString(7);
+                            CacheS.telefono = lector.GetInt32(7);
                         }
                         return true;
                     }

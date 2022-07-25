@@ -15,8 +15,8 @@ namespace Ejemplo2.Cache
         public static string t_empleado { get; set; }
 
         //Cache Login Cliente
-        public static int Telefono { get; set; }
-        public static string Nombres { get; set; }
-        public static string Clave { get; set; }
+        public static int telefono { get; set; }
+        public static string nombres { get; set; }
+        public static string clave { get; set; }
     }
 }

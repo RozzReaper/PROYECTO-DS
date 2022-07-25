@@ -67,22 +67,23 @@ namespace Ejemplo2
 
                             datos.txtid.Text = dgvsiu.CurrentRow.Cells[0].Value.ToString();//Se envian los datos de el dgv hacia los textbox
                             datos.txtnombre.Text = dgvsiu.CurrentRow.Cells[1].Value.ToString();//Del siguiente formulario
-                            datos.txtemail.Text = dgvsiu.CurrentRow.Cells[2].Value.ToString();
-                            datos.cmbestado.Text = dgvsiu.CurrentRow.Cells[3].Value.ToString();
-                            datos.txtcalle.Text = dgvsiu.CurrentRow.Cells[4].Value.ToString();
-                            datos.txtcasanum.Text = dgvsiu.CurrentRow.Cells[5].Value.ToString();
-                            datos.txttelefono.Text = dgvsiu.CurrentRow.Cells[6].Value.ToString();
-                            datos.txtimpuesto.Text = dgvsiu.CurrentRow.Cells[7].Value.ToString();
-                            datos.txtcosto.Text = dgvsiu.CurrentRow.Cells[8].Value.ToString();
-                            datos.txtdescuento.Text = dgvsiu.CurrentRow.Cells[9].Value.ToString();
-                            datos.txtsubtotal.Text = dgvsiu.CurrentRow.Cells[10].Value.ToString();
-                            datos.txtpendiente.Text = dgvsiu.CurrentRow.Cells[11].Value.ToString();
-                            datos.txttotal.Text = dgvsiu.CurrentRow.Cells[12].Value.ToString();
-                            datos.txtfechainicio.Text = dgvsiu.CurrentRow.Cells[13].Value.ToString();
-                            datos.txtvelocidad.Text = dgvsiu.CurrentRow.Cells[14].Value.ToString();
-                            datos.txt_tipofibra.Text = dgvsiu.CurrentRow.Cells[15].Value.ToString();
-                            datos.txtdiapago.Text = dgvsiu.CurrentRow.Cells[16].Value.ToString();
-                            datos.txt_planestado.Text = dgvsiu.CurrentRow.Cells[17].Value.ToString();
+                            datos.txtapellido.Text = dgvsiu.CurrentRow.Cells[2].Value.ToString();
+                            datos.txtemail.Text = dgvsiu.CurrentRow.Cells[3].Value.ToString();
+                            datos.cmbestado.Text = dgvsiu.CurrentRow.Cells[4].Value.ToString();
+                            datos.txtcalle.Text = dgvsiu.CurrentRow.Cells[5].Value.ToString();
+                            datos.txtcasanum.Text = dgvsiu.CurrentRow.Cells[6].Value.ToString();
+                            datos.txttelefono.Text = dgvsiu.CurrentRow.Cells[7].Value.ToString();
+                            datos.txtimpuesto.Text = dgvsiu.CurrentRow.Cells[8].Value.ToString();
+                            datos.txtcosto.Text = dgvsiu.CurrentRow.Cells[9].Value.ToString();
+                            datos.txtdescuento.Text = dgvsiu.CurrentRow.Cells[10].Value.ToString();
+                            datos.txtsubtotal.Text = dgvsiu.CurrentRow.Cells[11].Value.ToString();
+                            datos.txtpendiente.Text = dgvsiu.CurrentRow.Cells[12].Value.ToString();
+                            datos.txttotal.Text = dgvsiu.CurrentRow.Cells[13].Value.ToString();
+                            datos.txtfechainicio.Text = dgvsiu.CurrentRow.Cells[14].Value.ToString();
+                            datos.txtvelocidad.Text = dgvsiu.CurrentRow.Cells[15].Value.ToString();
+                            datos.txt_tipofibra.Text = dgvsiu.CurrentRow.Cells[16].Value.ToString();
+                            datos.txtdiapago.Text = dgvsiu.CurrentRow.Cells[17].Value.ToString();
+                            datos.txt_planestado.Text = dgvsiu.CurrentRow.Cells[18].Value.ToString();
                         }
 
                     }
@@ -123,7 +124,7 @@ namespace Ejemplo2
             {
                 try//Se declara un string el cual contendrá la sentencia para buscar a los clientes
                 {
-                    string query = "SELECT dbo.Clientes.Id_cliente, dbo.Clientes.Nombres, dbo.Clientes.Email, dbo.Clientes.Estado, dbo.Clientes.Calle, dbo.Clientes.Casa_num, dbo.Clientes.Teléfono, dbo.Historial_crediticio.Impuesto, dbo.Historial_crediticio.Costo_plan, dbo.Historial_crediticio.Descuento, dbo.Historial_crediticio.Subtotal, dbo.Historial_crediticio.Pendiente, dbo.Historial_crediticio.Total, dbo.Planes.Fecha_inicio, dbo.Planes.Velocidad, dbo.Planes.Tipo_fibra,dbo.Planes.Día_pago, dbo.Planes.Plan_estado FROM dbo.Clientes INNER JOIN dbo.Historial_crediticio ON dbo.Clientes.Id_cliente = dbo.Historial_crediticio.FK_Clientes INNER JOIN dbo.Planes ON dbo.Clientes.Id_cliente = dbo.Planes.FK_Clientes where Teléfono = '" + txtcel.Text +  "'";
+                    string query = "SELECT dbo.clientes.id_cliente, dbo.clientes.nombres,dbo.clientes.apellidos, dbo.clientes.email, dbo.clientes.estado, dbo.clientes.calle, dbo.clientes.casa_num, dbo.clientes.telefono, dbo.historial_crediticio.impuesto, dbo.historial_crediticio.costo_plan, dbo.historial_crediticio.descuento, dbo.historial_crediticio.subtotal, dbo.historial_crediticio.pendiente, dbo.historial_crediticio.total, dbo.planes.fecha_inicio, dbo.planes.velocidad, dbo.planes.tipo_fibra,dbo.planes.dia_pago, dbo.planes.plan_estado FROM dbo.clientes INNER JOIN dbo.historial_crediticio ON dbo.clientes.id_cliente = dbo.historial_crediticio.fk_clientes INNER JOIN dbo.planes ON dbo.clientes.id_cliente = dbo.planes.fk_clientes where telefono = '" + txtcel.Text +  "'";
                     SqlCommand comando = new SqlCommand(query, cn);
                     SqlDataAdapter data = new SqlDataAdapter(comando);
                     DataTable tabla = new DataTable();//Haciendo uso de un data adapter, se lleva a cabo la consulta

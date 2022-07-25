@@ -31,7 +31,7 @@ namespace Ejemplo2
             cn.Open();//Se abre la conexion con al BD
             try
             {
-                SqlCommand cmd = new SqlCommand("UPDATE dbo.Clientes SET dbo.Clientes.Nombres ='" +this.txtnombre.Text+ "',dbo.Clientes.Email='" + this.txtemail.Text + "',dbo.Clientes.Estado='" + this.cmbestado.Text + "',dbo.Clientes.Calle='" + this.txtcalle.Text + "',dbo.Clientes.Casa_num='" + this.txtcasanum.Text + "',dbo.Clientes.Teléfono='" + this.txttelefono.Text + "'WHERE dbo.Clientes.Id_cliente=" +Convert.ToInt32(this.txtid.Text + ""), cn);
+                SqlCommand cmd = new SqlCommand("UPDATE dbo.clientes SET dbo.clientes.nombres ='" +this.txtnombre.Text + "',dbo.clientes.apellidos='" + this.txtapellido.Text + "',dbo.clientes.email='" + this.txtemail.Text + "',dbo.clientes.estado='" + this.cmbestado.Text + "',dbo.clientes.calle='" + this.txtcalle.Text + "',dbo.clientes.casa_num='" + this.txtcasanum.Text + "',dbo.clientes.telefono='" + this.txttelefono.Text + "'WHERE dbo.clientes.id_cliente=" +Convert.ToInt32(this.txtid.Text + ""), cn);
                 cmd.ExecuteNonQuery();//Se declara un comando para añadir el query usado para actualizar los datos
                 cn.Close();//cambiando los valores de las posibles variables por los valores puestos en los textbox, se ejecuta y cierra la conexion
             }
@@ -263,5 +263,27 @@ namespace Ejemplo2
             
         }
 
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtapellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (txtapellido.Text.Trim().Length >= 50)//Validación de limite de caracteres M
+            {
+                //validacion para limite de caracteres 
+                if (e.KeyChar >=0 && e.KeyChar <= 7 || e.KeyChar>=9 && e.KeyChar<=64 || e.KeyChar>=91 && e.KeyChar <= 96 || e.KeyChar >= 123 && e.KeyChar <= 255)
+                {
+                    if (e.KeyChar != 08)
+                    {
+                        MessageDescLimite messageDescLimite = new MessageDescLimite();
+                        messageDescLimite.Show();//validacion para limite de caracteres
+                        e.Handled = true;
+                        return;
+                    }
+                }
+            }
+        }
     }
 }
