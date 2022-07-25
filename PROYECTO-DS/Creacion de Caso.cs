@@ -39,7 +39,7 @@ namespace Ejemplo2
         private void txtins_Click(object sender, EventArgs e)
         {
 
-            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "" || cmb_cate.Text =="")//Validación, si los textos están vacíos lanzar un mensaje de error
+            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "" || cmb_cate.Text =="" || txtidcli.Text == "")//Validación, si los textos están vacíos lanzar un mensaje de error
             { 
                 MessageCreacion messageCreacion = new MessageCreacion();
                 messageCreacion.Show();
@@ -66,9 +66,10 @@ namespace Ejemplo2
                 }
                 else
                 {
-                    string query = "INSERT INTO Informes (FK_Agentes, Categoría, Descripcion, Creación_fecha) VALUES (@id, @categoria, @descripcion, @fecha)";
+                    string query = "INSERT INTO informes (fk_clientes, fk_empleados, categoria, descripcion, creacion_fecha) VALUES (@id_cli, @id, @categoria, @descripcion, @fecha)";
                     cn.Open();//declarar un string para la insersión de datos
                     SqlCommand comando = new SqlCommand(query, cn);
+                    comando.Parameters.AddWithValue("@id_cli", txtidcli.Text);
                     comando.Parameters.AddWithValue("@id", txtidemple.Text);//igualar las variables del query con las variables declaradas en el void
                     comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
                     comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
@@ -107,6 +108,23 @@ namespace Ejemplo2
                 MessageDescLimite messageDescLimite = new MessageDescLimite();
                 messageDescLimite.Show();
                 txt_desc.Clear();    
+                e.Handled = true;
+                return;
+
+            }
+        }
+
+        private void txtidcli_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.Handled = char.IsWhiteSpace(e.KeyChar))
+            {
+                MessageDescVacia messageDescVacia = new MessageDescVacia();
+                messageDescVacia.Show();// mensaje de error para espacios
+            }
+            else if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
+            {
+                MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                messageNume.Show();
                 e.Handled = true;
                 return;
 

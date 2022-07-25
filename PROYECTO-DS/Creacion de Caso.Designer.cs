@@ -43,6 +43,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtpfecha = new System.Windows.Forms.DateTimePicker();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.lblcli = new System.Windows.Forms.Label();
+            this.txtidcli = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -86,7 +88,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 155);
+            this.label2.Location = new System.Drawing.Point(60, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 19);
             this.label2.TabIndex = 25;
@@ -106,7 +108,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 231);
+            this.label4.Location = new System.Drawing.Point(59, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(178, 19);
             this.label4.TabIndex = 25;
@@ -140,7 +142,7 @@
             "Fecha de instalación",
             "Dia de pago",
             "Otro... (Especifique)"});
-            this.cmb_cate.Location = new System.Drawing.Point(64, 191);
+            this.cmb_cate.Location = new System.Drawing.Point(63, 197);
             this.cmb_cate.Name = "cmb_cate";
             this.cmb_cate.Size = new System.Drawing.Size(129, 21);
             this.cmb_cate.TabIndex = 26;
@@ -148,7 +150,7 @@
             // txtins
             // 
             this.txtins.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold);
-            this.txtins.Location = new System.Drawing.Point(194, 338);
+            this.txtins.Location = new System.Drawing.Point(238, 338);
             this.txtins.Name = "txtins";
             this.txtins.Size = new System.Drawing.Size(94, 31);
             this.txtins.TabIndex = 27;
@@ -179,7 +181,7 @@
             // dtpfecha
             // 
             this.dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpfecha.Location = new System.Drawing.Point(65, 265);
+            this.dtpfecha.Location = new System.Drawing.Point(64, 335);
             this.dtpfecha.Name = "dtpfecha";
             this.dtpfecha.Size = new System.Drawing.Size(128, 20);
             this.dtpfecha.TabIndex = 31;
@@ -187,13 +189,31 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(349, 339);
+            this.btnLimpiar.Location = new System.Drawing.Point(386, 339);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(94, 31);
             this.btnLimpiar.TabIndex = 27;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // lblcli
+            // 
+            this.lblcli.AutoSize = true;
+            this.lblcli.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcli.Location = new System.Drawing.Point(60, 227);
+            this.lblcli.Name = "lblcli";
+            this.lblcli.Size = new System.Drawing.Size(82, 19);
+            this.lblcli.TabIndex = 25;
+            this.lblcli.Text = "Id Cliente";
+            // 
+            // txtidcli
+            // 
+            this.txtidcli.Location = new System.Drawing.Point(63, 265);
+            this.txtidcli.Name = "txtidcli";
+            this.txtidcli.Size = new System.Drawing.Size(129, 20);
+            this.txtidcli.TabIndex = 24;
+            this.txtidcli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtidcli_KeyPress);
             // 
             // Form7
             // 
@@ -206,9 +226,11 @@
             this.Controls.Add(this.txtins);
             this.Controls.Add(this.cmb_cate);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtidcli);
             this.Controls.Add(this.txtidemple);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Descripción);
+            this.Controls.Add(this.lblcli);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.panel1);
@@ -243,5 +265,7 @@
         private System.Windows.Forms.DateTimePicker dtpfecha;
         private System.Windows.Forms.Button btnLimpiar;
         public System.Windows.Forms.TextBox txtidemple;
+        private System.Windows.Forms.Label lblcli;
+        public System.Windows.Forms.TextBox txtidcli;
     }
 }
