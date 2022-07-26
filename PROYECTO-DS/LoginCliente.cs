@@ -57,7 +57,7 @@ namespace Ejemplo2
 
                     try
                     {
-                        if (dgvsiu.Rows.Count == 0)//Si los datos son nulos, mostrar un error el cual dice que no existe dicho cliente
+                        if (dgv_siu.Rows.Count == 0)//Si los datos son nulos, mostrar un error el cual dice que no existe dicho cliente
                         {
                             MessageNC messageNC = new MessageNC();
                             messageNC.Show();
@@ -65,25 +65,25 @@ namespace Ejemplo2
                         else
                         {
 
-                            datos.txtid.Text = dgvsiu.CurrentRow.Cells[0].Value.ToString();//Se envian los datos de el dgv hacia los textbox
-                            datos.txtnombre.Text = dgvsiu.CurrentRow.Cells[1].Value.ToString();//Del siguiente formulario
-                            datos.txtapellido.Text = dgvsiu.CurrentRow.Cells[2].Value.ToString();
-                            datos.txtemail.Text = dgvsiu.CurrentRow.Cells[3].Value.ToString();
-                            datos.cmbestado.Text = dgvsiu.CurrentRow.Cells[4].Value.ToString();
-                            datos.txtcalle.Text = dgvsiu.CurrentRow.Cells[5].Value.ToString();
-                            datos.txtcasanum.Text = dgvsiu.CurrentRow.Cells[6].Value.ToString();
-                            datos.txttelefono.Text = dgvsiu.CurrentRow.Cells[7].Value.ToString();
-                            datos.txtimpuesto.Text = dgvsiu.CurrentRow.Cells[8].Value.ToString();
-                            datos.txtcosto.Text = dgvsiu.CurrentRow.Cells[9].Value.ToString();
-                            datos.txtdescuento.Text = dgvsiu.CurrentRow.Cells[10].Value.ToString();
-                            datos.txtsubtotal.Text = dgvsiu.CurrentRow.Cells[11].Value.ToString();
-                            datos.txtpendiente.Text = dgvsiu.CurrentRow.Cells[12].Value.ToString();
-                            datos.txttotal.Text = dgvsiu.CurrentRow.Cells[13].Value.ToString();
-                            datos.txtfechainicio.Text = dgvsiu.CurrentRow.Cells[14].Value.ToString();
-                            datos.txtvelocidad.Text = dgvsiu.CurrentRow.Cells[15].Value.ToString();
-                            datos.txt_tipofibra.Text = dgvsiu.CurrentRow.Cells[16].Value.ToString();
-                            datos.txtdiapago.Text = dgvsiu.CurrentRow.Cells[17].Value.ToString();
-                            datos.txt_planestado.Text = dgvsiu.CurrentRow.Cells[18].Value.ToString();
+                            datos.txtid.Text = dgv_siu.CurrentRow.Cells[0].Value.ToString();//Se envian los datos de el dgv hacia los textbox
+                            datos.txtnombre.Text = dgv_siu.CurrentRow.Cells[1].Value.ToString();//Del siguiente formulario
+                            datos.txtapellido.Text = dgv_siu.CurrentRow.Cells[2].Value.ToString();
+                            datos.txtemail.Text = dgv_siu.CurrentRow.Cells[3].Value.ToString();
+                            datos.cmbestado.Text = dgv_siu.CurrentRow.Cells[4].Value.ToString();
+                            datos.txtcalle.Text = dgv_siu.CurrentRow.Cells[5].Value.ToString();
+                            datos.txtcasanum.Text = dgv_siu.CurrentRow.Cells[6].Value.ToString();
+                            datos.txttelefono.Text = dgv_siu.CurrentRow.Cells[7].Value.ToString();
+                            datos.txtimpuesto.Text = dgv_siu.CurrentRow.Cells[8].Value.ToString();
+                            datos.txtcosto.Text = dgv_siu.CurrentRow.Cells[9].Value.ToString();
+                            datos.txtdescuento.Text = dgv_siu.CurrentRow.Cells[10].Value.ToString();
+                            datos.txtsubtotal.Text = dgv_siu.CurrentRow.Cells[11].Value.ToString();
+                            datos.txtpendiente.Text = dgv_siu.CurrentRow.Cells[12].Value.ToString();
+                            datos.txttotal.Text = dgv_siu.CurrentRow.Cells[13].Value.ToString();
+                            datos.txtfechainicio.Text = dgv_siu.CurrentRow.Cells[14].Value.ToString();
+                            datos.txtvelocidad.Text = dgv_siu.CurrentRow.Cells[15].Value.ToString();
+                            datos.txt_tipofibra.Text = dgv_siu.CurrentRow.Cells[16].Value.ToString();
+                            datos.txtdiapago.Text = dgv_siu.CurrentRow.Cells[17].Value.ToString();
+                            datos.txt_planestado.Text = dgv_siu.CurrentRow.Cells[18].Value.ToString();
                         }
 
                     }
@@ -129,9 +129,9 @@ namespace Ejemplo2
                     SqlDataAdapter data = new SqlDataAdapter(comando);
                     DataTable tabla = new DataTable();//Haciendo uso de un data adapter, se lleva a cabo la consulta
                     data.Fill(tabla);//Llenado de datos pata luego igualarlo al dgv existente
-                    dgvsiu.DataSource = tabla;
+                    dgv_siu.DataSource = tabla;
 
-                    if(dgvsiu.Rows.Count ==0)//Si el dgv está vácío, tirar un mensaje de error
+                    if(dgv_siu.Rows.Count ==0)//Si el dgv está vácío, tirar un mensaje de error
                     {
                         MessageNC messageNC = new MessageNC();
                         messageNC.Show();

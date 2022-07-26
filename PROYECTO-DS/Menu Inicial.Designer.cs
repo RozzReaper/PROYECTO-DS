@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAgente = new System.Windows.Forms.Button();
+            this.btn_agente = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnAgente);
+            this.panel1.Controls.Add(this.btn_agente);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -109,23 +109,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnAgente
+            // btn_agente
             // 
-            this.btnAgente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(13)))), ((int)(((byte)(63)))));
-            this.btnAgente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgente.FlatAppearance.BorderSize = 0;
-            this.btnAgente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnAgente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAgente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgente.ForeColor = System.Drawing.Color.White;
-            this.btnAgente.Location = new System.Drawing.Point(192, 314);
-            this.btnAgente.Name = "btnAgente";
-            this.btnAgente.Size = new System.Drawing.Size(312, 40);
-            this.btnAgente.TabIndex = 4;
-            this.btnAgente.Text = "Acceder Login";
-            this.btnAgente.UseVisualStyleBackColor = false;
-            this.btnAgente.Click += new System.EventHandler(this.btnAgente_Click);
+            this.btn_agente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(13)))), ((int)(((byte)(63)))));
+            this.btn_agente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_agente.FlatAppearance.BorderSize = 0;
+            this.btn_agente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_agente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_agente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agente.ForeColor = System.Drawing.Color.White;
+            this.btn_agente.Location = new System.Drawing.Point(192, 314);
+            this.btn_agente.Name = "btn_agente";
+            this.btn_agente.Size = new System.Drawing.Size(312, 40);
+            this.btn_agente.TabIndex = 4;
+            this.btn_agente.Text = "Acceder Login";
+            this.btn_agente.UseVisualStyleBackColor = false;
+            this.btn_agente.Click += new System.EventHandler(this.btnAgente_Click);
             // 
             // Form1
             // 
@@ -153,7 +153,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnAgente;
+        private System.Windows.Forms.Button btn_agente;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_helper;
     }
