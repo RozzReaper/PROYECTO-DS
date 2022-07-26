@@ -10,12 +10,12 @@ using Ejemplo2;
 
 namespace MatthiWare.SmsAndCallClient
 {
-    public partial class TW : Form
+    public partial class tw_frm : Form
     {
         private IClient m_currentApi;
         private IResponse m_lastResponse;
 
-        public TW()
+        public tw_frm()
         {
             InitializeComponent();
             LoadAPIs();
@@ -23,14 +23,14 @@ namespace MatthiWare.SmsAndCallClient
 
         private void LoadAPIs()
         {
-            cbApis.Items.Add(new ClickatellWrapperClient(Credentials.CLICKATELL_API_KEY));
-            cbApis.Items.Add(new TwilioWrapperClient(Credentials.TWILIO_ACC_SID, Credentials.TWILIO_AUTH_TOKEN));
+            cb_apis.Items.Add(new ClickatellWrapperClient(Credentials.CLICKATELL_API_KEY));
+            cb_apis.Items.Add(new TwilioWrapperClient(Credentials.TWILIO_ACC_SID, Credentials.TWILIO_AUTH_TOKEN));
         }
 
 
         private void cbApis_SelectedValueChanged(object sender, EventArgs e)
         {
-            m_currentApi = cbApis.SelectedItem as IClient;
+            m_currentApi = cb_apis.SelectedItem as IClient;
 
             if (m_currentApi == null)
                 return;
@@ -39,25 +39,25 @@ namespace MatthiWare.SmsAndCallClient
                 m_currentApi.Init();
         
 
-            btnText.Enabled = m_currentApi.CanSendSms;
+            btn_text.Enabled = m_currentApi.CanSendSms;
 
-            txtFrom.Enabled = m_currentApi.FromNumberRequired;
+            txt_from.Enabled = m_currentApi.FromNumberRequired;
         }
 
         private async void btnText_Click(object sender, EventArgs e)
         {
-            btnText.Enabled = false;
+            btn_text.Enabled = false;
 
-            string from = txtFrom.Text;
-            string to = txtTo.Text;
-            string body = txtBody.Text;
+            string from = txt_from.Text;
+            string to = txt_to.Text;
+            string body = txt_body.Text;
 
             SetStatus("Sending...");
 
             m_lastResponse = await m_currentApi.SendSmsAsync(from, to, body);
 
 
-            btnText.Enabled = true;
+            btn_text.Enabled = true;
             SetStatus();
         }
 
@@ -78,10 +78,10 @@ namespace MatthiWare.SmsAndCallClient
 
         private async void btnUpdateStatus_Click(object sender, EventArgs e)
         {
-            txtBody.Clear();
-            txtFrom.Clear();
-            txtTo.Clear();
-            cbApis.SelectedIndex = -1;
+            txt_body.Clear();
+            txt_from.Clear();
+            txt_to.Clear();
+            cb_apis.SelectedIndex = -1;
             if (m_lastResponse == null || !m_lastResponse.CanUpdate)
                 return;
 
@@ -100,7 +100,7 @@ namespace MatthiWare.SmsAndCallClient
                 return;
 
             }
-            else if (txtFrom.Text.Trim().Length >= 18)//Validación de limite de caracteres M
+            else if (txt_from.Text.Trim().Length >= 18)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar == 18)
@@ -127,7 +127,7 @@ namespace MatthiWare.SmsAndCallClient
                 return;
 
             }
-            else if (txtFrom.Text.Trim().Length >= 18)//Validación de limite de caracteres M
+            else if (txt_from.Text.Trim().Length >= 18)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar == 18)
@@ -146,13 +146,13 @@ namespace MatthiWare.SmsAndCallClient
 
         private void txtBody_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (txtBody.Text.Trim().Length >= 250)//Validación de limite de caracteres M
+            if (txt_body.Text.Trim().Length >= 250)//Validación de limite de caracteres M
             {
 
                 //validacion para limite de caracteres 
                 MessageDescLimite messageDescLimite = new MessageDescLimite();
                 messageDescLimite.Show();
-                txtBody.Clear();
+                txt_body.Clear();
                 e.Handled = true;
                 return;
 
@@ -165,6 +165,11 @@ namespace MatthiWare.SmsAndCallClient
             frm.txtimport.Text = txttwilio.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
             frm.Show();
             this.Hide();//Mediante una orpiedad, se oculta el formulario presentado, para mostrar el siguiente
+        }
+
+        private void txtTo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

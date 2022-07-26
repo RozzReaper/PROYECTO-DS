@@ -1,6 +1,6 @@
 ﻿namespace MatthiWare.SmsAndCallClient
 {
-    partial class TW
+    partial class tw_frm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,103 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbApis = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtFrom = new System.Windows.Forms.TextBox();
-            this.txtTo = new System.Windows.Forms.TextBox();
-            this.txtBody = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnText = new System.Windows.Forms.Button();
+            this.cb_apis = new System.Windows.Forms.ComboBox();
+            this.lbl_api = new System.Windows.Forms.Label();
+            this.lbl_from = new System.Windows.Forms.Label();
+            this.lbl_to = new System.Windows.Forms.Label();
+            this.txt_from = new System.Windows.Forms.TextBox();
+            this.txt_to = new System.Windows.Forms.TextBox();
+            this.txt_body = new System.Windows.Forms.TextBox();
+            this.lbl_msg = new System.Windows.Forms.Label();
+            this.btn_text = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.btnUpdateStatus = new System.Windows.Forms.Button();
+            this.btn_update_status = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.txttwilio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbApis
+            // cb_apis
             // 
-            this.cbApis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbApis.FormattingEnabled = true;
-            this.cbApis.Location = new System.Drawing.Point(110, 12);
-            this.cbApis.Name = "cbApis";
-            this.cbApis.Size = new System.Drawing.Size(203, 21);
-            this.cbApis.TabIndex = 0;
-            this.cbApis.SelectedValueChanged += new System.EventHandler(this.cbApis_SelectedValueChanged);
+            this.cb_apis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_apis.FormattingEnabled = true;
+            this.cb_apis.Location = new System.Drawing.Point(110, 12);
+            this.cb_apis.Name = "cb_apis";
+            this.cb_apis.Size = new System.Drawing.Size(203, 21);
+            this.cb_apis.TabIndex = 0;
+            this.cb_apis.SelectedValueChanged += new System.EventHandler(this.cbApis_SelectedValueChanged);
             // 
-            // label1
+            // lbl_api
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Select API to use:";
+            this.lbl_api.AutoSize = true;
+            this.lbl_api.Location = new System.Drawing.Point(12, 15);
+            this.lbl_api.Name = "lbl_api";
+            this.lbl_api.Size = new System.Drawing.Size(92, 13);
+            this.lbl_api.TabIndex = 1;
+            this.lbl_api.Text = "Select API to use:";
             // 
-            // label2
+            // lbl_from
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "From:";
+            this.lbl_from.AutoSize = true;
+            this.lbl_from.Location = new System.Drawing.Point(12, 90);
+            this.lbl_from.Name = "lbl_from";
+            this.lbl_from.Size = new System.Drawing.Size(33, 13);
+            this.lbl_from.TabIndex = 4;
+            this.lbl_from.Text = "From:";
             // 
-            // label3
+            // lbl_to
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "To: ";
+            this.lbl_to.AutoSize = true;
+            this.lbl_to.Location = new System.Drawing.Point(10, 116);
+            this.lbl_to.Name = "lbl_to";
+            this.lbl_to.Size = new System.Drawing.Size(26, 13);
+            this.lbl_to.TabIndex = 5;
+            this.lbl_to.Text = "To: ";
             // 
-            // txtFrom
+            // txt_from
             // 
-            this.txtFrom.Location = new System.Drawing.Point(51, 87);
-            this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(262, 20);
-            this.txtFrom.TabIndex = 6;
-            this.txtFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFrom_KeyPress);
+            this.txt_from.Location = new System.Drawing.Point(51, 87);
+            this.txt_from.Name = "txt_from";
+            this.txt_from.Size = new System.Drawing.Size(262, 20);
+            this.txt_from.TabIndex = 6;
+            this.txt_from.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFrom_KeyPress);
             // 
-            // txtTo
+            // txt_to
             // 
-            this.txtTo.Location = new System.Drawing.Point(51, 113);
-            this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(262, 20);
-            this.txtTo.TabIndex = 7;
-            this.txtTo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTo_KeyPress);
+            this.txt_to.Location = new System.Drawing.Point(51, 113);
+            this.txt_to.Name = "txt_to";
+            this.txt_to.Size = new System.Drawing.Size(262, 20);
+            this.txt_to.TabIndex = 7;
+            this.txt_to.TextChanged += new System.EventHandler(this.txtTo_TextChanged);
+            this.txt_to.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTo_KeyPress);
             // 
-            // txtBody
+            // txt_body
             // 
-            this.txtBody.Location = new System.Drawing.Point(15, 157);
-            this.txtBody.Multiline = true;
-            this.txtBody.Name = "txtBody";
-            this.txtBody.Size = new System.Drawing.Size(298, 146);
-            this.txtBody.TabIndex = 8;
-            this.txtBody.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBody_KeyPress);
+            this.txt_body.Location = new System.Drawing.Point(15, 157);
+            this.txt_body.Multiline = true;
+            this.txt_body.Name = "txt_body";
+            this.txt_body.Size = new System.Drawing.Size(298, 146);
+            this.txt_body.TabIndex = 8;
+            this.txt_body.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBody_KeyPress);
             // 
-            // label4
+            // lbl_msg
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Message: ";
+            this.lbl_msg.AutoSize = true;
+            this.lbl_msg.Location = new System.Drawing.Point(12, 141);
+            this.lbl_msg.Name = "lbl_msg";
+            this.lbl_msg.Size = new System.Drawing.Size(56, 13);
+            this.lbl_msg.TabIndex = 9;
+            this.lbl_msg.Text = "Message: ";
             // 
-            // btnText
+            // btn_text
             // 
-            this.btnText.Enabled = false;
-            this.btnText.Location = new System.Drawing.Point(94, 309);
-            this.btnText.Name = "btnText";
-            this.btnText.Size = new System.Drawing.Size(141, 23);
-            this.btnText.TabIndex = 10;
-            this.btnText.Text = "Sms";
-            this.btnText.UseVisualStyleBackColor = true;
-            this.btnText.Click += new System.EventHandler(this.btnText_Click);
+            this.btn_text.Enabled = false;
+            this.btn_text.Location = new System.Drawing.Point(94, 309);
+            this.btn_text.Name = "btn_text";
+            this.btn_text.Size = new System.Drawing.Size(141, 23);
+            this.btn_text.TabIndex = 10;
+            this.btn_text.Text = "Sms";
+            this.btn_text.UseVisualStyleBackColor = true;
+            this.btn_text.Click += new System.EventHandler(this.btnText_Click);
             // 
             // lblStatus
             // 
@@ -135,15 +136,15 @@
             this.lblStatus.TabIndex = 12;
             this.lblStatus.Text = "Status: waiting..";
             // 
-            // btnUpdateStatus
+            // btn_update_status
             // 
-            this.btnUpdateStatus.Location = new System.Drawing.Point(238, 336);
-            this.btnUpdateStatus.Name = "btnUpdateStatus";
-            this.btnUpdateStatus.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdateStatus.TabIndex = 13;
-            this.btnUpdateStatus.Text = "Refresh";
-            this.btnUpdateStatus.UseVisualStyleBackColor = true;
-            this.btnUpdateStatus.Click += new System.EventHandler(this.btnUpdateStatus_Click);
+            this.btn_update_status.Location = new System.Drawing.Point(238, 336);
+            this.btn_update_status.Name = "btn_update_status";
+            this.btn_update_status.Size = new System.Drawing.Size(75, 23);
+            this.btn_update_status.TabIndex = 13;
+            this.btn_update_status.Text = "Refresh";
+            this.btn_update_status.UseVisualStyleBackColor = true;
+            this.btn_update_status.Click += new System.EventHandler(this.btnUpdateStatus_Click);
             // 
             // btn_regresar
             // 
@@ -164,25 +165,25 @@
             this.txttwilio.Size = new System.Drawing.Size(100, 20);
             this.txttwilio.TabIndex = 23;
             // 
-            // TW
+            // tw_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 393);
             this.Controls.Add(this.txttwilio);
             this.Controls.Add(this.btn_regresar);
-            this.Controls.Add(this.btnUpdateStatus);
+            this.Controls.Add(this.btn_update_status);
             this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.btnText);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtBody);
-            this.Controls.Add(this.txtTo);
-            this.Controls.Add(this.txtFrom);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbApis);
-            this.Name = "TW";
+            this.Controls.Add(this.btn_text);
+            this.Controls.Add(this.lbl_msg);
+            this.Controls.Add(this.txt_body);
+            this.Controls.Add(this.txt_to);
+            this.Controls.Add(this.txt_from);
+            this.Controls.Add(this.lbl_to);
+            this.Controls.Add(this.lbl_from);
+            this.Controls.Add(this.lbl_api);
+            this.Controls.Add(this.cb_apis);
+            this.Name = "tw_frm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
@@ -193,17 +194,17 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cbApis;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtFrom;
-        private System.Windows.Forms.TextBox txtTo;
-        private System.Windows.Forms.TextBox txtBody;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnText;
+        private System.Windows.Forms.ComboBox cb_apis;
+        private System.Windows.Forms.Label lbl_api;
+        private System.Windows.Forms.Label lbl_from;
+        private System.Windows.Forms.Label lbl_to;
+        private System.Windows.Forms.TextBox txt_from;
+        private System.Windows.Forms.TextBox txt_to;
+        private System.Windows.Forms.TextBox txt_body;
+        private System.Windows.Forms.Label lbl_msg;
+        private System.Windows.Forms.Button btn_text;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Button btnUpdateStatus;
+        private System.Windows.Forms.Button btn_update_status;
         private System.Windows.Forms.PictureBox btn_regresar;
         public System.Windows.Forms.TextBox txttwilio;
     }

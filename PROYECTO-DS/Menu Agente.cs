@@ -63,7 +63,7 @@ namespace Ejemplo2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TW tW1 = new TW();
+            tw_frm tW1 = new tw_frm();
             tW1.txttwilio.Text = txtimport.Text;
             this.Hide();
             tW1.Show();
