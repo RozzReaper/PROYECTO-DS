@@ -34,7 +34,7 @@ namespace Ejemplo2
         private void btnAgente_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 a = new Form2();
+            frm_inicio_sesion a = new frm_inicio_sesion();
             a.Show();
         }
 

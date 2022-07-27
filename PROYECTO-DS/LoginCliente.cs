@@ -16,9 +16,9 @@ using System.Diagnostics;
 
 namespace Ejemplo2
 {
-    public partial class LoginCliente : Form
+    public partial class frm_login_cliente : Form
     {
-        public LoginCliente()
+        public frm_login_cliente()
         {
             InitializeComponent();
         }
@@ -46,18 +46,18 @@ namespace Ejemplo2
             Login_Clientes obj = new Login_Clientes();
             try
             {
-                bool Valido = obj.LoginC(Convert.ToInt32(txtcel.Text)); //Se extrapola el valor booleano y se iguala el parametro definido al text box
+                bool Valido = obj.LoginC(Convert.ToInt32(txt_telefono.Text)); //Se extrapola el valor booleano y se iguala el parametro definido al text box
 
                 if (Valido)
                 {
-                    Datos_cliente datos = new Datos_cliente();
+                    frm_datos_cliente datos = new frm_datos_cliente();
                     datos.txtidfinal.Text = txtsearch.Text;                    
                     this.Hide();
                     datos.Show();
 
                     try
                     {
-                        if (dgv_siu.Rows.Count == 0)//Si los datos son nulos, mostrar un error el cual dice que no existe dicho cliente
+                        if (dgv_busqueda_cliente.Rows.Count == 0)//Si los datos son nulos, mostrar un error el cual dice que no existe dicho cliente
                         {
                             MessageNC messageNC = new MessageNC();
                             messageNC.Show();
@@ -65,25 +65,25 @@ namespace Ejemplo2
                         else
                         {
 
-                            datos.txtid.Text = dgv_siu.CurrentRow.Cells[0].Value.ToString();//Se envian los datos de el dgv hacia los textbox
-                            datos.txtnombre.Text = dgv_siu.CurrentRow.Cells[1].Value.ToString();//Del siguiente formulario
-                            datos.txtapellido.Text = dgv_siu.CurrentRow.Cells[2].Value.ToString();
-                            datos.txtemail.Text = dgv_siu.CurrentRow.Cells[3].Value.ToString();
-                            datos.cmbestado.Text = dgv_siu.CurrentRow.Cells[4].Value.ToString();
-                            datos.txtcalle.Text = dgv_siu.CurrentRow.Cells[5].Value.ToString();
-                            datos.txtcasanum.Text = dgv_siu.CurrentRow.Cells[6].Value.ToString();
-                            datos.txttelefono.Text = dgv_siu.CurrentRow.Cells[7].Value.ToString();
-                            datos.txtimpuesto.Text = dgv_siu.CurrentRow.Cells[8].Value.ToString();
-                            datos.txtcosto.Text = dgv_siu.CurrentRow.Cells[9].Value.ToString();
-                            datos.txtdescuento.Text = dgv_siu.CurrentRow.Cells[10].Value.ToString();
-                            datos.txtsubtotal.Text = dgv_siu.CurrentRow.Cells[11].Value.ToString();
-                            datos.txtpendiente.Text = dgv_siu.CurrentRow.Cells[12].Value.ToString();
-                            datos.txttotal.Text = dgv_siu.CurrentRow.Cells[13].Value.ToString();
-                            datos.txtfechainicio.Text = dgv_siu.CurrentRow.Cells[14].Value.ToString();
-                            datos.txtvelocidad.Text = dgv_siu.CurrentRow.Cells[15].Value.ToString();
-                            datos.txt_tipofibra.Text = dgv_siu.CurrentRow.Cells[16].Value.ToString();
-                            datos.txtdiapago.Text = dgv_siu.CurrentRow.Cells[17].Value.ToString();
-                            datos.txt_planestado.Text = dgv_siu.CurrentRow.Cells[18].Value.ToString();
+                            datos.txt_id.Text = dgv_busqueda_cliente.CurrentRow.Cells[0].Value.ToString();//Se envian los datos de el dgv hacia los textbox
+                            datos.txt_nombre.Text = dgv_busqueda_cliente.CurrentRow.Cells[1].Value.ToString();//Del siguiente formulario
+                            datos.txt_apellidos.Text = dgv_busqueda_cliente.CurrentRow.Cells[2].Value.ToString();
+                            datos.txt_email.Text = dgv_busqueda_cliente.CurrentRow.Cells[3].Value.ToString();
+                            datos.cmb_estado.Text = dgv_busqueda_cliente.CurrentRow.Cells[4].Value.ToString();
+                            datos.txt_calle.Text = dgv_busqueda_cliente.CurrentRow.Cells[5].Value.ToString();
+                            datos.txt_num_casa.Text = dgv_busqueda_cliente.CurrentRow.Cells[6].Value.ToString();
+                            datos.txt_telefono.Text = dgv_busqueda_cliente.CurrentRow.Cells[7].Value.ToString();
+                            datos.txt_impuesto.Text = dgv_busqueda_cliente.CurrentRow.Cells[8].Value.ToString();
+                            datos.txt_costo_plan.Text = dgv_busqueda_cliente.CurrentRow.Cells[9].Value.ToString();
+                            datos.txt_descuento.Text = dgv_busqueda_cliente.CurrentRow.Cells[10].Value.ToString();
+                            datos.txt_subtotal.Text = dgv_busqueda_cliente.CurrentRow.Cells[11].Value.ToString();
+                            datos.txt_pendiente.Text = dgv_busqueda_cliente.CurrentRow.Cells[12].Value.ToString();
+                            datos.txt_total.Text = dgv_busqueda_cliente.CurrentRow.Cells[13].Value.ToString();
+                            datos.txt_fecha_inicio.Text = dgv_busqueda_cliente.CurrentRow.Cells[14].Value.ToString();
+                            datos.txt_velocidad.Text = dgv_busqueda_cliente.CurrentRow.Cells[15].Value.ToString();
+                            datos.txt_tipofibra.Text = dgv_busqueda_cliente.CurrentRow.Cells[16].Value.ToString();
+                            datos.txt_dia_pago.Text = dgv_busqueda_cliente.CurrentRow.Cells[17].Value.ToString();
+                            datos.txt_estado_plan.Text = dgv_busqueda_cliente.CurrentRow.Cells[18].Value.ToString();
                         }
 
                     }
@@ -115,7 +115,7 @@ namespace Ejemplo2
         private void txtbuscar_Click(object sender, EventArgs e)
         {
 
-            if(txtcel.Text=="")//Primera validación si el campo telefono está vacío
+            if(txt_telefono.Text=="")//Primera validación si el campo telefono está vacío
             {
                 MessageCliente messageLogin = new MessageCliente();
                 messageLogin.Show();
@@ -124,14 +124,14 @@ namespace Ejemplo2
             {
                 try//Se declara un string el cual contendrá la sentencia para buscar a los clientes
                 {
-                    string query = "SELECT dbo.clientes.id_cliente, dbo.clientes.nombres,dbo.clientes.apellidos, dbo.clientes.email, dbo.clientes.estado, dbo.clientes.calle, dbo.clientes.casa_num, dbo.clientes.telefono, dbo.historial_crediticio.impuesto, dbo.historial_crediticio.costo_plan, dbo.historial_crediticio.descuento, dbo.historial_crediticio.subtotal, dbo.historial_crediticio.pendiente, dbo.historial_crediticio.total, dbo.planes.fecha_inicio, dbo.planes.velocidad, dbo.planes.tipo_fibra,dbo.planes.dia_pago, dbo.planes.plan_estado FROM dbo.clientes INNER JOIN dbo.historial_crediticio ON dbo.clientes.id_cliente = dbo.historial_crediticio.fk_clientes INNER JOIN dbo.planes ON dbo.clientes.id_cliente = dbo.planes.fk_clientes where telefono = '" + txtcel.Text +  "'";
+                    string query = "SELECT dbo.clientes.id_cliente, dbo.clientes.nombres,dbo.clientes.apellidos, dbo.clientes.email, dbo.clientes.estado, dbo.clientes.calle, dbo.clientes.casa_num, dbo.clientes.telefono, dbo.historial_crediticio.impuesto, dbo.historial_crediticio.costo_plan, dbo.historial_crediticio.descuento, dbo.historial_crediticio.subtotal, dbo.historial_crediticio.pendiente, dbo.historial_crediticio.total, dbo.planes.fecha_inicio, dbo.planes.velocidad, dbo.planes.tipo_fibra,dbo.planes.dia_pago, dbo.planes.plan_estado FROM dbo.clientes INNER JOIN dbo.historial_crediticio ON dbo.clientes.id_cliente = dbo.historial_crediticio.fk_clientes INNER JOIN dbo.planes ON dbo.clientes.id_cliente = dbo.planes.fk_clientes where telefono = '" + txt_telefono.Text +  "'";
                     SqlCommand comando = new SqlCommand(query, cn);
                     SqlDataAdapter data = new SqlDataAdapter(comando);
                     DataTable tabla = new DataTable();//Haciendo uso de un data adapter, se lleva a cabo la consulta
                     data.Fill(tabla);//Llenado de datos pata luego igualarlo al dgv existente
-                    dgv_siu.DataSource = tabla;
+                    dgv_busqueda_cliente.DataSource = tabla;
 
-                    if(dgv_siu.Rows.Count ==0)//Si el dgv está vácío, tirar un mensaje de error
+                    if(dgv_busqueda_cliente.Rows.Count ==0)//Si el dgv está vácío, tirar un mensaje de error
                     {
                         MessageNC messageNC = new MessageNC();
                         messageNC.Show();
@@ -161,7 +161,7 @@ namespace Ejemplo2
                 return;
 
             }
-            else if (txtcel.Text.Trim().Length >= 8)//Validación de limite de caracteres M
+            else if (txt_telefono.Text.Trim().Length >= 8)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar == 08)

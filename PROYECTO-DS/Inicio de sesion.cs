@@ -15,10 +15,10 @@ using System.Configuration;
 using System.Drawing.Drawing2D;
 namespace Ejemplo2
 {
-    public partial class Form2 : Form
+    public partial class frm_inicio_sesion : Form
     {
 
-        public Form2()
+        public frm_inicio_sesion()
         {
             InitializeComponent();
         }
@@ -30,62 +30,62 @@ namespace Ejemplo2
         //Evento "Enter" del control "txtuser"
         private void txtuser_Enter(object sender, EventArgs e)
         {
-            if (txtuser.Text == "USUARIO") 
+            if (txt_usuario.Text == "USUARIO") 
             {
-                txtuser.Text = "";
-                txtuser.ForeColor = Color.LightGray;
+                txt_usuario.Text = "";
+                txt_usuario.ForeColor = Color.LightGray;
             }
         }
 
         //Evento "Leave" del control "txtuser"
         private void txtuser_Leave(object sender, EventArgs e)
         {
-            if (txtuser.Text == "")
+            if (txt_usuario.Text == "")
             {
-                txtuser.Text = "USUARIO";
-                txtuser.ForeColor = Color.DimGray;
+                txt_usuario.Text = "USUARIO";
+                txt_usuario.ForeColor = Color.DimGray;
             }
         }
 
         //Evento "Enter" del control "txtpass"
         private void txtpass_Enter(object sender, EventArgs e)
         {
-            if (txtpass.Text == "CONTRASEÑA")
+            if (txt_contraseña.Text == "CONTRASEÑA")
             {
-                txtpass.Text = "";
-                txtpass.ForeColor = Color.LightGray;
-                txtpass.UseSystemPasswordChar = true;
+                txt_contraseña.Text = "";
+                txt_contraseña.ForeColor = Color.LightGray;
+                txt_contraseña.UseSystemPasswordChar = true;
             }
         }
 
         //Evento "Leave" del control "txtpass"
         private void txtpass_Leave(object sender, EventArgs e)
         {
-            if (txtpass.Text == "")
+            if (txt_contraseña.Text == "")
             {
-                txtpass.Text = "CONTRASEÑA";
-                txtpass.ForeColor = Color.DimGray;
-                txtpass.UseSystemPasswordChar = false;
+                txt_contraseña.Text = "CONTRASEÑA";
+                txt_contraseña.ForeColor = Color.DimGray;
+                txt_contraseña.UseSystemPasswordChar = false;
             }
         }
 
         //Evento "Enter" del control "txtidentidad"
         private void txtidentidad_Enter(object sender, EventArgs e)
         {
-            if (txtidentidad.Text == "ID EMPLEADO")
+            if (txt_id_empleado.Text == "ID EMPLEADO")
             {
-                txtidentidad.Text = "";
-                txtidentidad.ForeColor = Color.LightGray;
+                txt_id_empleado.Text = "";
+                txt_id_empleado.ForeColor = Color.LightGray;
             }
         }
 
         //Evento "Leave" del control "txtidentidad"
         private void txtidentidad_Leave(object sender, EventArgs e)
         {
-            if (txtidentidad.Text == "")
+            if (txt_id_empleado.Text == "")
             {
-                txtidentidad.Text = "ID EMPLEADO";
-                txtidentidad.ForeColor = Color.DimGray;
+                txt_id_empleado.Text = "ID EMPLEADO";
+                txt_id_empleado.ForeColor = Color.DimGray;
             }
         }
 
@@ -117,24 +117,24 @@ namespace Ejemplo2
                 DatosLogin obj = new DatosLogin();
 
                 //Declaración booleana para verificar si los datos ingresados coinciden con datos existentes en la Base de Datos.
-                bool Valido = obj.login(txtuser.Text, txtpass.Text, cmb_temple.Text, Convert.ToInt32(txtidentidad.Text));
+                bool Valido = obj.login(txt_usuario.Text, txt_contraseña.Text, cmb_tipo_empleado.Text, Convert.ToInt32(txt_id_empleado.Text));
 
                 if (Valido)
                 {
 
                     //Validación a la hora de seleccionar el rol "Agente Universal"
-                    if (cmb_temple.Text == "Agente Universal")
+                    if (cmb_tipo_empleado.Text == "Agente Universal")
                     {
                         //Herencia del ID del Usuario que loguea
-                        txtcopiar.Text = txtidentidad.Text;
+                        txtcopiar.Text = txt_id_empleado.Text;
                         Form6 forma = new Form6();
-                        forma.txtimport.Text = txtidentidad.Text;
+                        forma.txtimport.Text = txt_id_empleado.Text;
                         this.Hide();
                         forma.Show();
                         
                     }
                     //Validación a la hora de seleccionar el rol "Supervisor"
-                    else if (cmb_temple.Text == "Supervisor")
+                    else if (cmb_tipo_empleado.Text == "Supervisor")
                     {
                         //Instancia del formulario Menu_Supervisor, que al cumplirse la validación y los datos coincidir con algún usuario "Supervisor", será redirigido a este mismo.
                         this.Hide();
@@ -166,13 +166,13 @@ namespace Ejemplo2
 
         private void cmb_temple_Enter(object sender, EventArgs e)
         {
-          cmb_temple.ForeColor = Color.DimGray;
+          cmb_tipo_empleado.ForeColor = Color.DimGray;
 
         }
 
         private void cmb_temple_Leave(object sender, EventArgs e)
         {
-          cmb_temple.ForeColor = Color.DimGray;
+          cmb_tipo_empleado.ForeColor = Color.DimGray;
         }
 
 

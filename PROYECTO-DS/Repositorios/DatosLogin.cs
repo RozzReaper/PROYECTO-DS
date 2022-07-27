@@ -42,7 +42,7 @@ namespace Ejemplo2
 
         //Inicio de sesion 
 
-        Form7 foru=new Form7();
+        frm_creacion_caso foru=new frm_creacion_caso();
 
         public bool login(string usuario, string contraseña, string t_empleado, int id)
         {

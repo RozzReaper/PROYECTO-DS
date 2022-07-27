@@ -13,11 +13,11 @@ using Ejemplo2.Message;
 
 namespace Ejemplo2
 {
-    public partial class Form7 : Form
+    public partial class frm_creacion_caso : Form
     {
         //representa la conexion y con ello, se acceden a sus propiedades
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["database-conection"].ConnectionString);
-        public Form7()
+        public frm_creacion_caso()
         {
             InitializeComponent(); 
             
@@ -31,7 +31,7 @@ namespace Ejemplo2
         private void btn_regresar_Click(object sender, EventArgs e)
         {
             Form6 frm6 = new Form6();//Se instancia el formulario que contiene el id del empleado
-            frm6.txtimport.Text = txtidemple.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
+            frm6.txtimport.Text = txt_id_empleado.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
             frm6.Show();
             this.Hide();
         }
@@ -39,7 +39,7 @@ namespace Ejemplo2
         private void txtins_Click(object sender, EventArgs e)
         {
 
-            if ( txt_desc.Text == "" || txtidemple.Text =="" || txtins.Text == "" || cmb_cate.Text =="" || txtidcli.Text == "")//Validación, si los textos están vacíos lanzar un mensaje de error
+            if ( txt_descripcion.Text == "" || txt_id_empleado.Text =="" || btn_insertar.Text == "" || cmb_categoria.Text =="" || txt_id_cliente.Text == "")//Validación, si los textos están vacíos lanzar un mensaje de error
             { 
                 MessageCreacion messageCreacion = new MessageCreacion();
                 messageCreacion.Show();
@@ -48,18 +48,18 @@ namespace Ejemplo2
             {
                 DateTime hoy = DateTime.Today;
 
-                if (dtpfecha.Value.Date > hoy)
+                if (dtp_fecha.Value.Date > hoy)
                 {
                     MessageFechaMayor messageFechaMayor = new MessageFechaMayor();
                     messageFechaMayor.Show();
                 }
-                else if (dtpfecha.Value.AddYears(10) <= hoy)
+                else if (dtp_fecha.Value.AddYears(10) <= hoy)
                 {
 
                     MessageFechaAntigua messageFechaAntigua = new MessageFechaAntigua();
                     messageFechaAntigua.Show();
                 }
-                else if (string.IsNullOrWhiteSpace(txt_desc.Text))
+                else if (string.IsNullOrWhiteSpace(txt_descripcion.Text))
                 {
                     MessageDescVacia messageDescVacia = new MessageDescVacia();
                     messageDescVacia.Show();
@@ -69,11 +69,11 @@ namespace Ejemplo2
                     string query = "INSERT INTO informes (fk_clientes, fk_empleados, categoria, descripcion, creacion_fecha) VALUES (@id_cli, @id, @categoria, @descripcion, @fecha)";
                     cn.Open();//declarar un string para la insersión de datos
                     SqlCommand comando = new SqlCommand(query, cn);
-                    comando.Parameters.AddWithValue("@id_cli", txtidcli.Text);
-                    comando.Parameters.AddWithValue("@id", txtidemple.Text);//igualar las variables del query con las variables declaradas en el void
-                    comando.Parameters.AddWithValue("@categoria", cmb_cate.Text);
-                    comando.Parameters.AddWithValue("@descripcion", txt_desc.Text);
-                    comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtpfecha.Text));
+                    comando.Parameters.AddWithValue("@id_cli", txt_id_cliente.Text);
+                    comando.Parameters.AddWithValue("@id", txt_id_empleado.Text);//igualar las variables del query con las variables declaradas en el void
+                    comando.Parameters.AddWithValue("@categoria", cmb_categoria.Text);
+                    comando.Parameters.AddWithValue("@descripcion", txt_descripcion.Text);
+                    comando.Parameters.AddWithValue("@fecha", Convert.ToDateTime(dtp_fecha.Text));
                     try
                     {
                         comando.ExecuteNonQuery();//ejeuta las intrucciones, como es un codigo propenso a dar errores, se pone en un try catch
@@ -93,21 +93,21 @@ namespace Ejemplo2
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txt_desc.Clear();
+            txt_descripcion.Clear();
             DateTime hoy = DateTime.Today;
-            dtpfecha.Text = hoy.ToString();
-            cmb_cate.SelectedIndex = -1;
+            dtp_fecha.Text = hoy.ToString();
+            cmb_categoria.SelectedIndex = -1;
         }
 
         private void txt_desc_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (txt_desc.Text.Trim().Length >= 250)//Validación de limite de caracteres M
+            if (txt_descripcion.Text.Trim().Length >= 250)//Validación de limite de caracteres M
             {
 
                 //validacion para limite de caracteres 
                 MessageDescLimite messageDescLimite = new MessageDescLimite();
                 messageDescLimite.Show();
-                txt_desc.Clear();    
+                txt_descripcion.Clear();    
                 e.Handled = true;
                 return;
 

@@ -1,6 +1,6 @@
 ﻿namespace Ejemplo2
 {
-    partial class Form5
+    partial class frm_examinacion_informe
     {
         /// <summary>
         /// Required designer variable.
@@ -31,53 +31,56 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_examinacion_informe));
             this.btn_regresar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btn_minimizar = new System.Windows.Forms.PictureBox();
+            this.lbl_examinacion_caso = new System.Windows.Forms.Label();
             this.dgv_casos = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnReporte = new System.Windows.Forms.Button();
+            this.pnl_examinacion_caso = new System.Windows.Forms.Panel();
+            this.btn_generar_reporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_casos)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnl_examinacion_caso.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_regresar
             // 
             this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(1236, 457);
+            this.btn_regresar.Location = new System.Drawing.Point(1648, 562);
+            this.btn_regresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(52, 45);
+            this.btn_regresar.Size = new System.Drawing.Size(69, 55);
             this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_regresar.TabIndex = 18;
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.btn_regresar_Click);
             // 
-            // btnMinimizar
+            // btn_minimizar
             // 
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(1248, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 17;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            this.btn_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_minimizar.Image = global::Ejemplo2.Properties.Resources.minus;
+            this.btn_minimizar.Location = new System.Drawing.Point(1664, 15);
+            this.btn_minimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_minimizar.Name = "btn_minimizar";
+            this.btn_minimizar.Size = new System.Drawing.Size(53, 49);
+            this.btn_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_minimizar.TabIndex = 17;
+            this.btn_minimizar.TabStop = false;
+            this.btn_minimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // label1
+            // lbl_examinacion_caso
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(522, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 28);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Examinación de Caso";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_examinacion_caso.AutoSize = true;
+            this.lbl_examinacion_caso.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_examinacion_caso.Location = new System.Drawing.Point(696, 30);
+            this.lbl_examinacion_caso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_examinacion_caso.Name = "lbl_examinacion_caso";
+            this.lbl_examinacion_caso.Size = new System.Drawing.Size(336, 37);
+            this.lbl_examinacion_caso.TabIndex = 23;
+            this.lbl_examinacion_caso.Text = "Examinación de Caso";
+            this.lbl_examinacion_caso.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgv_casos
             // 
@@ -101,7 +104,8 @@
             this.dgv_casos.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgv_casos.EnableHeadersVisualStyles = false;
             this.dgv_casos.GridColor = System.Drawing.Color.BlueViolet;
-            this.dgv_casos.Location = new System.Drawing.Point(61, 92);
+            this.dgv_casos.Location = new System.Drawing.Point(81, 113);
+            this.dgv_casos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_casos.Name = "dgv_casos";
             this.dgv_casos.ReadOnly = true;
             this.dgv_casos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -113,6 +117,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_casos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_casos.RowHeadersWidth = 51;
             this.dgv_casos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateBlue;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,62 +126,65 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dgv_casos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_casos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_casos.Size = new System.Drawing.Size(1169, 359);
+            this.dgv_casos.Size = new System.Drawing.Size(1559, 442);
             this.dgv_casos.TabIndex = 1;
             this.dgv_casos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_casos_CellContentClick);
             // 
-            // panel1
+            // pnl_examinacion_caso
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnMinimizar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 74);
-            this.panel1.TabIndex = 24;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            this.pnl_examinacion_caso.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.pnl_examinacion_caso.Controls.Add(this.lbl_examinacion_caso);
+            this.pnl_examinacion_caso.Controls.Add(this.btn_minimizar);
+            this.pnl_examinacion_caso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_examinacion_caso.Location = new System.Drawing.Point(0, 0);
+            this.pnl_examinacion_caso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_examinacion_caso.Name = "pnl_examinacion_caso";
+            this.pnl_examinacion_caso.Size = new System.Drawing.Size(1733, 91);
+            this.pnl_examinacion_caso.TabIndex = 24;
+            this.pnl_examinacion_caso.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
-            // btnReporte
+            // btn_generar_reporte
             // 
-            this.btnReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.btnReporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReporte.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnReporte.FlatAppearance.BorderSize = 0;
-            this.btnReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporte.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnReporte.ForeColor = System.Drawing.Color.LightGray;
-            this.btnReporte.Location = new System.Drawing.Point(453, 457);
-            this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(408, 40);
-            this.btnReporte.TabIndex = 25;
-            this.btnReporte.Text = "GENERAR REPORTE";
-            this.btnReporte.UseVisualStyleBackColor = false;
-            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            this.btn_generar_reporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.btn_generar_reporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_generar_reporte.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btn_generar_reporte.FlatAppearance.BorderSize = 0;
+            this.btn_generar_reporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_generar_reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_generar_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_generar_reporte.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_generar_reporte.ForeColor = System.Drawing.Color.LightGray;
+            this.btn_generar_reporte.Location = new System.Drawing.Point(604, 562);
+            this.btn_generar_reporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_generar_reporte.Name = "btn_generar_reporte";
+            this.btn_generar_reporte.Size = new System.Drawing.Size(544, 49);
+            this.btn_generar_reporte.TabIndex = 25;
+            this.btn_generar_reporte.Text = "GENERAR REPORTE";
+            this.btn_generar_reporte.UseVisualStyleBackColor = false;
+            this.btn_generar_reporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
-            // Form5
+            // frm_examinacion_informe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 509);
-            this.Controls.Add(this.btnReporte);
+            this.ClientSize = new System.Drawing.Size(1733, 626);
+            this.Controls.Add(this.btn_generar_reporte);
             this.Controls.Add(this.dgv_casos);
             this.Controls.Add(this.btn_regresar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_examinacion_caso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form5";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frm_examinacion_informe";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Examinación de informes";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_casos)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnl_examinacion_caso.ResumeLayout(false);
+            this.pnl_examinacion_caso.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -184,10 +192,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox btn_regresar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btn_minimizar;
+        private System.Windows.Forms.Label lbl_examinacion_caso;
         private System.Windows.Forms.DataGridView dgv_casos;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnReporte;
+        private System.Windows.Forms.Panel pnl_examinacion_caso;
+        private System.Windows.Forms.Button btn_generar_reporte;
     }
 }

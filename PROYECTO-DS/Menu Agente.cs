@@ -30,7 +30,7 @@ namespace Ejemplo2
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
+            frm_inicio_sesion form2 = new frm_inicio_sesion();
             form2.Show();
         }
 
@@ -42,15 +42,15 @@ namespace Ejemplo2
         //Evento click del boton btnSupervisor_Click
         private void btnSupervisor_Click(object sender, EventArgs e)
         {
-            Form7 traslado = new Form7();
-            traslado.txtidemple.Text = txtimport.Text; //Se iguala el contenido del text box que contiene el id al del siguiente formulario
+            frm_creacion_caso traslado = new frm_creacion_caso();
+            traslado.txt_id_empleado.Text = txtimport.Text; //Se iguala el contenido del text box que contiene el id al del siguiente formulario
             this.Hide();
             traslado.Show();
         }
         //Evento click del boton btnlgncliente_Click
         private void btnlgncliente_Click(object sender, EventArgs e)
         {
-            LoginCliente loginCliente = new LoginCliente();
+            frm_login_cliente loginCliente = new frm_login_cliente();
             loginCliente.txtsearch.Text = txtimport.Text; //Text box para busqueda de cliente
             this.Hide();
             loginCliente.Show();

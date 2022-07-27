@@ -1,6 +1,6 @@
 ﻿namespace Ejemplo2
 {
-    partial class Form2
+    partial class frm_inicio_sesion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,121 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.txtpass = new System.Windows.Forms.TextBox();
-            this.txtuser = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_inicio_sesion));
+            this.pnl_andromeda = new System.Windows.Forms.Panel();
+            this.lbl_andromeda = new System.Windows.Forms.Label();
+            this.ptb_andromeda = new System.Windows.Forms.PictureBox();
+            this.lbl_login = new System.Windows.Forms.Label();
+            this.btn_acceder = new System.Windows.Forms.Button();
+            this.txt_contraseña = new System.Windows.Forms.TextBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
-            this.txtidentidad = new System.Windows.Forms.TextBox();
+            this.txt_id_empleado = new System.Windows.Forms.TextBox();
             this.txtcopiar = new System.Windows.Forms.TextBox();
-            this.cmb_temple = new System.Windows.Forms.ComboBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.cmb_tipo_empleado = new System.Windows.Forms.ComboBox();
+            this.pnl_andromeda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_andromeda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_andromeda
             // 
-            this.panel1.BackColor = System.Drawing.Color.Indigo;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 455);
-            this.panel1.TabIndex = 0;
+            this.pnl_andromeda.BackColor = System.Drawing.Color.Indigo;
+            this.pnl_andromeda.Controls.Add(this.lbl_andromeda);
+            this.pnl_andromeda.Controls.Add(this.ptb_andromeda);
+            this.pnl_andromeda.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_andromeda.Location = new System.Drawing.Point(0, 0);
+            this.pnl_andromeda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_andromeda.Name = "pnl_andromeda";
+            this.pnl_andromeda.Size = new System.Drawing.Size(373, 560);
+            this.pnl_andromeda.TabIndex = 0;
             // 
-            // label2
+            // lbl_andromeda
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 299);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 38);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "ANDROMEDA";
+            this.lbl_andromeda.AutoSize = true;
+            this.lbl_andromeda.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_andromeda.Location = new System.Drawing.Point(8, 368);
+            this.lbl_andromeda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_andromeda.Name = "lbl_andromeda";
+            this.lbl_andromeda.Size = new System.Drawing.Size(301, 48);
+            this.lbl_andromeda.TabIndex = 13;
+            this.lbl_andromeda.Text = "ANDROMEDA";
             // 
-            // pictureBox3
+            // ptb_andromeda
             // 
-            this.pictureBox3.Image = global::Ejemplo2.Properties.Resources.andromeda;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 88);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(208, 208);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
+            this.ptb_andromeda.Image = global::Ejemplo2.Properties.Resources.andromeda;
+            this.ptb_andromeda.Location = new System.Drawing.Point(44, 108);
+            this.ptb_andromeda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_andromeda.Name = "ptb_andromeda";
+            this.ptb_andromeda.Size = new System.Drawing.Size(277, 256);
+            this.ptb_andromeda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_andromeda.TabIndex = 12;
+            this.ptb_andromeda.TabStop = false;
             // 
-            // label1
+            // lbl_login
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(537, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "LOGIN";
+            this.lbl_login.AutoSize = true;
+            this.lbl_login.Font = new System.Drawing.Font("Century Gothic", 24F);
+            this.lbl_login.ForeColor = System.Drawing.Color.White;
+            this.lbl_login.Location = new System.Drawing.Point(716, 42);
+            this.lbl_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_login.Name = "lbl_login";
+            this.lbl_login.Size = new System.Drawing.Size(151, 49);
+            this.lbl_login.TabIndex = 1;
+            this.lbl_login.Text = "LOGIN";
             // 
-            // btnLogin
+            // btn_acceder
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(386, 329);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(408, 40);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "ACCEDER";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btn_acceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.btn_acceder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_acceder.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btn_acceder.FlatAppearance.BorderSize = 0;
+            this.btn_acceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_acceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_acceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_acceder.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_acceder.ForeColor = System.Drawing.Color.LightGray;
+            this.btn_acceder.Location = new System.Drawing.Point(515, 405);
+            this.btn_acceder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_acceder.Name = "btn_acceder";
+            this.btn_acceder.Size = new System.Drawing.Size(544, 49);
+            this.btn_acceder.TabIndex = 5;
+            this.btn_acceder.Text = "ACCEDER";
+            this.btn_acceder.UseVisualStyleBackColor = false;
+            this.btn_acceder.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txtpass
+            // txt_contraseña
             // 
-            this.txtpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpass.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtpass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtpass.Location = new System.Drawing.Point(386, 264);
-            this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(408, 20);
-            this.txtpass.TabIndex = 4;
-            this.txtpass.Text = "CONTRASEÑA";
-            this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
-            this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
+            this.txt_contraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txt_contraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_contraseña.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txt_contraseña.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_contraseña.Location = new System.Drawing.Point(515, 325);
+            this.txt_contraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_contraseña.Name = "txt_contraseña";
+            this.txt_contraseña.Size = new System.Drawing.Size(544, 25);
+            this.txt_contraseña.TabIndex = 4;
+            this.txt_contraseña.Text = "CONTRASEÑA";
+            this.txt_contraseña.Enter += new System.EventHandler(this.txtpass_Enter);
+            this.txt_contraseña.Leave += new System.EventHandler(this.txtpass_Leave);
             // 
-            // txtuser
+            // txt_usuario
             // 
-            this.txtuser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtuser.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtuser.ForeColor = System.Drawing.Color.DimGray;
-            this.txtuser.Location = new System.Drawing.Point(386, 160);
-            this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(408, 20);
-            this.txtuser.TabIndex = 2;
-            this.txtuser.Text = "USUARIO";
-            this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
-            this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
+            this.txt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txt_usuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_usuario.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txt_usuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_usuario.Location = new System.Drawing.Point(515, 197);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(544, 25);
+            this.txt_usuario.TabIndex = 2;
+            this.txt_usuario.Text = "USUARIO";
+            this.txt_usuario.Enter += new System.EventHandler(this.txtuser_Enter);
+            this.txt_usuario.Leave += new System.EventHandler(this.txtuser_Leave);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(848, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(1131, 15);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
+            this.btnMinimizar.Size = new System.Drawing.Size(53, 49);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 11;
             this.btnMinimizar.TabStop = false;
@@ -152,80 +160,84 @@
             // 
             this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(836, 388);
+            this.btn_regresar.Location = new System.Drawing.Point(1115, 478);
+            this.btn_regresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(52, 50);
+            this.btn_regresar.Size = new System.Drawing.Size(69, 62);
             this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_regresar.TabIndex = 12;
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // txtidentidad
+            // txt_id_empleado
             // 
-            this.txtidentidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtidentidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtidentidad.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtidentidad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtidentidad.Location = new System.Drawing.Point(386, 110);
-            this.txtidentidad.Name = "txtidentidad";
-            this.txtidentidad.Size = new System.Drawing.Size(408, 20);
-            this.txtidentidad.TabIndex = 2;
-            this.txtidentidad.Text = "ID EMPLEADO";
-            this.txtidentidad.Enter += new System.EventHandler(this.txtidentidad_Enter);
-            this.txtidentidad.Leave += new System.EventHandler(this.txtidentidad_Leave);
+            this.txt_id_empleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txt_id_empleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_id_empleado.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txt_id_empleado.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_id_empleado.Location = new System.Drawing.Point(515, 135);
+            this.txt_id_empleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_id_empleado.Name = "txt_id_empleado";
+            this.txt_id_empleado.Size = new System.Drawing.Size(544, 25);
+            this.txt_id_empleado.TabIndex = 2;
+            this.txt_id_empleado.Text = "ID EMPLEADO";
+            this.txt_id_empleado.Enter += new System.EventHandler(this.txtidentidad_Enter);
+            this.txt_id_empleado.Leave += new System.EventHandler(this.txtidentidad_Leave);
             // 
             // txtcopiar
             // 
             this.txtcopiar.Enabled = false;
-            this.txtcopiar.Location = new System.Drawing.Point(544, 465);
+            this.txtcopiar.Location = new System.Drawing.Point(725, 572);
+            this.txtcopiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcopiar.Name = "txtcopiar";
-            this.txtcopiar.Size = new System.Drawing.Size(100, 20);
+            this.txtcopiar.Size = new System.Drawing.Size(132, 22);
             this.txtcopiar.TabIndex = 14;
             this.txtcopiar.Visible = false;
             // 
-            // cmb_temple
+            // cmb_tipo_empleado
             // 
-            this.cmb_temple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.cmb_temple.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.cmb_temple.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_temple.FormattingEnabled = true;
-            this.cmb_temple.Items.AddRange(new object[] {
+            this.cmb_tipo_empleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cmb_tipo_empleado.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.cmb_tipo_empleado.ForeColor = System.Drawing.Color.LightGray;
+            this.cmb_tipo_empleado.FormattingEnabled = true;
+            this.cmb_tipo_empleado.Items.AddRange(new object[] {
             "Agente Universal",
             "Supervisor"});
-            this.cmb_temple.Location = new System.Drawing.Point(386, 209);
-            this.cmb_temple.Margin = new System.Windows.Forms.Padding(2);
-            this.cmb_temple.Name = "cmb_temple";
-            this.cmb_temple.Size = new System.Drawing.Size(409, 29);
-            this.cmb_temple.TabIndex = 15;
-            this.cmb_temple.Enter += new System.EventHandler(this.cmb_temple_Enter);
-            this.cmb_temple.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmb_temple_KeyPress);
-            this.cmb_temple.Leave += new System.EventHandler(this.cmb_temple_Leave);
+            this.cmb_tipo_empleado.Location = new System.Drawing.Point(515, 257);
+            this.cmb_tipo_empleado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_tipo_empleado.Name = "cmb_tipo_empleado";
+            this.cmb_tipo_empleado.Size = new System.Drawing.Size(544, 31);
+            this.cmb_tipo_empleado.TabIndex = 15;
+            this.cmb_tipo_empleado.Enter += new System.EventHandler(this.cmb_temple_Enter);
+            this.cmb_tipo_empleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmb_temple_KeyPress);
+            this.cmb_tipo_empleado.Leave += new System.EventHandler(this.cmb_temple_Leave);
             // 
-            // Form2
+            // frm_inicio_sesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(900, 455);
-            this.Controls.Add(this.cmb_temple);
-            this.Controls.Add(this.txtidentidad);
+            this.ClientSize = new System.Drawing.Size(1200, 560);
+            this.Controls.Add(this.cmb_tipo_empleado);
+            this.Controls.Add(this.txt_id_empleado);
             this.Controls.Add(this.btn_regresar);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_login);
             this.Controls.Add(this.btnMinimizar);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtpass);
-            this.Controls.Add(this.txtuser);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btn_acceder);
+            this.Controls.Add(this.txt_contraseña);
+            this.Controls.Add(this.txt_usuario);
+            this.Controls.Add(this.pnl_andromeda);
             this.Controls.Add(this.txtcopiar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frm_inicio_sesion";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesión";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnl_andromeda.ResumeLayout(false);
+            this.pnl_andromeda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_andromeda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
             this.ResumeLayout(false);
@@ -235,17 +247,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox txtpass;
-        private System.Windows.Forms.TextBox txtuser;
+        private System.Windows.Forms.Panel pnl_andromeda;
+        private System.Windows.Forms.Label lbl_login;
+        private System.Windows.Forms.Button btn_acceder;
+        private System.Windows.Forms.TextBox txt_contraseña;
+        private System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ptb_andromeda;
         private System.Windows.Forms.PictureBox btn_regresar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_andromeda;
         public System.Windows.Forms.TextBox txtcopiar;
-        private System.Windows.Forms.TextBox txtidentidad;
-        private System.Windows.Forms.ComboBox cmb_temple;
+        private System.Windows.Forms.TextBox txt_id_empleado;
+        private System.Windows.Forms.ComboBox cmb_tipo_empleado;
     }
 }

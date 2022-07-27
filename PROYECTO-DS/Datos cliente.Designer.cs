@@ -1,6 +1,6 @@
 ﻿namespace Ejemplo2
 {
-    partial class Datos_cliente
+    partial class frm_datos_cliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,624 +28,675 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Datos_cliente));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_datos_cliente));
+            this.lbl_informacion_cliente = new System.Windows.Forms.Label();
+            this.lbl_datos_planes = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_historial_crediticio = new System.Windows.Forms.Label();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtsubtotal = new System.Windows.Forms.TextBox();
-            this.txtpendiente = new System.Windows.Forms.TextBox();
-            this.txttotal = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtcosto = new System.Windows.Forms.TextBox();
-            this.txtdescuento = new System.Windows.Forms.TextBox();
-            this.txttelefono = new System.Windows.Forms.TextBox();
-            this.txt_planestado = new System.Windows.Forms.TextBox();
-            this.txtcalle = new System.Windows.Forms.TextBox();
-            this.txtcasanum = new System.Windows.Forms.TextBox();
-            this.txtimpuesto = new System.Windows.Forms.TextBox();
-            this.txtfechainicio = new System.Windows.Forms.TextBox();
-            this.txtemail = new System.Windows.Forms.TextBox();
+            this.btn_minimizar = new System.Windows.Forms.PictureBox();
+            this.pnl_informacion_cliente = new System.Windows.Forms.Panel();
+            this.txt_subtotal = new System.Windows.Forms.TextBox();
+            this.txt_pendiente = new System.Windows.Forms.TextBox();
+            this.txt_total = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.txt_costo_plan = new System.Windows.Forms.TextBox();
+            this.txt_descuento = new System.Windows.Forms.TextBox();
+            this.txt_telefono = new System.Windows.Forms.TextBox();
+            this.txt_estado_plan = new System.Windows.Forms.TextBox();
+            this.txt_calle = new System.Windows.Forms.TextBox();
+            this.txt_num_casa = new System.Windows.Forms.TextBox();
+            this.txt_impuesto = new System.Windows.Forms.TextBox();
+            this.txt_fecha_inicio = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_tipofibra = new System.Windows.Forms.TextBox();
-            this.txtdiapago = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtvelocidad = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtapellido = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.cmbestado = new System.Windows.Forms.ComboBox();
-            this.btnmodi = new System.Windows.Forms.Button();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.txt_dia_pago = new System.Windows.Forms.TextBox();
+            this.lbl_nombre = new System.Windows.Forms.Label();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.lbl_estado = new System.Windows.Forms.Label();
+            this.lbl_calle = new System.Windows.Forms.Label();
+            this.lbl_num_casa = new System.Windows.Forms.Label();
+            this.lbl_telefono = new System.Windows.Forms.Label();
+            this.lbl_impuesto = new System.Windows.Forms.Label();
+            this.lbl_costo_plan = new System.Windows.Forms.Label();
+            this.lbl_descuento = new System.Windows.Forms.Label();
+            this.lbl_subtotal = new System.Windows.Forms.Label();
+            this.lbl_pendiente = new System.Windows.Forms.Label();
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.lbl_fecha_inicio = new System.Windows.Forms.Label();
+            this.lbl_tipo_fibra = new System.Windows.Forms.Label();
+            this.lbl_dia_pago = new System.Windows.Forms.Label();
+            this.lbl_estado_plan = new System.Windows.Forms.Label();
+            this.txt_velocidad = new System.Windows.Forms.TextBox();
+            this.lbl_velocidad = new System.Windows.Forms.Label();
+            this.pnl_historial_crediticio = new System.Windows.Forms.Panel();
+            this.pnl_informacion_general = new System.Windows.Forms.Panel();
+            this.txt_apellidos = new System.Windows.Forms.TextBox();
+            this.lbl_apellidos = new System.Windows.Forms.Label();
+            this.cmb_estado = new System.Windows.Forms.ComboBox();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.txt_id = new System.Windows.Forms.TextBox();
+            this.lbl_id = new System.Windows.Forms.Label();
+            this.pnl_datos_planes = new System.Windows.Forms.Panel();
             this.txtidfinal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
+            this.pnl_informacion_cliente.SuspendLayout();
+            this.pnl_historial_crediticio.SuspendLayout();
+            this.pnl_informacion_general.SuspendLayout();
+            this.pnl_datos_planes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_informacion_cliente
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(284, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Información del cliente";
+            this.lbl_informacion_cliente.AutoSize = true;
+            this.lbl_informacion_cliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_informacion_cliente.Location = new System.Drawing.Point(379, 15);
+            this.lbl_informacion_cliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_informacion_cliente.Name = "lbl_informacion_cliente";
+            this.lbl_informacion_cliente.Size = new System.Drawing.Size(466, 46);
+            this.lbl_informacion_cliente.TabIndex = 0;
+            this.lbl_informacion_cliente.Text = "Información del cliente";
             // 
-            // label2
+            // lbl_datos_planes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(358, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(225, 32);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Datos de planes";
+            this.lbl_datos_planes.AutoSize = true;
+            this.lbl_datos_planes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_datos_planes.Location = new System.Drawing.Point(477, 22);
+            this.lbl_datos_planes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_datos_planes.Name = "lbl_datos_planes";
+            this.lbl_datos_planes.Size = new System.Drawing.Size(281, 39);
+            this.lbl_datos_planes.TabIndex = 0;
+            this.lbl_datos_planes.Text = "Datos de planes";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(119, 5);
+            this.label3.Location = new System.Drawing.Point(159, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(277, 32);
+            this.label3.Size = new System.Drawing.Size(352, 39);
             this.label3.TabIndex = 0;
             this.label3.Text = "Información general";
             // 
-            // label4
+            // lbl_historial_crediticio
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(103, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(256, 32);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Historial crediticio";
+            this.lbl_historial_crediticio.AutoSize = true;
+            this.lbl_historial_crediticio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_historial_crediticio.Location = new System.Drawing.Point(137, 17);
+            this.lbl_historial_crediticio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_historial_crediticio.Name = "lbl_historial_crediticio";
+            this.lbl_historial_crediticio.Size = new System.Drawing.Size(321, 39);
+            this.lbl_historial_crediticio.TabIndex = 0;
+            this.lbl_historial_crediticio.Text = "Historial crediticio";
             // 
             // btn_regresar
             // 
             this.btn_regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_regresar.Image = global::Ejemplo2.Properties.Resources._return;
-            this.btn_regresar.Location = new System.Drawing.Point(904, 172);
+            this.btn_regresar.Location = new System.Drawing.Point(1205, 212);
+            this.btn_regresar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(52, 50);
+            this.btn_regresar.Size = new System.Drawing.Size(69, 62);
             this.btn_regresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_regresar.TabIndex = 21;
             this.btn_regresar.TabStop = false;
             this.btn_regresar.Click += new System.EventHandler(this.btn_regresar_Click);
             // 
-            // btnMinimizar
+            // btn_minimizar
             // 
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.btnMinimizar.Location = new System.Drawing.Point(916, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 20;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            this.btn_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_minimizar.Image = global::Ejemplo2.Properties.Resources.minus;
+            this.btn_minimizar.Location = new System.Drawing.Point(1221, 15);
+            this.btn_minimizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_minimizar.Name = "btn_minimizar";
+            this.btn_minimizar.Size = new System.Drawing.Size(53, 49);
+            this.btn_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_minimizar.TabIndex = 20;
+            this.btn_minimizar.TabStop = false;
+            this.btn_minimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // panel1
+            // pnl_informacion_cliente
             // 
-            this.panel1.BackColor = System.Drawing.Color.Cyan;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnMinimizar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(969, 64);
-            this.panel1.TabIndex = 23;
+            this.pnl_informacion_cliente.BackColor = System.Drawing.Color.Cyan;
+            this.pnl_informacion_cliente.Controls.Add(this.lbl_informacion_cliente);
+            this.pnl_informacion_cliente.Controls.Add(this.btn_minimizar);
+            this.pnl_informacion_cliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_informacion_cliente.Location = new System.Drawing.Point(0, 0);
+            this.pnl_informacion_cliente.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_informacion_cliente.Name = "pnl_informacion_cliente";
+            this.pnl_informacion_cliente.Size = new System.Drawing.Size(1292, 79);
+            this.pnl_informacion_cliente.TabIndex = 23;
             // 
-            // txtsubtotal
+            // txt_subtotal
             // 
-            this.txtsubtotal.Enabled = false;
-            this.txtsubtotal.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsubtotal.Location = new System.Drawing.Point(330, 77);
-            this.txtsubtotal.Name = "txtsubtotal";
-            this.txtsubtotal.Size = new System.Drawing.Size(100, 22);
-            this.txtsubtotal.TabIndex = 24;
+            this.txt_subtotal.Enabled = false;
+            this.txt_subtotal.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_subtotal.Location = new System.Drawing.Point(440, 95);
+            this.txt_subtotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_subtotal.Name = "txt_subtotal";
+            this.txt_subtotal.Size = new System.Drawing.Size(132, 26);
+            this.txt_subtotal.TabIndex = 24;
             // 
-            // txtpendiente
+            // txt_pendiente
             // 
-            this.txtpendiente.Enabled = false;
-            this.txtpendiente.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpendiente.Location = new System.Drawing.Point(330, 115);
-            this.txtpendiente.Name = "txtpendiente";
-            this.txtpendiente.Size = new System.Drawing.Size(100, 22);
-            this.txtpendiente.TabIndex = 24;
+            this.txt_pendiente.Enabled = false;
+            this.txt_pendiente.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pendiente.Location = new System.Drawing.Point(440, 142);
+            this.txt_pendiente.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pendiente.Name = "txt_pendiente";
+            this.txt_pendiente.Size = new System.Drawing.Size(132, 26);
+            this.txt_pendiente.TabIndex = 24;
             // 
-            // txttotal
+            // txt_total
             // 
-            this.txttotal.Enabled = false;
-            this.txttotal.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttotal.Location = new System.Drawing.Point(330, 153);
-            this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(100, 22);
-            this.txttotal.TabIndex = 24;
+            this.txt_total.Enabled = false;
+            this.txt_total.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total.Location = new System.Drawing.Point(440, 188);
+            this.txt_total.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(132, 26);
+            this.txt_total.TabIndex = 24;
             // 
-            // txtnombre
+            // txt_nombre
             // 
-            this.txtnombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtnombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.txtnombre.Enabled = false;
-            this.txtnombre.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(91, 83);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(161, 22);
-            this.txtnombre.TabIndex = 24;
-            this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
+            this.txt_nombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txt_nombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.txt_nombre.Enabled = false;
+            this.txt_nombre.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.Location = new System.Drawing.Point(121, 102);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(213, 26);
+            this.txt_nombre.TabIndex = 24;
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
             // 
-            // txtcosto
+            // txt_costo_plan
             // 
-            this.txtcosto.Enabled = false;
-            this.txtcosto.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcosto.Location = new System.Drawing.Point(133, 114);
-            this.txtcosto.Name = "txtcosto";
-            this.txtcosto.Size = new System.Drawing.Size(100, 22);
-            this.txtcosto.TabIndex = 24;
+            this.txt_costo_plan.Enabled = false;
+            this.txt_costo_plan.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_costo_plan.Location = new System.Drawing.Point(177, 140);
+            this.txt_costo_plan.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_costo_plan.Name = "txt_costo_plan";
+            this.txt_costo_plan.Size = new System.Drawing.Size(132, 26);
+            this.txt_costo_plan.TabIndex = 24;
             // 
-            // txtdescuento
+            // txt_descuento
             // 
-            this.txtdescuento.Enabled = false;
-            this.txtdescuento.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdescuento.Location = new System.Drawing.Point(133, 156);
-            this.txtdescuento.Name = "txtdescuento";
-            this.txtdescuento.Size = new System.Drawing.Size(100, 22);
-            this.txtdescuento.TabIndex = 24;
+            this.txt_descuento.Enabled = false;
+            this.txt_descuento.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descuento.Location = new System.Drawing.Point(177, 192);
+            this.txt_descuento.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_descuento.Name = "txt_descuento";
+            this.txt_descuento.Size = new System.Drawing.Size(132, 26);
+            this.txt_descuento.TabIndex = 24;
             // 
-            // txttelefono
+            // txt_telefono
             // 
-            this.txttelefono.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttelefono.Location = new System.Drawing.Point(327, 158);
-            this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(164, 22);
-            this.txttelefono.TabIndex = 24;
-            this.txttelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
+            this.txt_telefono.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_telefono.Location = new System.Drawing.Point(436, 194);
+            this.txt_telefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Size = new System.Drawing.Size(217, 26);
+            this.txt_telefono.TabIndex = 24;
+            this.txt_telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
             // 
-            // txt_planestado
+            // txt_estado_plan
             // 
-            this.txt_planestado.Enabled = false;
-            this.txt_planestado.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_planestado.Location = new System.Drawing.Point(330, 116);
-            this.txt_planestado.Name = "txt_planestado";
-            this.txt_planestado.Size = new System.Drawing.Size(122, 22);
-            this.txt_planestado.TabIndex = 24;
+            this.txt_estado_plan.Enabled = false;
+            this.txt_estado_plan.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_estado_plan.Location = new System.Drawing.Point(440, 143);
+            this.txt_estado_plan.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_estado_plan.Name = "txt_estado_plan";
+            this.txt_estado_plan.Size = new System.Drawing.Size(161, 26);
+            this.txt_estado_plan.TabIndex = 24;
             // 
-            // txtcalle
+            // txt_calle
             // 
-            this.txtcalle.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcalle.Location = new System.Drawing.Point(327, 83);
-            this.txtcalle.Name = "txtcalle";
-            this.txtcalle.Size = new System.Drawing.Size(164, 22);
-            this.txtcalle.TabIndex = 24;
-            this.txtcalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcalle_KeyPress);
+            this.txt_calle.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_calle.Location = new System.Drawing.Point(436, 102);
+            this.txt_calle.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_calle.Name = "txt_calle";
+            this.txt_calle.Size = new System.Drawing.Size(217, 26);
+            this.txt_calle.TabIndex = 24;
+            this.txt_calle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcalle_KeyPress);
             // 
-            // txtcasanum
+            // txt_num_casa
             // 
-            this.txtcasanum.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcasanum.Location = new System.Drawing.Point(327, 122);
-            this.txtcasanum.Name = "txtcasanum";
-            this.txtcasanum.Size = new System.Drawing.Size(164, 22);
-            this.txtcasanum.TabIndex = 24;
-            this.txtcasanum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcasanum_KeyPress);
+            this.txt_num_casa.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_num_casa.Location = new System.Drawing.Point(436, 150);
+            this.txt_num_casa.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_num_casa.Name = "txt_num_casa";
+            this.txt_num_casa.Size = new System.Drawing.Size(217, 26);
+            this.txt_num_casa.TabIndex = 24;
+            this.txt_num_casa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcasanum_KeyPress);
             // 
-            // txtimpuesto
+            // txt_impuesto
             // 
-            this.txtimpuesto.Enabled = false;
-            this.txtimpuesto.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtimpuesto.Location = new System.Drawing.Point(133, 74);
-            this.txtimpuesto.Name = "txtimpuesto";
-            this.txtimpuesto.Size = new System.Drawing.Size(100, 22);
-            this.txtimpuesto.TabIndex = 24;
+            this.txt_impuesto.Enabled = false;
+            this.txt_impuesto.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_impuesto.Location = new System.Drawing.Point(177, 91);
+            this.txt_impuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_impuesto.Name = "txt_impuesto";
+            this.txt_impuesto.Size = new System.Drawing.Size(132, 26);
+            this.txt_impuesto.TabIndex = 24;
             // 
-            // txtfechainicio
+            // txt_fecha_inicio
             // 
-            this.txtfechainicio.Enabled = false;
-            this.txtfechainicio.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfechainicio.Location = new System.Drawing.Point(330, 159);
-            this.txtfechainicio.Name = "txtfechainicio";
-            this.txtfechainicio.Size = new System.Drawing.Size(122, 22);
-            this.txtfechainicio.TabIndex = 24;
+            this.txt_fecha_inicio.Enabled = false;
+            this.txt_fecha_inicio.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fecha_inicio.Location = new System.Drawing.Point(440, 196);
+            this.txt_fecha_inicio.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_fecha_inicio.Name = "txt_fecha_inicio";
+            this.txt_fecha_inicio.Size = new System.Drawing.Size(161, 26);
+            this.txt_fecha_inicio.TabIndex = 24;
             // 
-            // txtemail
+            // txt_email
             // 
-            this.txtemail.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(90, 148);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(162, 22);
-            this.txtemail.TabIndex = 24;
-            this.txtemail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
+            this.txt_email.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Location = new System.Drawing.Point(120, 182);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(215, 26);
+            this.txt_email.TabIndex = 24;
+            this.txt_email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemail_KeyPress);
             // 
             // txt_tipofibra
             // 
             this.txt_tipofibra.Enabled = false;
             this.txt_tipofibra.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tipofibra.Location = new System.Drawing.Point(593, 116);
+            this.txt_tipofibra.Location = new System.Drawing.Point(791, 143);
+            this.txt_tipofibra.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tipofibra.Name = "txt_tipofibra";
-            this.txt_tipofibra.Size = new System.Drawing.Size(114, 22);
+            this.txt_tipofibra.Size = new System.Drawing.Size(151, 26);
             this.txt_tipofibra.TabIndex = 24;
             // 
-            // txtdiapago
+            // txt_dia_pago
             // 
-            this.txtdiapago.Enabled = false;
-            this.txtdiapago.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdiapago.Location = new System.Drawing.Point(330, 77);
-            this.txtdiapago.Name = "txtdiapago";
-            this.txtdiapago.Size = new System.Drawing.Size(122, 22);
-            this.txtdiapago.TabIndex = 24;
+            this.txt_dia_pago.Enabled = false;
+            this.txt_dia_pago.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dia_pago.Location = new System.Drawing.Point(440, 95);
+            this.txt_dia_pago.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_dia_pago.Name = "txt_dia_pago";
+            this.txt_dia_pago.Size = new System.Drawing.Size(161, 26);
+            this.txt_dia_pago.TabIndex = 24;
             // 
-            // label5
+            // lbl_nombre
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 84);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 16);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Nombre";
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(21, 103);
+            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(76, 19);
+            this.lbl_nombre.TabIndex = 25;
+            this.lbl_nombre.Text = "Nombre";
             // 
-            // label6
+            // lbl_email
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 154);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 16);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Email";
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.Location = new System.Drawing.Point(21, 190);
+            this.lbl_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(53, 19);
+            this.lbl_email.TabIndex = 25;
+            this.lbl_email.Text = "Email";
             // 
-            // label7
+            // lbl_estado
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 16);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Estado";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lbl_estado.AutoSize = true;
+            this.lbl_estado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_estado.Location = new System.Drawing.Point(21, 231);
+            this.lbl_estado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_estado.Name = "lbl_estado";
+            this.lbl_estado.Size = new System.Drawing.Size(63, 19);
+            this.lbl_estado.TabIndex = 25;
+            this.lbl_estado.Text = "Estado";
+            this.lbl_estado.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
+            // lbl_calle
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(279, 85);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 16);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Calle";
+            this.lbl_calle.AutoSize = true;
+            this.lbl_calle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_calle.Location = new System.Drawing.Point(372, 105);
+            this.lbl_calle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_calle.Name = "lbl_calle";
+            this.lbl_calle.Size = new System.Drawing.Size(52, 19);
+            this.lbl_calle.TabIndex = 25;
+            this.lbl_calle.Text = "Calle";
             // 
-            // label9
+            // lbl_num_casa
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(268, 128);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 16);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "# Casa";
+            this.lbl_num_casa.AutoSize = true;
+            this.lbl_num_casa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_num_casa.Location = new System.Drawing.Point(357, 158);
+            this.lbl_num_casa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_num_casa.Name = "lbl_num_casa";
+            this.lbl_num_casa.Size = new System.Drawing.Size(67, 19);
+            this.lbl_num_casa.TabIndex = 25;
+            this.lbl_num_casa.Text = "# Casa";
             // 
-            // label10
+            // lbl_telefono
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(260, 161);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 16);
-            this.label10.TabIndex = 25;
-            this.label10.Text = "Teléfono";
+            this.lbl_telefono.AutoSize = true;
+            this.lbl_telefono.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_telefono.Location = new System.Drawing.Point(347, 198);
+            this.lbl_telefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_telefono.Name = "lbl_telefono";
+            this.lbl_telefono.Size = new System.Drawing.Size(79, 19);
+            this.lbl_telefono.TabIndex = 25;
+            this.lbl_telefono.Text = "Teléfono";
             // 
-            // label11
+            // lbl_impuesto
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(49, 75);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 16);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Impuesto";
+            this.lbl_impuesto.AutoSize = true;
+            this.lbl_impuesto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_impuesto.Location = new System.Drawing.Point(65, 92);
+            this.lbl_impuesto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_impuesto.Name = "lbl_impuesto";
+            this.lbl_impuesto.Size = new System.Drawing.Size(85, 19);
+            this.lbl_impuesto.TabIndex = 25;
+            this.lbl_impuesto.Text = "Impuesto";
             // 
-            // label12
+            // lbl_costo_plan
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(25, 116);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 16);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Costo del plan";
+            this.lbl_costo_plan.AutoSize = true;
+            this.lbl_costo_plan.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_costo_plan.Location = new System.Drawing.Point(33, 143);
+            this.lbl_costo_plan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_costo_plan.Name = "lbl_costo_plan";
+            this.lbl_costo_plan.Size = new System.Drawing.Size(128, 19);
+            this.lbl_costo_plan.TabIndex = 25;
+            this.lbl_costo_plan.Text = "Costo del plan";
             // 
-            // label13
+            // lbl_descuento
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(49, 161);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 16);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Descuento";
+            this.lbl_descuento.AutoSize = true;
+            this.lbl_descuento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_descuento.Location = new System.Drawing.Point(65, 198);
+            this.lbl_descuento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_descuento.Name = "lbl_descuento";
+            this.lbl_descuento.Size = new System.Drawing.Size(97, 19);
+            this.lbl_descuento.TabIndex = 25;
+            this.lbl_descuento.Text = "Descuento";
             // 
-            // label14
+            // lbl_subtotal
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(258, 78);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 16);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Subtotal";
+            this.lbl_subtotal.AutoSize = true;
+            this.lbl_subtotal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_subtotal.Location = new System.Drawing.Point(344, 96);
+            this.lbl_subtotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_subtotal.Name = "lbl_subtotal";
+            this.lbl_subtotal.Size = new System.Drawing.Size(73, 19);
+            this.lbl_subtotal.TabIndex = 25;
+            this.lbl_subtotal.Text = "Subtotal";
             // 
-            // label15
+            // lbl_pendiente
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(255, 118);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 16);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "Pendiente";
+            this.lbl_pendiente.AutoSize = true;
+            this.lbl_pendiente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pendiente.Location = new System.Drawing.Point(340, 145);
+            this.lbl_pendiente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_pendiente.Name = "lbl_pendiente";
+            this.lbl_pendiente.Size = new System.Drawing.Size(91, 19);
+            this.lbl_pendiente.TabIndex = 25;
+            this.lbl_pendiente.Text = "Pendiente";
             // 
-            // label16
+            // lbl_total
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(280, 154);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(38, 16);
-            this.label16.TabIndex = 25;
-            this.label16.Text = "Total";
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total.Location = new System.Drawing.Point(373, 190);
+            this.lbl_total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(46, 19);
+            this.lbl_total.TabIndex = 25;
+            this.lbl_total.Text = "Total";
             // 
-            // label17
+            // lbl_fecha_inicio
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(223, 160);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(107, 16);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "Fecha de inicio";
+            this.lbl_fecha_inicio.AutoSize = true;
+            this.lbl_fecha_inicio.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fecha_inicio.Location = new System.Drawing.Point(297, 197);
+            this.lbl_fecha_inicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_fecha_inicio.Name = "lbl_fecha_inicio";
+            this.lbl_fecha_inicio.Size = new System.Drawing.Size(136, 19);
+            this.lbl_fecha_inicio.TabIndex = 25;
+            this.lbl_fecha_inicio.Text = "Fecha de inicio";
             // 
-            // label18
+            // lbl_tipo_fibra
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(493, 120);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(90, 16);
-            this.label18.TabIndex = 25;
-            this.label18.Text = "Tipo de fibra";
+            this.lbl_tipo_fibra.AutoSize = true;
+            this.lbl_tipo_fibra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tipo_fibra.Location = new System.Drawing.Point(657, 148);
+            this.lbl_tipo_fibra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_tipo_fibra.Name = "lbl_tipo_fibra";
+            this.lbl_tipo_fibra.Size = new System.Drawing.Size(110, 19);
+            this.lbl_tipo_fibra.TabIndex = 25;
+            this.lbl_tipo_fibra.Text = "Tipo de fibra";
             // 
-            // label19
+            // lbl_dia_pago
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(238, 78);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 16);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "Día de pago";
+            this.lbl_dia_pago.AutoSize = true;
+            this.lbl_dia_pago.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dia_pago.Location = new System.Drawing.Point(317, 96);
+            this.lbl_dia_pago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_dia_pago.Name = "lbl_dia_pago";
+            this.lbl_dia_pago.Size = new System.Drawing.Size(112, 19);
+            this.lbl_dia_pago.TabIndex = 25;
+            this.lbl_dia_pago.Text = "Día de pago";
             // 
-            // label20
+            // lbl_estado_plan
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(221, 118);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(109, 16);
-            this.label20.TabIndex = 25;
-            this.label20.Text = "Estado del plan";
+            this.lbl_estado_plan.AutoSize = true;
+            this.lbl_estado_plan.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_estado_plan.Location = new System.Drawing.Point(295, 145);
+            this.lbl_estado_plan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_estado_plan.Name = "lbl_estado_plan";
+            this.lbl_estado_plan.Size = new System.Drawing.Size(135, 19);
+            this.lbl_estado_plan.TabIndex = 25;
+            this.lbl_estado_plan.Text = "Estado del plan";
             // 
-            // txtvelocidad
+            // txt_velocidad
             // 
-            this.txtvelocidad.Enabled = false;
-            this.txtvelocidad.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtvelocidad.Location = new System.Drawing.Point(593, 78);
-            this.txtvelocidad.Name = "txtvelocidad";
-            this.txtvelocidad.Size = new System.Drawing.Size(114, 22);
-            this.txtvelocidad.TabIndex = 24;
+            this.txt_velocidad.Enabled = false;
+            this.txt_velocidad.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_velocidad.Location = new System.Drawing.Point(791, 96);
+            this.txt_velocidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_velocidad.Name = "txt_velocidad";
+            this.txt_velocidad.Size = new System.Drawing.Size(151, 26);
+            this.txt_velocidad.TabIndex = 24;
             // 
-            // label21
+            // lbl_velocidad
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(508, 78);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(75, 16);
-            this.label21.TabIndex = 25;
-            this.label21.Text = "Velocidad";
+            this.lbl_velocidad.AutoSize = true;
+            this.lbl_velocidad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_velocidad.Location = new System.Drawing.Point(677, 96);
+            this.lbl_velocidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_velocidad.Name = "lbl_velocidad";
+            this.lbl_velocidad.Size = new System.Drawing.Size(95, 19);
+            this.lbl_velocidad.TabIndex = 25;
+            this.lbl_velocidad.Text = "Velocidad";
             // 
-            // panel2
+            // pnl_historial_crediticio
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.panel2.Controls.Add(this.txtpendiente);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.txttotal);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.txtimpuesto);
-            this.panel2.Controls.Add(this.txtsubtotal);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.txtcosto);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.txtdescuento);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(0, 62);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(468, 219);
-            this.panel2.TabIndex = 26;
+            this.pnl_historial_crediticio.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pnl_historial_crediticio.Controls.Add(this.txt_pendiente);
+            this.pnl_historial_crediticio.Controls.Add(this.lbl_pendiente);
+            this.pnl_historial_crediticio.Controls.Add(this.txt_total);
+            this.pnl_historial_crediticio.Controls.Add(this.lbl_total);
+            this.pnl_historial_crediticio.Controls.Add(this.txt_impuesto);
+            this.pnl_historial_crediticio.Controls.Add(this.txt_subtotal);
+            this.pnl_historial_crediticio.Controls.Add(this.lbl_descuento);
+            this.pnl_historial_crediticio.Controls.Add(this.lbl_subtotal);
+            this.pnl_historial_crediticio.Controls.Add(this.lbl_costo_plan);
+            this.pnl_historial_crediticio.Controls.Add(this.txt_costo_plan);
+            this.pnl_historial_crediticio.Controls.Add(this.lbl_impuesto);
+            this.pnl_historial_crediticio.Controls.Add(this.txt_descuento);
+            this.pnl_historial_crediticio.Controls.Add(this.lbl_historial_crediticio);
+            this.pnl_historial_crediticio.Location = new System.Drawing.Point(0, 76);
+            this.pnl_historial_crediticio.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_historial_crediticio.Name = "pnl_historial_crediticio";
+            this.pnl_historial_crediticio.Size = new System.Drawing.Size(624, 270);
+            this.pnl_historial_crediticio.TabIndex = 26;
             // 
-            // panel3
+            // pnl_informacion_general
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panel3.Controls.Add(this.txtapellido);
-            this.panel3.Controls.Add(this.label23);
-            this.panel3.Controls.Add(this.cmbestado);
-            this.panel3.Controls.Add(this.btnmodi);
-            this.panel3.Controls.Add(this.txtid);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.txtnombre);
-            this.panel3.Controls.Add(this.txtemail);
-            this.panel3.Controls.Add(this.txttelefono);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.txtcasanum);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.txtcalle);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label22);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(468, 62);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(501, 219);
-            this.panel3.TabIndex = 27;
+            this.pnl_informacion_general.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.pnl_informacion_general.Controls.Add(this.txt_apellidos);
+            this.pnl_informacion_general.Controls.Add(this.lbl_apellidos);
+            this.pnl_informacion_general.Controls.Add(this.cmb_estado);
+            this.pnl_informacion_general.Controls.Add(this.btn_modificar);
+            this.pnl_informacion_general.Controls.Add(this.txt_id);
+            this.pnl_informacion_general.Controls.Add(this.lbl_telefono);
+            this.pnl_informacion_general.Controls.Add(this.lbl_estado);
+            this.pnl_informacion_general.Controls.Add(this.txt_nombre);
+            this.pnl_informacion_general.Controls.Add(this.txt_email);
+            this.pnl_informacion_general.Controls.Add(this.txt_telefono);
+            this.pnl_informacion_general.Controls.Add(this.lbl_num_casa);
+            this.pnl_informacion_general.Controls.Add(this.txt_num_casa);
+            this.pnl_informacion_general.Controls.Add(this.label3);
+            this.pnl_informacion_general.Controls.Add(this.lbl_email);
+            this.pnl_informacion_general.Controls.Add(this.txt_calle);
+            this.pnl_informacion_general.Controls.Add(this.lbl_calle);
+            this.pnl_informacion_general.Controls.Add(this.lbl_id);
+            this.pnl_informacion_general.Controls.Add(this.lbl_nombre);
+            this.pnl_informacion_general.Location = new System.Drawing.Point(624, 76);
+            this.pnl_informacion_general.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_informacion_general.Name = "pnl_informacion_general";
+            this.pnl_informacion_general.Size = new System.Drawing.Size(668, 270);
+            this.pnl_informacion_general.TabIndex = 27;
             // 
-            // txtapellido
+            // txt_apellidos
             // 
-            this.txtapellido.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtapellido.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.txtapellido.Enabled = false;
-            this.txtapellido.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtapellido.Location = new System.Drawing.Point(91, 115);
-            this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(161, 22);
-            this.txtapellido.TabIndex = 29;
-            this.txtapellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellido_KeyPress);
+            this.txt_apellidos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txt_apellidos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.txt_apellidos.Enabled = false;
+            this.txt_apellidos.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_apellidos.Location = new System.Drawing.Point(121, 142);
+            this.txt_apellidos.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_apellidos.Name = "txt_apellidos";
+            this.txt_apellidos.Size = new System.Drawing.Size(213, 26);
+            this.txt_apellidos.TabIndex = 29;
+            this.txt_apellidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellido_KeyPress);
             // 
-            // label23
+            // lbl_apellidos
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(16, 118);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(69, 16);
-            this.label23.TabIndex = 28;
-            this.label23.Text = "Apellidos";
+            this.lbl_apellidos.AutoSize = true;
+            this.lbl_apellidos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_apellidos.Location = new System.Drawing.Point(21, 145);
+            this.lbl_apellidos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_apellidos.Name = "lbl_apellidos";
+            this.lbl_apellidos.Size = new System.Drawing.Size(86, 19);
+            this.lbl_apellidos.TabIndex = 28;
+            this.lbl_apellidos.Text = "Apellidos";
             // 
-            // cmbestado
+            // cmb_estado
             // 
-            this.cmbestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbestado.FormattingEnabled = true;
-            this.cmbestado.Items.AddRange(new object[] {
+            this.cmb_estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_estado.FormattingEnabled = true;
+            this.cmb_estado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cmbestado.Location = new System.Drawing.Point(90, 187);
-            this.cmbestado.Name = "cmbestado";
-            this.cmbestado.Size = new System.Drawing.Size(160, 21);
-            this.cmbestado.TabIndex = 27;
+            this.cmb_estado.Location = new System.Drawing.Point(120, 230);
+            this.cmb_estado.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_estado.Name = "cmb_estado";
+            this.cmb_estado.Size = new System.Drawing.Size(212, 24);
+            this.cmb_estado.TabIndex = 27;
             // 
-            // btnmodi
+            // btn_modificar
             // 
-            this.btnmodi.Location = new System.Drawing.Point(416, 188);
-            this.btnmodi.Name = "btnmodi";
-            this.btnmodi.Size = new System.Drawing.Size(75, 23);
-            this.btnmodi.TabIndex = 26;
-            this.btnmodi.Text = "Modificar";
-            this.btnmodi.UseVisualStyleBackColor = true;
-            this.btnmodi.Click += new System.EventHandler(this.btnmodi_Click);
+            this.btn_modificar.Location = new System.Drawing.Point(555, 231);
+            this.btn_modificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(100, 28);
+            this.btn_modificar.TabIndex = 26;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btnmodi_Click);
             // 
-            // txtid
+            // txt_id
             // 
-            this.txtid.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(81, 55);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(100, 13);
-            this.txtid.TabIndex = 26;
+            this.txt_id.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_id.Enabled = false;
+            this.txt_id.Location = new System.Drawing.Point(108, 68);
+            this.txt_id.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(133, 15);
+            this.txt_id.TabIndex = 26;
             // 
-            // label22
+            // lbl_id
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(54, 52);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(20, 16);
-            this.label22.TabIndex = 25;
-            this.label22.Text = "Id";
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.Location = new System.Drawing.Point(72, 64);
+            this.lbl_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(25, 19);
+            this.lbl_id.TabIndex = 25;
+            this.lbl_id.Text = "Id";
             // 
-            // panel4
+            // pnl_datos_planes
             // 
-            this.panel4.BackColor = System.Drawing.Color.Turquoise;
-            this.panel4.Controls.Add(this.btn_regresar);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.label21);
-            this.panel4.Controls.Add(this.label17);
-            this.panel4.Controls.Add(this.label18);
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Controls.Add(this.txt_planestado);
-            this.panel4.Controls.Add(this.txtvelocidad);
-            this.panel4.Controls.Add(this.txtdiapago);
-            this.panel4.Controls.Add(this.label20);
-            this.panel4.Controls.Add(this.txt_tipofibra);
-            this.panel4.Controls.Add(this.txtfechainicio);
-            this.panel4.Location = new System.Drawing.Point(0, 279);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(969, 222);
-            this.panel4.TabIndex = 28;
+            this.pnl_datos_planes.BackColor = System.Drawing.Color.Turquoise;
+            this.pnl_datos_planes.Controls.Add(this.btn_regresar);
+            this.pnl_datos_planes.Controls.Add(this.lbl_datos_planes);
+            this.pnl_datos_planes.Controls.Add(this.lbl_velocidad);
+            this.pnl_datos_planes.Controls.Add(this.lbl_fecha_inicio);
+            this.pnl_datos_planes.Controls.Add(this.lbl_tipo_fibra);
+            this.pnl_datos_planes.Controls.Add(this.lbl_dia_pago);
+            this.pnl_datos_planes.Controls.Add(this.txt_estado_plan);
+            this.pnl_datos_planes.Controls.Add(this.txt_velocidad);
+            this.pnl_datos_planes.Controls.Add(this.txt_dia_pago);
+            this.pnl_datos_planes.Controls.Add(this.lbl_estado_plan);
+            this.pnl_datos_planes.Controls.Add(this.txt_tipofibra);
+            this.pnl_datos_planes.Controls.Add(this.txt_fecha_inicio);
+            this.pnl_datos_planes.Location = new System.Drawing.Point(0, 343);
+            this.pnl_datos_planes.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_datos_planes.Name = "pnl_datos_planes";
+            this.pnl_datos_planes.Size = new System.Drawing.Size(1292, 273);
+            this.pnl_datos_planes.TabIndex = 28;
             // 
             // txtidfinal
             // 
             this.txtidfinal.Enabled = false;
-            this.txtidfinal.Location = new System.Drawing.Point(764, 507);
+            this.txtidfinal.Location = new System.Drawing.Point(1019, 624);
+            this.txtidfinal.Margin = new System.Windows.Forms.Padding(4);
             this.txtidfinal.Name = "txtidfinal";
-            this.txtidfinal.Size = new System.Drawing.Size(100, 20);
+            this.txtidfinal.Size = new System.Drawing.Size(132, 22);
             this.txtidfinal.TabIndex = 26;
             // 
-            // Datos_cliente
+            // frm_datos_cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(969, 502);
+            this.ClientSize = new System.Drawing.Size(1292, 618);
             this.Controls.Add(this.txtidfinal);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pnl_datos_planes);
+            this.Controls.Add(this.pnl_informacion_cliente);
+            this.Controls.Add(this.pnl_historial_crediticio);
+            this.Controls.Add(this.pnl_informacion_general);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Datos_cliente";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frm_datos_cliente";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos_cliente";
             ((System.ComponentModel.ISupportInitialize)(this.btn_regresar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
+            this.pnl_informacion_cliente.ResumeLayout(false);
+            this.pnl_informacion_cliente.PerformLayout();
+            this.pnl_historial_crediticio.ResumeLayout(false);
+            this.pnl_historial_crediticio.PerformLayout();
+            this.pnl_informacion_general.ResumeLayout(false);
+            this.pnl_informacion_general.PerformLayout();
+            this.pnl_datos_planes.ResumeLayout(false);
+            this.pnl_datos_planes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -653,55 +704,55 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_informacion_cliente;
+        private System.Windows.Forms.Label lbl_datos_planes;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_historial_crediticio;
         private System.Windows.Forms.PictureBox btn_regresar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.TextBox txtsubtotal;
-        public System.Windows.Forms.TextBox txtpendiente;
-        public System.Windows.Forms.TextBox txttotal;
-        public System.Windows.Forms.TextBox txtnombre;
-        public System.Windows.Forms.TextBox txtcosto;
-        public System.Windows.Forms.TextBox txtdescuento;
-        public System.Windows.Forms.TextBox txttelefono;
-        public System.Windows.Forms.TextBox txt_planestado;
-        public System.Windows.Forms.TextBox txtcalle;
-        public System.Windows.Forms.TextBox txtcasanum;
-        public System.Windows.Forms.TextBox txtimpuesto;
-        public System.Windows.Forms.TextBox txtfechainicio;
-        public System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.PictureBox btn_minimizar;
+        private System.Windows.Forms.Panel pnl_informacion_cliente;
+        public System.Windows.Forms.TextBox txt_subtotal;
+        public System.Windows.Forms.TextBox txt_pendiente;
+        public System.Windows.Forms.TextBox txt_total;
+        public System.Windows.Forms.TextBox txt_nombre;
+        public System.Windows.Forms.TextBox txt_costo_plan;
+        public System.Windows.Forms.TextBox txt_descuento;
+        public System.Windows.Forms.TextBox txt_telefono;
+        public System.Windows.Forms.TextBox txt_estado_plan;
+        public System.Windows.Forms.TextBox txt_calle;
+        public System.Windows.Forms.TextBox txt_num_casa;
+        public System.Windows.Forms.TextBox txt_impuesto;
+        public System.Windows.Forms.TextBox txt_fecha_inicio;
+        public System.Windows.Forms.TextBox txt_email;
         public System.Windows.Forms.TextBox txt_tipofibra;
-        public System.Windows.Forms.TextBox txtdiapago;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        public System.Windows.Forms.TextBox txtvelocidad;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnmodi;
-        private System.Windows.Forms.Label label22;
-        public System.Windows.Forms.TextBox txtid;
-        public System.Windows.Forms.ComboBox cmbestado;
+        public System.Windows.Forms.TextBox txt_dia_pago;
+        private System.Windows.Forms.Label lbl_nombre;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label lbl_estado;
+        private System.Windows.Forms.Label lbl_calle;
+        private System.Windows.Forms.Label lbl_num_casa;
+        private System.Windows.Forms.Label lbl_telefono;
+        private System.Windows.Forms.Label lbl_impuesto;
+        private System.Windows.Forms.Label lbl_costo_plan;
+        private System.Windows.Forms.Label lbl_descuento;
+        private System.Windows.Forms.Label lbl_subtotal;
+        private System.Windows.Forms.Label lbl_pendiente;
+        private System.Windows.Forms.Label lbl_total;
+        private System.Windows.Forms.Label lbl_fecha_inicio;
+        private System.Windows.Forms.Label lbl_tipo_fibra;
+        private System.Windows.Forms.Label lbl_dia_pago;
+        private System.Windows.Forms.Label lbl_estado_plan;
+        public System.Windows.Forms.TextBox txt_velocidad;
+        private System.Windows.Forms.Label lbl_velocidad;
+        private System.Windows.Forms.Panel pnl_historial_crediticio;
+        private System.Windows.Forms.Panel pnl_informacion_general;
+        private System.Windows.Forms.Panel pnl_datos_planes;
+        private System.Windows.Forms.Button btn_modificar;
+        private System.Windows.Forms.Label lbl_id;
+        public System.Windows.Forms.TextBox txt_id;
+        public System.Windows.Forms.ComboBox cmb_estado;
         public System.Windows.Forms.TextBox txtidfinal;
-        public System.Windows.Forms.TextBox txtapellido;
-        private System.Windows.Forms.Label label23;
+        public System.Windows.Forms.TextBox txt_apellidos;
+        private System.Windows.Forms.Label lbl_apellidos;
     }
 }

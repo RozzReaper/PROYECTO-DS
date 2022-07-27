@@ -21,7 +21,7 @@ namespace Ejemplo2
         {
             //Boton para regresar a la pantalla anterior
             this.Hide();
-            Form2 form2 = new Form2();
+            frm_inicio_sesion form2 = new frm_inicio_sesion();
             form2.Show();
         }
 
@@ -35,7 +35,7 @@ namespace Ejemplo2
         {
             //Boton para mostrar el Caso
             this.Hide();
-            Form5 form5 = new Form5();
+            frm_examinacion_informe form5 = new frm_examinacion_informe();
             form5.Show();
         }
     }

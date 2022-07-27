@@ -16,9 +16,9 @@ using System.Text.RegularExpressions;
 
 namespace Ejemplo2
 {
-    public partial class Datos_cliente : Form
+    public partial class frm_datos_cliente : Form
     {
-        public Datos_cliente()
+        public frm_datos_cliente()
         {
             InitializeComponent();
         }
@@ -31,7 +31,7 @@ namespace Ejemplo2
             cn.Open();//Se abre la conexion con al BD
             try
             {
-                SqlCommand cmd = new SqlCommand("UPDATE dbo.clientes SET dbo.clientes.nombres ='" +this.txtnombre.Text + "',dbo.clientes.apellidos='" + this.txtapellido.Text + "',dbo.clientes.email='" + this.txtemail.Text + "',dbo.clientes.estado='" + this.cmbestado.Text + "',dbo.clientes.calle='" + this.txtcalle.Text + "',dbo.clientes.casa_num='" + this.txtcasanum.Text + "',dbo.clientes.telefono='" + this.txttelefono.Text + "'WHERE dbo.clientes.id_cliente=" +Convert.ToInt32(this.txtid.Text + ""), cn);
+                SqlCommand cmd = new SqlCommand("UPDATE dbo.clientes SET dbo.clientes.nombres ='" +this.txt_nombre.Text + "',dbo.clientes.apellidos='" + this.txt_apellidos.Text + "',dbo.clientes.email='" + this.txt_email.Text + "',dbo.clientes.estado='" + this.cmb_estado.Text + "',dbo.clientes.calle='" + this.txt_calle.Text + "',dbo.clientes.casa_num='" + this.txt_num_casa.Text + "',dbo.clientes.telefono='" + this.txt_telefono.Text + "'WHERE dbo.clientes.id_cliente=" +Convert.ToInt32(this.txt_id.Text + ""), cn);
                 cmd.ExecuteNonQuery();//Se declara un comando para añadir el query usado para actualizar los datos
                 cn.Close();//cambiando los valores de las posibles variables por los valores puestos en los textbox, se ejecuta y cierra la conexion
             }
@@ -71,7 +71,7 @@ namespace Ejemplo2
 
         private void btn_regresar_Click(object sender, EventArgs e)
         {
-            LoginCliente loginCliente = new LoginCliente();//Se instancia el formulario para usar sus campos y variables
+            frm_login_cliente loginCliente = new frm_login_cliente();//Se instancia el formulario para usar sus campos y variables
             loginCliente.txtsearch.Text = txtidfinal.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
             loginCliente.Show();
             this.Hide();
@@ -79,7 +79,7 @@ namespace Ejemplo2
 
         private void btnmodi_Click(object sender, EventArgs e)
         {
-            if (txtcalle.Text == "" || cmbestado.Text == "" || txttelefono.Text == "")//Primera validación si los parámetros están incompletos
+            if (txt_calle.Text == "" || cmb_estado.Text == "" || txt_telefono.Text == "")//Primera validación si los parámetros están incompletos
             {
 
                 MessageCreacion creacion= new MessageCreacion();//Se mandará un formulario que contendrá el mensaje de error
@@ -87,14 +87,14 @@ namespace Ejemplo2
             }
             else
             {
-                if (txttelefono.Text.Trim().Length != 8)//Segunda validación, si el numero ingresado supera el largo de 8 digitos
+                if (txt_telefono.Text.Trim().Length != 8)//Segunda validación, si el numero ingresado supera el largo de 8 digitos
                 {
                     Tel8digi tel8Digi = new Tel8digi(); 
                     tel8Digi.Show();//Se lanza un mensaje de error, mostrando que el numero debe de ser de esa cantidad
                 }
                 else//Usando la propiedad para acceder al contenido del primer digito, se hace un if para que, si no coincide con los numeros posteriores->
                 {
-                    if (!txttelefono.Text[0].ToString().Equals("2") && !txttelefono.Text[0].ToString().Equals("3") && !txttelefono.Text[0].ToString().Equals("8") && !txttelefono.Text[0].ToString().Equals("9"))
+                    if (!txt_telefono.Text[0].ToString().Equals("2") && !txt_telefono.Text[0].ToString().Equals("3") && !txt_telefono.Text[0].ToString().Equals("8") && !txt_telefono.Text[0].ToString().Equals("9"))
                     {
                         MessageTel messageTel = new MessageTel();//<-Mostrar un mensaje informando que el numero solo debe comenzar con 2,3,8 o 9
                         messageTel.Show();
@@ -102,14 +102,14 @@ namespace Ejemplo2
                     }
                     else
                     {
-                        if (txtcasanum.Text.Trim().Length > 4)//Segunda validación, si el numero ingresado supera el largo de 8 digitos
+                        if (txt_num_casa.Text.Trim().Length > 4)//Segunda validación, si el numero ingresado supera el largo de 8 digitos
                         {
                             ValCasa valCasa = new ValCasa(); //mensaje de error num casa
                             valCasa.Show();
                         }
                         else
                         {
-                            if (ValidarEmail(txtemail.Text) == false)
+                            if (ValidarEmail(txt_email.Text) == false)
                             {
                                 Correo correo = new Correo();//Validación correo M
                                 correo.Show();
@@ -147,7 +147,7 @@ namespace Ejemplo2
                     return;
 
                 }
-            else if (txttelefono.Text.Trim().Length >= 8)//Validación de limite de caracteres M
+            else if (txt_telefono.Text.Trim().Length >= 8)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if(e.KeyChar != 08)
@@ -163,7 +163,7 @@ namespace Ejemplo2
 
         private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (txtnombre.Text.Trim().Length >= 50)//Validación de limite de caracteres M
+            if (txt_nombre.Text.Trim().Length >= 50)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar != 08)
@@ -184,7 +184,7 @@ namespace Ejemplo2
                 MessageDescVacia messageDescVacia = new MessageDescVacia();
                 messageDescVacia.Show();// mensaje de error para espacios
             }
-            else if (txtemail.Text.Trim().Length >= 175)//Validación de limite de caracteres M
+            else if (txt_email.Text.Trim().Length >= 175)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar != 08)
@@ -214,7 +214,7 @@ namespace Ejemplo2
                     return;
 
             }
-            else if (txtcasanum.Text.Trim().Length >= 4)//Validación de limite de caracteres M
+            else if (txt_num_casa.Text.Trim().Length >= 4)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar != 08)
@@ -247,7 +247,7 @@ namespace Ejemplo2
                 }
                 else
                 {
-                    if (txtcalle.Text.Trim().Length >= 50)//Validación de limite de caracteres PONER EN LOS DEMAS TEXTBOX
+                    if (txt_calle.Text.Trim().Length >= 50)//Validación de limite de caracteres PONER EN LOS DEMAS TEXTBOX
                     {
                         //validacion para limite de caracteres
                         if(e.KeyChar != 08)
@@ -270,7 +270,7 @@ namespace Ejemplo2
 
         private void txtapellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (txtapellido.Text.Trim().Length >= 50)//Validación de limite de caracteres M
+            if (txt_apellidos.Text.Trim().Length >= 50)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar >=0 && e.KeyChar <= 7 || e.KeyChar>=9 && e.KeyChar<=64 || e.KeyChar>=91 && e.KeyChar <= 96 || e.KeyChar >= 123 && e.KeyChar <= 255)
