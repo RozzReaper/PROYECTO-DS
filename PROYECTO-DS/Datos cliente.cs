@@ -44,13 +44,12 @@ namespace Ejemplo2
 
         }
 
-        public static bool ValidarEmail(string comprobarEmail)
+        public static bool ValidarEmail(string comprobar_email)
         {
-            string emailFormato;
-            emailFormato = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
-            if (Regex.IsMatch(comprobarEmail, emailFormato))
+            string formato_email = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            if (Regex.IsMatch(comprobar_email, formato_email))
             {
-                if (Regex.Replace(comprobarEmail, emailFormato, String.Empty).Length == 0)
+                if (Regex.Replace(comprobar_email, formato_email, String.Empty).Length == 0)
                 {
                     return true;
                 }
@@ -96,16 +95,16 @@ namespace Ejemplo2
                 {
                     if (!txt_telefono.Text[0].ToString().Equals("2") && !txt_telefono.Text[0].ToString().Equals("3") && !txt_telefono.Text[0].ToString().Equals("8") && !txt_telefono.Text[0].ToString().Equals("9"))
                     {
-                        MessageTel messageTel = new MessageTel();//<-Mostrar un mensaje informando que el numero solo debe comenzar con 2,3,8 o 9
-                        messageTel.Show();
+                        MessageTel message_telefono = new MessageTel();//<-Mostrar un mensaje informando que el numero solo debe comenzar con 2,3,8 o 9
+                        message_telefono.Show();
 
                     }
                     else
                     {
                         if (txt_num_casa.Text.Trim().Length > 4)//Segunda validación, si el numero ingresado supera el largo de 8 digitos
                         {
-                            ValCasa valCasa = new ValCasa(); //mensaje de error num casa
-                            valCasa.Show();
+                            ValCasa validar_casa = new ValCasa(); //mensaje de error num casa
+                            validar_casa.Show();
                         }
                         else
                         {
@@ -136,13 +135,13 @@ namespace Ejemplo2
 
             if (e.Handled = char.IsWhiteSpace(e.KeyChar))
             {
-                MessageDescVacia messageDescVacia = new MessageDescVacia();
-                messageDescVacia.Show();// mensaje de error para espacios 
+                MessageDescVacia message_descripcion_vacia = new MessageDescVacia();
+                message_descripcion_vacia.Show();// mensaje de error para espacios 
             }
             else if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
                 {
-                    MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
-                    messageNume.Show();
+                    MessageNume message_numero = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                    message_numero.Show();
                     e.Handled = true;
                     return;
 
@@ -152,8 +151,8 @@ namespace Ejemplo2
                 //validacion para limite de caracteres 
                 if(e.KeyChar != 08)
                 {
-                    MessageDescLimite messageDescLimite = new MessageDescLimite();
-                    messageDescLimite.Show();//validacion para limite de caracteresv
+                    MessageDescLimite message_descripcion_limite = new MessageDescLimite();
+                    message_descripcion_limite.Show();//validacion para limite de caracteresv
                     e.Handled = true;
                     return;
                 }
@@ -168,8 +167,8 @@ namespace Ejemplo2
                 //validacion para limite de caracteres 
                 if (e.KeyChar != 08)
                 {
-                    MessageDescLimite messageDescLimite = new MessageDescLimite();
-                    messageDescLimite.Show();//validacion para limite de caracteres
+                    MessageDescLimite message_descripcion_limite = new MessageDescLimite();
+                    message_descripcion_limite.Show();//validacion para limite de caracteres
                     e.Handled = true;
                     return;
                 }
@@ -181,16 +180,16 @@ namespace Ejemplo2
         {
             if (e.Handled = char.IsWhiteSpace(e.KeyChar))
             {
-                MessageDescVacia messageDescVacia = new MessageDescVacia();
-                messageDescVacia.Show();// mensaje de error para espacios
+                MessageDescVacia message_descripcion_vacia = new MessageDescVacia();
+                message_descripcion_vacia.Show();// mensaje de error para espacios
             }
             else if (txt_email.Text.Trim().Length >= 175)//Validación de limite de caracteres M
             {
                 //validacion para limite de caracteres 
                 if (e.KeyChar != 08)
                 {
-                    MessageDescLimite messageDescLimite = new MessageDescLimite();
-                    messageDescLimite.Show();//validacion para limite de caracteres
+                    MessageDescLimite message_descripcion_limite = new MessageDescLimite();
+                    message_descripcion_limite.Show();//validacion para limite de caracteres
                     e.Handled = true;
                     return;
                 }
@@ -203,13 +202,13 @@ namespace Ejemplo2
 
             if (e.Handled = char.IsWhiteSpace(e.KeyChar))
             {
-                MessageDescVacia messageDescVacia = new MessageDescVacia();
-                messageDescVacia.Show();// mensaje de error para espacios
+                MessageDescVacia message_descripcion_vacia = new MessageDescVacia();
+                message_descripcion_vacia.Show();// mensaje de error para espacios
             }
             else if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
             {
-                    MessageNume messageNume = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
-                    messageNume.Show();
+                    MessageNume message_numero = new MessageNume();//En caso que se introduzca un valor que no sea tipo numérico, mandar un mensaje de error
+                message_numero.Show();
                     e.Handled = true;
                     return;
 
@@ -219,8 +218,8 @@ namespace Ejemplo2
                 //validacion para limite de caracteres 
                 if (e.KeyChar != 08)
                 {
-                    MessageDescLimite messageDescLimite = new MessageDescLimite();
-                    messageDescLimite.Show();//validacion para limite de caracteres
+                    MessageDescLimite message_descripcion_limite = new MessageDescLimite();
+                    message_descripcion_limite.Show();//validacion para limite de caracteres
                     e.Handled = true;
                     return;
                 }
@@ -233,15 +232,15 @@ namespace Ejemplo2
 
             if (e.Handled = char.IsWhiteSpace(e.KeyChar))
             {
-                MessageDescVacia messageDescVacia = new MessageDescVacia();
-                messageDescVacia.Show();// mensaje de error para espacios
+                MessageDescVacia message_descripcion_vacia = new MessageDescVacia();
+                message_descripcion_vacia.Show();// mensaje de error para espacios
             }
             else
             {
                 if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))//En caso de no pertenecer a los numeros del 0-9, mandar un mensaje de error
                 {
-                    MessageDescVacia messageDescVacia = new MessageDescVacia();
-                    messageDescVacia.Show();// mensaje de error para espacios
+                    MessageDescVacia message_descripcion_vacia = new MessageDescVacia();
+                    message_descripcion_vacia.Show();// mensaje de error para espacios
                     e.Handled = true;
                     return;
                 }
@@ -252,8 +251,8 @@ namespace Ejemplo2
                         //validacion para limite de caracteres
                         if(e.KeyChar != 08)
                         {
-                            MessageDescLimite messageDescLimite = new MessageDescLimite();
-                            messageDescLimite.Show();//validacion para el tipo de caracter
+                            MessageDescLimite message_descripcion_limite = new MessageDescLimite();
+                            message_descripcion_limite.Show();//validacion para el tipo de caracter
                             e.Handled = true;
                             return;
                         }
@@ -263,10 +262,6 @@ namespace Ejemplo2
             
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtapellido_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -277,8 +272,8 @@ namespace Ejemplo2
                 {
                     if (e.KeyChar != 08)
                     {
-                        MessageDescLimite messageDescLimite = new MessageDescLimite();
-                        messageDescLimite.Show();//validacion para limite de caracteres
+                        MessageDescLimite message_descripcion_limite = new MessageDescLimite();
+                        message_descripcion_limite.Show();//validacion para limite de caracteres
                         e.Handled = true;
                         return;
                     }

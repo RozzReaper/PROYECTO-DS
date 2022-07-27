@@ -354,7 +354,6 @@
             this.lbl_estado.Size = new System.Drawing.Size(63, 19);
             this.lbl_estado.TabIndex = 25;
             this.lbl_estado.Text = "Estado";
-            this.lbl_estado.Click += new System.EventHandler(this.label7_Click);
             // 
             // lbl_calle
             // 
