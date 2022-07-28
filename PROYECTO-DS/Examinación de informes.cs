@@ -69,8 +69,28 @@ namespace Ejemplo2
         //Botón que redirige a la visualización del Reporte de la Tabla
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            ReporteInformes reporteInformes = new ReporteInformes();
-            reporteInformes.Show();
+
+
+            //datos.txt_id.Text = dgv_busqueda_cliente.CurrentRow.Cells[0].Value.ToString();
+            
+            Report reporte = new Report();
+
+            
+            for (int i = 0; i < dgv_casos.Rows.Count; i++)
+            {
+                Reporteandro report = new Reporteandro();
+                report.nombres = (string)this.dgv_casos.Rows[i].Cells[0].Value;
+                report.apellidos = (string)this.dgv_casos.Rows[i].Cells[1].Value;
+                report.id_empleado = (int)this.dgv_casos.Rows[i].Cells[2].Value;
+                report.id_cliente = (int)this.dgv_casos.Rows[i].Cells[3].Value;
+                report.categoria = (string)this.dgv_casos.Rows[i].Cells[4].Value;
+                report.descripcion = (string)this.dgv_casos.Rows[i].Cells[5].Value;
+                report.creacion_fecha = (DateTime)this.dgv_casos.Rows[i].Cells[6].Value;
+                reporte.report.Add(report);
+            }
+           
+            reporte.ShowDialog();
+
         }
     }
 }
