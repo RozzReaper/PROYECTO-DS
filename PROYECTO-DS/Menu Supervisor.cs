@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ejemplo2
 {
-    public partial class Menu_Supervisor : Form
+    public partial class menu_supervisor : Form
     {
-        public Menu_Supervisor()//Acceso a una clase en este caso al Menu supervisor
+        public menu_supervisor()//Acceso a una clase en este caso al Menu supervisor
         {
             InitializeComponent();//Llamada al constructor para inicializar los parametros
         }

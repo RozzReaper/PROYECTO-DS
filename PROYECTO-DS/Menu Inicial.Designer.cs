@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_acceder_login = new System.Windows.Forms.Panel();
             this.btn_helper = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_bienvenidos = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_agente = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.panel_acceder_login.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel_acceder_login
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(12)))), ((int)(((byte)(43)))));
-            this.panel1.BackgroundImage = global::Ejemplo2.Properties.Resources.BANNER;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Controls.Add(this.btn_helper);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btn_agente);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1260, 427);
-            this.panel1.TabIndex = 14;
+            this.panel_acceder_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(12)))), ((int)(((byte)(43)))));
+            this.panel_acceder_login.BackgroundImage = global::Ejemplo2.Properties.Resources.BANNER;
+            this.panel_acceder_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_acceder_login.Controls.Add(this.btn_helper);
+            this.panel_acceder_login.Controls.Add(this.lbl_bienvenidos);
+            this.panel_acceder_login.Controls.Add(this.pictureBox2);
+            this.panel_acceder_login.Controls.Add(this.pictureBox1);
+            this.panel_acceder_login.Controls.Add(this.btn_agente);
+            this.panel_acceder_login.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_acceder_login.Location = new System.Drawing.Point(0, 0);
+            this.panel_acceder_login.Name = "panel_acceder_login";
+            this.panel_acceder_login.Size = new System.Drawing.Size(1260, 427);
+            this.panel_acceder_login.TabIndex = 14;
             // 
             // btn_helper
             // 
@@ -71,17 +71,17 @@
             this.btn_helper.TabStop = false;
             this.btn_helper.Click += new System.EventHandler(this.btn_helper_Click);
             // 
-            // label1
+            // lbl_bienvenidos
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(12)))), ((int)(((byte)(43)))));
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 28F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(227, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 45);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bienvenidos";
+            this.lbl_bienvenidos.AutoSize = true;
+            this.lbl_bienvenidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(12)))), ((int)(((byte)(43)))));
+            this.lbl_bienvenidos.Font = new System.Drawing.Font("Century Gothic", 28F);
+            this.lbl_bienvenidos.ForeColor = System.Drawing.Color.White;
+            this.lbl_bienvenidos.Location = new System.Drawing.Point(227, 123);
+            this.lbl_bienvenidos.Name = "lbl_bienvenidos";
+            this.lbl_bienvenidos.Size = new System.Drawing.Size(243, 45);
+            this.lbl_bienvenidos.TabIndex = 1;
+            this.lbl_bienvenidos.Text = "Bienvenidos";
             // 
             // pictureBox2
             // 
@@ -133,15 +133,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1260, 427);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_acceder_login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Inicial";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel_acceder_login.ResumeLayout(false);
+            this.panel_acceder_login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -150,11 +150,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_bienvenidos;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_agente;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_acceder_login;
         private System.Windows.Forms.PictureBox btn_helper;
     }
 }

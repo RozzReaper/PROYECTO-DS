@@ -22,9 +22,9 @@ namespace Ejemplo2
 
         private void Report_Load(object sender, EventArgs e)
         {
-            reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", report));
-            this.reportViewer1.RefreshReport();
+            report_viewer.LocalReport.DataSources.Clear();
+            report_viewer.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", report));
+            this.report_viewer.RefreshReport();
         }
     }
 }

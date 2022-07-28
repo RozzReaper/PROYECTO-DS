@@ -127,8 +127,8 @@ namespace Ejemplo2
                     {
                         //Herencia del ID del Usuario que loguea
                         txtcopiar.Text = txt_id_empleado.Text;
-                        Form6 forma = new Form6();
-                        forma.txtimport.Text = txt_id_empleado.Text;
+                        menu_agente_universal forma = new menu_agente_universal();
+                        forma.txt_import.Text = txt_id_empleado.Text;
                         this.Hide();
                         forma.Show();
                         
@@ -138,7 +138,7 @@ namespace Ejemplo2
                     {
                         //Instancia del formulario Menu_Supervisor, que al cumplirse la validación y los datos coincidir con algún usuario "Supervisor", será redirigido a este mismo.
                         this.Hide();
-                        Menu_Supervisor frm = new Menu_Supervisor();
+                        menu_supervisor frm = new menu_supervisor();
                         frm.Show();
                     }
                 }

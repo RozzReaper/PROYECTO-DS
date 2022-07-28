@@ -33,7 +33,7 @@ namespace Ejemplo2
         {
             //Ocultamos el formulario actual para poder mostrar el formulario instanciado
             this.Hide();
-            Menu_Supervisor menu_Supervisor = new Menu_Supervisor();
+            menu_supervisor menu_Supervisor = new menu_supervisor();
             menu_Supervisor.Show();
         }
 

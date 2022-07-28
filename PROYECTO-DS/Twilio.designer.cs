@@ -37,7 +37,7 @@
             this.txt_body = new System.Windows.Forms.TextBox();
             this.lbl_msg = new System.Windows.Forms.Label();
             this.btn_text = new System.Windows.Forms.Button();
-            this.lblStatus = new System.Windows.Forms.Label();
+            this.lbl_status = new System.Windows.Forms.Label();
             this.btn_update_status = new System.Windows.Forms.Button();
             this.btn_regresar = new System.Windows.Forms.PictureBox();
             this.txttwilio = new System.Windows.Forms.TextBox();
@@ -127,14 +127,14 @@
             this.btn_text.UseVisualStyleBackColor = true;
             this.btn_text.Click += new System.EventHandler(this.btnText_Click);
             // 
-            // lblStatus
+            // lbl_status
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(12, 341);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(82, 13);
-            this.lblStatus.TabIndex = 12;
-            this.lblStatus.Text = "Status: waiting..";
+            this.lbl_status.AutoSize = true;
+            this.lbl_status.Location = new System.Drawing.Point(12, 341);
+            this.lbl_status.Name = "lbl_status";
+            this.lbl_status.Size = new System.Drawing.Size(82, 13);
+            this.lbl_status.TabIndex = 12;
+            this.lbl_status.Text = "Status: waiting..";
             // 
             // btn_update_status
             // 
@@ -173,7 +173,7 @@
             this.Controls.Add(this.txttwilio);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btn_update_status);
-            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.lbl_status);
             this.Controls.Add(this.btn_text);
             this.Controls.Add(this.lbl_msg);
             this.Controls.Add(this.txt_body);
@@ -203,7 +203,7 @@
         private System.Windows.Forms.TextBox txt_body;
         private System.Windows.Forms.Label lbl_msg;
         private System.Windows.Forms.Button btn_text;
-        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lbl_status;
         private System.Windows.Forms.Button btn_update_status;
         private System.Windows.Forms.PictureBox btn_regresar;
         public System.Windows.Forms.TextBox txttwilio;

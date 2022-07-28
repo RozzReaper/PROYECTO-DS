@@ -12,9 +12,9 @@ using MatthiWare.SmsAndCallClient;
 
 namespace Ejemplo2
 {
-    public partial class Form6 : Form
+    public partial class menu_agente_universal : Form
     {
-        public Form6()
+        public menu_agente_universal()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace Ejemplo2
         private void btnSupervisor_Click(object sender, EventArgs e)
         {
             frm_creacion_caso traslado = new frm_creacion_caso();
-            traslado.txt_id_empleado.Text = txtimport.Text; //Se iguala el contenido del text box que contiene el id al del siguiente formulario
+            traslado.txt_id_empleado.Text = txt_import.Text; //Se iguala el contenido del text box que contiene el id al del siguiente formulario
             this.Hide();
             traslado.Show();
         }
@@ -51,7 +51,7 @@ namespace Ejemplo2
         private void btnlgncliente_Click(object sender, EventArgs e)
         {
             frm_login_cliente loginCliente = new frm_login_cliente();
-            loginCliente.txtsearch.Text = txtimport.Text; //Text box para busqueda de cliente
+            loginCliente.txtsearch.Text = txt_import.Text; //Text box para busqueda de cliente
             this.Hide();
             loginCliente.Show();
         }
@@ -64,7 +64,7 @@ namespace Ejemplo2
         private void button1_Click(object sender, EventArgs e)
         {
             tw_frm tW1 = new tw_frm();
-            tW1.txttwilio.Text = txtimport.Text;
+            tW1.txttwilio.Text = txt_import.Text;
             this.Hide();
             tW1.Show();
         }

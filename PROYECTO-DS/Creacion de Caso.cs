@@ -30,8 +30,8 @@ namespace Ejemplo2
 
         private void btn_regresar_Click(object sender, EventArgs e)
         {
-            Form6 frm6 = new Form6();//Se instancia el formulario que contiene el id del empleado
-            frm6.txtimport.Text = txt_id_empleado.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
+            menu_agente_universal frm6 = new menu_agente_universal();//Se instancia el formulario que contiene el id del empleado
+            frm6.txt_import.Text = txt_id_empleado.Text;//Se iguala el contenido del text box que contiene el id al del siguiente formulatio
             frm6.Show();
             this.Hide();
         }
