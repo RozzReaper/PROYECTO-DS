@@ -171,5 +171,35 @@ namespace MatthiWare.SmsAndCallClient
         {
 
         }
+
+        private void pic_minus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tw_frm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_from_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_to_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_msg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_api_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

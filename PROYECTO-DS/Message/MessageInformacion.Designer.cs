@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label lbl_info;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageInformacion));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnOkC = new System.Windows.Forms.Button();
+            this.btn_okc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            label1 = new System.Windows.Forms.Label();
+            this.lbl_txt = new System.Windows.Forms.Label();
+            this.pic_warn = new System.Windows.Forms.PictureBox();
+            lbl_info = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_warn)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_info
             // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.ForeColor = System.Drawing.Color.DimGray;
-            label1.Location = new System.Drawing.Point(13, 13);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(104, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Información";
+            lbl_info.AutoSize = true;
+            lbl_info.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbl_info.ForeColor = System.Drawing.Color.DimGray;
+            lbl_info.Location = new System.Drawing.Point(13, 13);
+            lbl_info.Name = "lbl_info";
+            lbl_info.Size = new System.Drawing.Size(104, 21);
+            lbl_info.TabIndex = 0;
+            lbl_info.Text = "Información";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Controls.Add(label1);
+            this.panel1.Controls.Add(lbl_info);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -67,58 +67,58 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.Controls.Add(this.btnOkC);
+            this.panel2.Controls.Add(this.btn_okc);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 135);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(370, 51);
             this.panel2.TabIndex = 3;
             // 
-            // btnOkC
+            // btn_okc
             // 
-            this.btnOkC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.btnOkC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOkC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnOkC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOkC.ForeColor = System.Drawing.Color.LightGray;
-            this.btnOkC.Location = new System.Drawing.Point(149, 12);
-            this.btnOkC.Name = "btnOkC";
-            this.btnOkC.Size = new System.Drawing.Size(60, 23);
-            this.btnOkC.TabIndex = 0;
-            this.btnOkC.Text = "Ok";
-            this.btnOkC.UseVisualStyleBackColor = false;
-            this.btnOkC.Click += new System.EventHandler(this.btnOkC_Click);
+            this.btn_okc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.btn_okc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_okc.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btn_okc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_okc.ForeColor = System.Drawing.Color.LightGray;
+            this.btn_okc.Location = new System.Drawing.Point(149, 12);
+            this.btn_okc.Name = "btn_okc";
+            this.btn_okc.Size = new System.Drawing.Size(60, 23);
+            this.btn_okc.TabIndex = 0;
+            this.btn_okc.Text = "Ok";
+            this.btn_okc.UseVisualStyleBackColor = false;
+            this.btn_okc.Click += new System.EventHandler(this.btnOkC_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightBlue;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.lbl_txt);
+            this.panel3.Controls.Add(this.pic_warn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 49);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(370, 86);
             this.panel3.TabIndex = 4;
             // 
-            // label2
+            // lbl_txt
             // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(61, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(297, 44);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Verifique que los campos estén llenos o que exista la identidad del empleado";
+            this.lbl_txt.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_txt.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_txt.Location = new System.Drawing.Point(61, 17);
+            this.lbl_txt.Name = "lbl_txt";
+            this.lbl_txt.Size = new System.Drawing.Size(297, 44);
+            this.lbl_txt.TabIndex = 5;
+            this.lbl_txt.Text = "Verifique que los campos estén llenos o que exista la identidad del empleado";
             // 
-            // pictureBox1
+            // pic_warn
             // 
-            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.advertencia;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pic_warn.Image = global::Ejemplo2.Properties.Resources.advertencia;
+            this.pic_warn.Location = new System.Drawing.Point(12, 17);
+            this.pic_warn.Name = "pic_warn";
+            this.pic_warn.Size = new System.Drawing.Size(43, 44);
+            this.pic_warn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_warn.TabIndex = 0;
+            this.pic_warn.TabStop = false;
             // 
             // MessageInformacion
             // 
@@ -137,7 +137,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_warn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -146,9 +146,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnOkC;
+        private System.Windows.Forms.Button btn_okc;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_txt;
+        private System.Windows.Forms.PictureBox pic_warn;
     }
 }

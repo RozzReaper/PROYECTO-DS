@@ -32,13 +32,13 @@
             this.panel_acceder_login = new System.Windows.Forms.Panel();
             this.btn_helper = new System.Windows.Forms.PictureBox();
             this.lbl_bienvenidos = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_minus = new System.Windows.Forms.PictureBox();
+            this.pic_x = new System.Windows.Forms.PictureBox();
             this.btn_agente = new System.Windows.Forms.Button();
             this.panel_acceder_login.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_minus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_x)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_acceder_login
@@ -48,8 +48,8 @@
             this.panel_acceder_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel_acceder_login.Controls.Add(this.btn_helper);
             this.panel_acceder_login.Controls.Add(this.lbl_bienvenidos);
-            this.panel_acceder_login.Controls.Add(this.pictureBox2);
-            this.panel_acceder_login.Controls.Add(this.pictureBox1);
+            this.panel_acceder_login.Controls.Add(this.pic_minus);
+            this.panel_acceder_login.Controls.Add(this.pic_x);
             this.panel_acceder_login.Controls.Add(this.btn_agente);
             this.panel_acceder_login.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_acceder_login.Location = new System.Drawing.Point(0, 0);
@@ -83,31 +83,31 @@
             this.lbl_bienvenidos.TabIndex = 1;
             this.lbl_bienvenidos.Text = "Bienvenidos";
             // 
-            // pictureBox2
+            // pic_minus
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Ejemplo2.Properties.Resources.minus;
-            this.pictureBox2.Location = new System.Drawing.Point(1161, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pic_minus.BackColor = System.Drawing.Color.Transparent;
+            this.pic_minus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_minus.Image = global::Ejemplo2.Properties.Resources.minus;
+            this.pic_minus.Location = new System.Drawing.Point(1161, 12);
+            this.pic_minus.Name = "pic_minus";
+            this.pic_minus.Size = new System.Drawing.Size(40, 40);
+            this.pic_minus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_minus.TabIndex = 13;
+            this.pic_minus.TabStop = false;
+            this.pic_minus.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox1
+            // pic_x
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Ejemplo2.Properties.Resources.close;
-            this.pictureBox1.Location = new System.Drawing.Point(1207, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pic_x.BackColor = System.Drawing.Color.Transparent;
+            this.pic_x.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pic_x.Image = global::Ejemplo2.Properties.Resources.close;
+            this.pic_x.Location = new System.Drawing.Point(1207, 12);
+            this.pic_x.Name = "pic_x";
+            this.pic_x.Size = new System.Drawing.Size(41, 40);
+            this.pic_x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_x.TabIndex = 12;
+            this.pic_x.TabStop = false;
+            this.pic_x.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btn_agente
             // 
@@ -143,16 +143,16 @@
             this.panel_acceder_login.ResumeLayout(false);
             this.panel_acceder_login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_helper)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_minus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_x)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label lbl_bienvenidos;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_minus;
+        private System.Windows.Forms.PictureBox pic_x;
         private System.Windows.Forms.Button btn_agente;
         private System.Windows.Forms.Panel panel_acceder_login;
         private System.Windows.Forms.PictureBox btn_helper;

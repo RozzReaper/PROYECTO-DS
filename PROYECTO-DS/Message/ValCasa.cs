@@ -22,5 +22,10 @@ namespace Ejemplo2.Message
             //Boton de "minimizacion" del message
             this.Hide();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
