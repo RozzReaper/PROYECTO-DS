@@ -58,10 +58,10 @@
             // lbl_bienvenido
             // 
             this.lbl_bienvenido.AutoSize = true;
-            this.lbl_bienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_bienvenido.Location = new System.Drawing.Point(269, 18);
+            this.lbl_bienvenido.Font = new System.Drawing.Font("Century Gothic", 18.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_bienvenido.Location = new System.Drawing.Point(278, 18);
             this.lbl_bienvenido.Name = "lbl_bienvenido";
-            this.lbl_bienvenido.Size = new System.Drawing.Size(374, 29);
+            this.lbl_bienvenido.Size = new System.Drawing.Size(369, 29);
             this.lbl_bienvenido.TabIndex = 0;
             this.lbl_bienvenido.Text = "Bienvenido, Agente Universal";
             // 
