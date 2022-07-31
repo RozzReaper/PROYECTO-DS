@@ -59,7 +59,7 @@
             // 
             this.lbl_bienvenido.AutoSize = true;
             this.lbl_bienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_bienvenido.Location = new System.Drawing.Point(244, 26);
+            this.lbl_bienvenido.Location = new System.Drawing.Point(269, 18);
             this.lbl_bienvenido.Name = "lbl_bienvenido";
             this.lbl_bienvenido.Size = new System.Drawing.Size(374, 29);
             this.lbl_bienvenido.TabIndex = 0;
@@ -103,7 +103,7 @@
             this.btn_lgncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_lgncliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn_lgncliente.ForeColor = System.Drawing.Color.LightGray;
-            this.btn_lgncliente.Location = new System.Drawing.Point(249, 195);
+            this.btn_lgncliente.Location = new System.Drawing.Point(249, 206);
             this.btn_lgncliente.Name = "btn_lgncliente";
             this.btn_lgncliente.Size = new System.Drawing.Size(408, 40);
             this.btn_lgncliente.TabIndex = 16;
@@ -125,7 +125,7 @@
             // 
             // txt_import
             // 
-            this.txt_import.Location = new System.Drawing.Point(403, 132);
+            this.txt_import.Location = new System.Drawing.Point(409, 132);
             this.txt_import.Name = "txt_import";
             this.txt_import.Size = new System.Drawing.Size(100, 20);
             this.txt_import.TabIndex = 17;
@@ -147,12 +147,17 @@
             // 
             // btn_twilio
             // 
-            this.btn_twilio.Location = new System.Drawing.Point(415, 321);
+            this.btn_twilio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_twilio.FlatAppearance.BorderSize = 0;
+            this.btn_twilio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_twilio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_twilio.ForeColor = System.Drawing.Color.LightGray;
+            this.btn_twilio.Location = new System.Drawing.Point(249, 298);
             this.btn_twilio.Name = "btn_twilio";
-            this.btn_twilio.Size = new System.Drawing.Size(75, 23);
+            this.btn_twilio.Size = new System.Drawing.Size(408, 40);
             this.btn_twilio.TabIndex = 19;
             this.btn_twilio.Text = "Twilio";
-            this.btn_twilio.UseVisualStyleBackColor = true;
+            this.btn_twilio.UseVisualStyleBackColor = false;
             this.btn_twilio.Click += new System.EventHandler(this.button1_Click);
             // 
             // menu_agente_universal
